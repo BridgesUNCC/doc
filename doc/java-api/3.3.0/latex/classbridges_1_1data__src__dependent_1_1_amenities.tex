@@ -1,0 +1,179 @@
+\hypertarget{classbridges_1_1data__src__dependent_1_1_amenities}{}\doxysection{bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities Class Reference}
+\label{classbridges_1_1data__src__dependent_1_1_amenities}\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+
+
+\doxysubsection{Detailed Description}
+Class that hold individual Open Street Map \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities}{Amenities}}. 
+
+This class holds the individual information for each amenity requested.
+
+Usually this class is not created by the user but part of an \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenity_data}{Amenity\+Data}} object returned by \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_aa25f4d7521aa1ad788b60816eb2088db}{bridges\+::connect\+::\+Data\+Source\+::get\+Amenity\+Data()}}
+
+Check out the tutorial on getting amenity data at \href{https://bridgesuncc.github.io/tutorials/Data_Amenity.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Amenity.\+html}}
+
+\begin{DoxyAuthor}{Author}
+Jay Strahler 
+\end{DoxyAuthor}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_af8fef61527f05840af07d29b27e7a37b}{Amenities}} ()
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_a8f4b8a6f4fb58612e172ad24f4ae3472}{Amenities}} (double id\+\_\+val, double lat, double lon, String name, String\mbox{[}$\,$\mbox{]} other)
+\item 
+double \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_af92163fb64e2dc067ec0d80c6f659411}{get\+Id}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_a69649672a786a773e4f271b54fd4aeb5}{set\+Id}} (double id\+\_\+val)
+\item 
+double \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_ae2cbd635a925de7671d85f279d31c2e6}{get\+Lat}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_a045f16aeb68af4f58298db858af95083}{set\+Lat}} (double lat)
+\item 
+double \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_a11396571a86572ec3a988c76711a9eb9}{get\+Lon}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_abd300182acdf10c9d1d44d18a6661723}{set\+Lon}} (double lon)
+\item 
+String \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_a0e54ba20eee3569157b6e968c3d6c8f8}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_a8149bb449a64db9da1401192905d4a73}{set\+Name}} (String name)
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_a0b80ff1c677e97e6b68483ce4d46a0f6}{get\+Other}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenities_ac2ad154f3864a4dc43f712c9b2a1588a}{set\+Other}} (String\mbox{[}$\,$\mbox{]} other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_af8fef61527f05840af07d29b27e7a37b}\label{classbridges_1_1data__src__dependent_1_1_amenities_af8fef61527f05840af07d29b27e7a37b}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!Amenities@{Amenities}}
+\index{Amenities@{Amenities}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{Amenities()}{Amenities()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+Amenities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default Constructor \mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_a8f4b8a6f4fb58612e172ad24f4ae3472}\label{classbridges_1_1data__src__dependent_1_1_amenities_a8f4b8a6f4fb58612e172ad24f4ae3472}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!Amenities@{Amenities}}
+\index{Amenities@{Amenities}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{Amenities()}{Amenities()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+Amenities (\begin{DoxyParamCaption}\item[{double}]{id\+\_\+val,  }\item[{double}]{lat,  }\item[{double}]{lon,  }\item[{String}]{name,  }\item[{String\mbox{[}$\,$\mbox{]}}]{other }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+val} & Amenity ID as stored in Open Street Maps \\
+\hline
+{\em lat} & Latitude of Amenity \\
+\hline
+{\em lon} & Longitude of Amenity \\
+\hline
+{\em name} & Name of Amenity as found in Open Street Maps \\
+\hline
+{\em other} & List of special values that may have come with the amenity \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_af92163fb64e2dc067ec0d80c6f659411}\label{classbridges_1_1data__src__dependent_1_1_amenities_af92163fb64e2dc067ec0d80c6f659411}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!getId@{getId}}
+\index{getId@{getId}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily double bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get the ID of this amenity \begin{DoxyReturn}{Returns}
+ID value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_ae2cbd635a925de7671d85f279d31c2e6}\label{classbridges_1_1data__src__dependent_1_1_amenities_ae2cbd635a925de7671d85f279d31c2e6}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!getLat@{getLat}}
+\index{getLat@{getLat}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{getLat()}{getLat()}}
+{\footnotesize\ttfamily double bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+get\+Lat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get the latitude of this amenity data \begin{DoxyReturn}{Returns}
+amenity data latitude 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_a11396571a86572ec3a988c76711a9eb9}\label{classbridges_1_1data__src__dependent_1_1_amenities_a11396571a86572ec3a988c76711a9eb9}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!getLon@{getLon}}
+\index{getLon@{getLon}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{getLon()}{getLon()}}
+{\footnotesize\ttfamily double bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+get\+Lon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get the longitude of this amenity data \begin{DoxyReturn}{Returns}
+amenity data longitude 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_a0e54ba20eee3569157b6e968c3d6c8f8}\label{classbridges_1_1data__src__dependent_1_1_amenities_a0e54ba20eee3569157b6e968c3d6c8f8}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!getName@{getName}}
+\index{getName@{getName}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get the name of this amenity data \begin{DoxyReturn}{Returns}
+name of this amenity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_a0b80ff1c677e97e6b68483ce4d46a0f6}\label{classbridges_1_1data__src__dependent_1_1_amenities_a0b80ff1c677e97e6b68483ce4d46a0f6}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!getOther@{getOther}}
+\index{getOther@{getOther}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{getOther()}{getOther()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+get\+Other (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get the extra data present for certain amenities \begin{DoxyReturn}{Returns}
+list of extra data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_a69649672a786a773e4f271b54fd4aeb5}\label{classbridges_1_1data__src__dependent_1_1_amenities_a69649672a786a773e4f271b54fd4aeb5}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!setId@{setId}}
+\index{setId@{setId}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+set\+Id (\begin{DoxyParamCaption}\item[{double}]{id\+\_\+val }\end{DoxyParamCaption})}
+
+set the ID value of this amenity 
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+val} & ID value to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_a045f16aeb68af4f58298db858af95083}\label{classbridges_1_1data__src__dependent_1_1_amenities_a045f16aeb68af4f58298db858af95083}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!setLat@{setLat}}
+\index{setLat@{setLat}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{setLat()}{setLat()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+set\+Lat (\begin{DoxyParamCaption}\item[{double}]{lat }\end{DoxyParamCaption})}
+
+set the latitude value of this amenity 
+\begin{DoxyParams}{Parameters}
+{\em lat} & latitude position to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_abd300182acdf10c9d1d44d18a6661723}\label{classbridges_1_1data__src__dependent_1_1_amenities_abd300182acdf10c9d1d44d18a6661723}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!setLon@{setLon}}
+\index{setLon@{setLon}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{setLon()}{setLon()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+set\+Lon (\begin{DoxyParamCaption}\item[{double}]{lon }\end{DoxyParamCaption})}
+
+set the longitude value of this amenity 
+\begin{DoxyParams}{Parameters}
+{\em lon} & longitude position to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_a8149bb449a64db9da1401192905d4a73}\label{classbridges_1_1data__src__dependent_1_1_amenities_a8149bb449a64db9da1401192905d4a73}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!setName@{setName}}
+\index{setName@{setName}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+set\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+set the name of this amenity 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of amenity to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_amenities_ac2ad154f3864a4dc43f712c9b2a1588a}\label{classbridges_1_1data__src__dependent_1_1_amenities_ac2ad154f3864a4dc43f712c9b2a1588a}} 
+\index{bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}!setOther@{setOther}}
+\index{setOther@{setOther}!bridges.data\_src\_dependent.Amenities@{bridges.data\_src\_dependent.Amenities}}
+\doxysubsubsection{\texorpdfstring{setOther()}{setOther()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Amenities.\+set\+Other (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{other }\end{DoxyParamCaption})}
+
+set the extra data present for certain amenities 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/work/bridges/bridges-\/java/src/main/java/bridges/data\+\_\+src\+\_\+dependent/\mbox{\hyperlink{_amenities_8java}{Amenities.\+java}}\end{DoxyCompactItemize}

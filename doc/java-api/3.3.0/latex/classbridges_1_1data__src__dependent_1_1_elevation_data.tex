@@ -1,0 +1,255 @@
+\hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data}{}\doxysection{bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data Class Reference}
+\label{classbridges_1_1data__src__dependent_1_1_elevation_data}\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+
+
+\doxysubsection{Detailed Description}
+Object that holds elevation data retrieved from NOAA repository. 
+
+A user would not normally create an \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data}{Elevation\+Data}} object but rather obtain one from calling \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_ac3aec28786d148e6b3554c78679bb4c2}{bridges\+::connect\+::\+Data\+Source\+::get\+Elevation\+Data()}}
+
+A tutorial on how to use the Elevation dataset is available at\+: \href{https://bridgesuncc.github.io/tutorials/Data_Elevation.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Elevation.\+html}}
+
+\begin{DoxyAuthor}{Author}
+Jay Strahler
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+12/26/20 
+\end{DoxyDate}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_aee584cdeb39194b0fd82f91f1281c989}{Elevation\+Data}} ()
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a5bb0de11a5d9d9564431aff839c5bb85}{Elevation\+Data}} (int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} data, int cols, int rows, double xll, double yll, double cellsize, int max\+Val)
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_ab7847f85409b8af94b85ea7023a46b2d}{get\+Data}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_ad9cf1900457e918d847cea8055d6bfa3}{set\+Data}} (int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} data)
+\item 
+int \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_aecd53a0d628fc595ce7f45d5cdd0d5c9}{get\+Cols}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a13b37ddf4aaddba84aaf047f0371032e}{set\+Cols}} (int cols)
+\item 
+int \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a06732017ff4427e36ecf583155a776fd}{get\+Rows}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a10c6df66f391797f389d97084bbf5ac3}{set\+Rows}} (int rows)
+\item 
+double \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a2a4af898ef5d7f5fefe09efcfb520850}{getxll}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a75ad5cc47b65deadc5905820c7c1749d}{setxll}} (double xll)
+\item 
+double \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a3dbade4bcd0a18c967bea1291d4a7be1}{getyll}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a5a047e02c5d0acf9bf6d4b45086ae1cc}{setyll}} (double yll)
+\item 
+double \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a7fba378d6a2c9f4e9723bd07fa697902}{get\+Cell\+Size}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a504abfe58c55baff68e7b1d17ae991e5}{set\+Cell\+Size}} (double cellsize)
+\item 
+int \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a041124e8005f06ad475627b1abd75c4e}{get\+Max\+Val}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data_a1942cae209312b44dac10436966eb4d0}{set\+Max\+Val}} (int max\+Val)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_aee584cdeb39194b0fd82f91f1281c989}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_aee584cdeb39194b0fd82f91f1281c989}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!ElevationData@{ElevationData}}
+\index{ElevationData@{ElevationData}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{ElevationData()}{ElevationData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+Elevation\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructors \mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a5bb0de11a5d9d9564431aff839c5bb85}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a5bb0de11a5d9d9564431aff839c5bb85}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!ElevationData@{ElevationData}}
+\index{ElevationData@{ElevationData}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{ElevationData()}{ElevationData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+Elevation\+Data (\begin{DoxyParamCaption}\item[{int}]{data\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{cols,  }\item[{int}]{rows,  }\item[{double}]{xll,  }\item[{double}]{yll,  }\item[{double}]{cellsize,  }\item[{int}]{max\+Val }\end{DoxyParamCaption})}
+
+constructors
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & elevation data (2D array of ints) \\
+\hline
+{\em cols} & width of data \\
+\hline
+{\em rows} & height of data \\
+\hline
+{\em xll} & lower left x coord of origin \\
+\hline
+{\em yll} & lower left y coord of origin \\
+\hline
+{\em cellsize} & size of each cell (resolution) \\
+\hline
+{\em max\+Val} & max value in dataset \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a7fba378d6a2c9f4e9723bd07fa697902}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a7fba378d6a2c9f4e9723bd07fa697902}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!getCellSize@{getCellSize}}
+\index{getCellSize@{getCellSize}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{getCellSize()}{getCellSize()}}
+{\footnotesize\ttfamily double bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+get\+Cell\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get cell size
+
+return the current cell size \mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_aecd53a0d628fc595ce7f45d5cdd0d5c9}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_aecd53a0d628fc595ce7f45d5cdd0d5c9}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!getCols@{getCols}}
+\index{getCols@{getCols}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{getCols()}{getCols()}}
+{\footnotesize\ttfamily int bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+get\+Cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get width
+
+\begin{DoxyReturn}{Returns}
+dataset width 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_ab7847f85409b8af94b85ea7023a46b2d}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_ab7847f85409b8af94b85ea7023a46b2d}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!getData@{getData}}
+\index{getData@{getData}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get elev. data
+
+\begin{DoxyReturn}{Returns}
+the current dataset (2D array of ints) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a041124e8005f06ad475627b1abd75c4e}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a041124e8005f06ad475627b1abd75c4e}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!getMaxVal@{getMaxVal}}
+\index{getMaxVal@{getMaxVal}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{getMaxVal()}{getMaxVal()}}
+{\footnotesize\ttfamily int bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+get\+Max\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get max value
+
+\begin{DoxyReturn}{Returns}
+max value of dataset 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a06732017ff4427e36ecf583155a776fd}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a06732017ff4427e36ecf583155a776fd}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!getRows@{getRows}}
+\index{getRows@{getRows}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{getRows()}{getRows()}}
+{\footnotesize\ttfamily int bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+get\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get height
+
+\begin{DoxyReturn}{Returns}
+dataset height 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a2a4af898ef5d7f5fefe09efcfb520850}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a2a4af898ef5d7f5fefe09efcfb520850}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!getxll@{getxll}}
+\index{getxll@{getxll}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{getxll()}{getxll()}}
+{\footnotesize\ttfamily double bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+getxll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get origin X
+
+\begin{DoxyReturn}{Returns}
+lower left x coord of origin 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a3dbade4bcd0a18c967bea1291d4a7be1}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a3dbade4bcd0a18c967bea1291d4a7be1}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!getyll@{getyll}}
+\index{getyll@{getyll}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{getyll()}{getyll()}}
+{\footnotesize\ttfamily double bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+getyll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get origin Y
+
+\begin{DoxyReturn}{Returns}
+lower left y coord of origin 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a504abfe58c55baff68e7b1d17ae991e5}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a504abfe58c55baff68e7b1d17ae991e5}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!setCellSize@{setCellSize}}
+\index{setCellSize@{setCellSize}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{setCellSize()}{setCellSize()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+set\+Cell\+Size (\begin{DoxyParamCaption}\item[{double}]{cellsize }\end{DoxyParamCaption})}
+
+set cell size
+
+
+\begin{DoxyParams}{Parameters}
+{\em cellsize} & set the cell size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a13b37ddf4aaddba84aaf047f0371032e}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a13b37ddf4aaddba84aaf047f0371032e}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!setCols@{setCols}}
+\index{setCols@{setCols}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{setCols()}{setCols()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+set\+Cols (\begin{DoxyParamCaption}\item[{int}]{cols }\end{DoxyParamCaption})}
+
+set width 
+\begin{DoxyParams}{Parameters}
+{\em cols} & width to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_ad9cf1900457e918d847cea8055d6bfa3}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_ad9cf1900457e918d847cea8055d6bfa3}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!setData@{setData}}
+\index{setData@{setData}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+set\+Data (\begin{DoxyParamCaption}\item[{int}]{data\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+set elev. data
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & (2D array of ints) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a1942cae209312b44dac10436966eb4d0}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a1942cae209312b44dac10436966eb4d0}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!setMaxVal@{setMaxVal}}
+\index{setMaxVal@{setMaxVal}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{setMaxVal()}{setMaxVal()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+set\+Max\+Val (\begin{DoxyParamCaption}\item[{int}]{max\+Val }\end{DoxyParamCaption})}
+
+set max value
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Val} & max value to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a10c6df66f391797f389d97084bbf5ac3}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a10c6df66f391797f389d97084bbf5ac3}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!setRows@{setRows}}
+\index{setRows@{setRows}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{setRows()}{setRows()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+set\+Rows (\begin{DoxyParamCaption}\item[{int}]{rows }\end{DoxyParamCaption})}
+
+set height 
+\begin{DoxyParams}{Parameters}
+{\em rows} & height to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a75ad5cc47b65deadc5905820c7c1749d}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a75ad5cc47b65deadc5905820c7c1749d}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!setxll@{setxll}}
+\index{setxll@{setxll}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{setxll()}{setxll()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+setxll (\begin{DoxyParamCaption}\item[{double}]{xll }\end{DoxyParamCaption})}
+
+set origin X
+
+
+\begin{DoxyParams}{Parameters}
+{\em xll} & lower left x coord of origin to be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_elevation_data_a5a047e02c5d0acf9bf6d4b45086ae1cc}\label{classbridges_1_1data__src__dependent_1_1_elevation_data_a5a047e02c5d0acf9bf6d4b45086ae1cc}} 
+\index{bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}!setyll@{setyll}}
+\index{setyll@{setyll}!bridges.data\_src\_dependent.ElevationData@{bridges.data\_src\_dependent.ElevationData}}
+\doxysubsubsection{\texorpdfstring{setyll()}{setyll()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Elevation\+Data.\+setyll (\begin{DoxyParamCaption}\item[{double}]{yll }\end{DoxyParamCaption})}
+
+set origin X
+
+
+\begin{DoxyParams}{Parameters}
+{\em yll} & lower left y coord of origin to be set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/work/bridges/bridges-\/java/src/main/java/bridges/data\+\_\+src\+\_\+dependent/\mbox{\hyperlink{_elevation_data_8java}{Elevation\+Data.\+java}}\end{DoxyCompactItemize}

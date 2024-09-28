@@ -1,0 +1,139 @@
+\hypertarget{classbridges_1_1base_1_1_text}{}\doxysection{bridges.\+base.\+Text Class Reference}
+\label{classbridges_1_1base_1_1_text}\index{bridges.base.Text@{bridges.base.Text}}
+Inheritance diagram for bridges.\+base.\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbridges_1_1base_1_1_text}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+This class used to render text as part of a \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_collection}{Symbol\+Collection}}. 
+
+\begin{DoxyVerb}Text have a text string, font size, anchor location, and anchoring mode.
+\end{DoxyVerb}
+ Basic styling such as stroke, color are defined in the superclass \mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}}.
+
+On a label the \char`\"{}stroke\char`\"{} refer to the outside of the of the letter, and the \char`\"{}fill\char`\"{} refers to the inside of the letters. In most case, you want no stroke but a fill.
+
+\mbox{\hyperlink{classbridges_1_1base_1_1_text}{Text}} is placed by defining an anchor position and what that position is for the text (is it the middle? is it the top left?). Check the tutorial for details.
+
+\begin{DoxySeeAlso}{See also}
+An example tutorial can be found at \href{https://bridgesuncc.github.io/tutorials/Symbol_Collection.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Symbol\+\_\+\+Collection.\+html}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+David Burlinson, Erik Saule 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2018, 7/15/19, 06/22/21 
+\end{DoxyDate}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_text_abed5c0fd8971ab58f1963e5d4bca8482}{Text}} ()
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_text_a1df275662a047535686286e025034217}{Text}} (String \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_ad2adcc82e6a96c2f3c465702502655e9}{label}})
+\item 
+String \mbox{\hyperlink{classbridges_1_1base_1_1_text_ac4ddf14ec9b6265da4eceaaf5ec42f85}{get\+Shape\+Type}} ()
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}} \mbox{\hyperlink{classbridges_1_1base_1_1_text_a57e1d8586ce57eeed2eac1c92d9fbc7c}{set\+Text}} (String t)
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_text}{Text}} \mbox{\hyperlink{classbridges_1_1base_1_1_text_a151f12946439cfdab49e4aaf791f3c32}{set\+Font\+Size}} (float size)
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}} \mbox{\hyperlink{classbridges_1_1base_1_1_text_ad878ddc8b965f77ed279019822ba7ba1}{set\+Anchor\+Location}} (float x, float y)
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}} \mbox{\hyperlink{classbridges_1_1base_1_1_text_a26aea94a119885a8127bac8345a9fe52}{set\+Anchor\+Alignment}} (String type\+LR, String type\+TB)
+\item 
+JSONObject \mbox{\hyperlink{classbridges_1_1base_1_1_text_a463507cf8a25a600a213ca0ff849a568}{get\+JSONRepresentation}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbridges_1_1base_1_1_text_abed5c0fd8971ab58f1963e5d4bca8482}\label{classbridges_1_1base_1_1_text_abed5c0fd8971ab58f1963e5d4bca8482}} 
+\index{bridges.base.Text@{bridges.base.Text}!Text@{Text}}
+\index{Text@{Text}!bridges.base.Text@{bridges.base.Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bridges.\+base.\+Text.\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Construct a default label \mbox{\Hypertarget{classbridges_1_1base_1_1_text_a1df275662a047535686286e025034217}\label{classbridges_1_1base_1_1_text_a1df275662a047535686286e025034217}} 
+\index{bridges.base.Text@{bridges.base.Text}!Text@{Text}}
+\index{Text@{Text}!bridges.base.Text@{bridges.base.Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bridges.\+base.\+Text.\+Text (\begin{DoxyParamCaption}\item[{String}]{label }\end{DoxyParamCaption})}
+
+Construct a label with the give text string 
+\begin{DoxyParams}{Parameters}
+{\em label} & the text of the label \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbridges_1_1base_1_1_text_a463507cf8a25a600a213ca0ff849a568}\label{classbridges_1_1base_1_1_text_a463507cf8a25a600a213ca0ff849a568}} 
+\index{bridges.base.Text@{bridges.base.Text}!getJSONRepresentation@{getJSONRepresentation}}
+\index{getJSONRepresentation@{getJSONRepresentation}!bridges.base.Text@{bridges.base.Text}}
+\doxysubsubsection{\texorpdfstring{getJSONRepresentation()}{getJSONRepresentation()}}
+{\footnotesize\ttfamily JSONObject bridges.\+base.\+Text.\+get\+JSONRepresentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the JSON representation of the label object
+
+\begin{DoxyReturn}{Returns}
+the encoded JSON string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_aeba4cfa5b39fe03e72a568a8b7452e60}{bridges.\+base.\+Symbol}}.
+
+\mbox{\Hypertarget{classbridges_1_1base_1_1_text_ac4ddf14ec9b6265da4eceaaf5ec42f85}\label{classbridges_1_1base_1_1_text_ac4ddf14ec9b6265da4eceaaf5ec42f85}} 
+\index{bridges.base.Text@{bridges.base.Text}!getShapeType@{getShapeType}}
+\index{getShapeType@{getShapeType}!bridges.base.Text@{bridges.base.Text}}
+\doxysubsubsection{\texorpdfstring{getShapeType()}{getShapeType()}}
+{\footnotesize\ttfamily String bridges.\+base.\+Text.\+get\+Shape\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the shape type
+
+\begin{DoxyReturn}{Returns}
+shape type 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_a10f3cde5331f1af9303b08249e719a9d}{bridges.\+base.\+Symbol}}.
+
+\mbox{\Hypertarget{classbridges_1_1base_1_1_text_a26aea94a119885a8127bac8345a9fe52}\label{classbridges_1_1base_1_1_text_a26aea94a119885a8127bac8345a9fe52}} 
+\index{bridges.base.Text@{bridges.base.Text}!setAnchorAlignment@{setAnchorAlignment}}
+\index{setAnchorAlignment@{setAnchorAlignment}!bridges.base.Text@{bridges.base.Text}}
+\doxysubsubsection{\texorpdfstring{setAnchorAlignment()}{setAnchorAlignment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}} bridges.\+base.\+Text.\+set\+Anchor\+Alignment (\begin{DoxyParamCaption}\item[{String}]{type\+LR,  }\item[{String}]{type\+TB }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+LR} & valid parameters are \char`\"{}left\char`\"{}, \char`\"{}middle\char`\"{}, and \char`\"{}right\char`\"{} \\
+\hline
+{\em type\+TB} & valid parameters are \char`\"{}top\char`\"{}, \char`\"{}bottom\char`\"{}, \char`\"{}embottom\char`\"{}, \char`\"{}emtop\char`\"{}, \char`\"{}middle\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1base_1_1_text_ad878ddc8b965f77ed279019822ba7ba1}\label{classbridges_1_1base_1_1_text_ad878ddc8b965f77ed279019822ba7ba1}} 
+\index{bridges.base.Text@{bridges.base.Text}!setAnchorLocation@{setAnchorLocation}}
+\index{setAnchorLocation@{setAnchorLocation}!bridges.base.Text@{bridges.base.Text}}
+\doxysubsubsection{\texorpdfstring{setAnchorLocation()}{setAnchorLocation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}} bridges.\+base.\+Text.\+set\+Anchor\+Location (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1base_1_1_text_a151f12946439cfdab49e4aaf791f3c32}\label{classbridges_1_1base_1_1_text_a151f12946439cfdab49e4aaf791f3c32}} 
+\index{bridges.base.Text@{bridges.base.Text}!setFontSize@{setFontSize}}
+\index{setFontSize@{setFontSize}!bridges.base.Text@{bridges.base.Text}}
+\doxysubsubsection{\texorpdfstring{setFontSize()}{setFontSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1base_1_1_text}{Text}} bridges.\+base.\+Text.\+set\+Font\+Size (\begin{DoxyParamCaption}\item[{float}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1base_1_1_text_a57e1d8586ce57eeed2eac1c92d9fbc7c}\label{classbridges_1_1base_1_1_text_a57e1d8586ce57eeed2eac1c92d9fbc7c}} 
+\index{bridges.base.Text@{bridges.base.Text}!setText@{setText}}
+\index{setText@{setText}!bridges.base.Text@{bridges.base.Text}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}} bridges.\+base.\+Text.\+set\+Text (\begin{DoxyParamCaption}\item[{String}]{t }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/work/bridges/bridges-\/java/src/main/java/bridges/base/\mbox{\hyperlink{_text_8java}{Text.\+java}}\end{DoxyCompactItemize}

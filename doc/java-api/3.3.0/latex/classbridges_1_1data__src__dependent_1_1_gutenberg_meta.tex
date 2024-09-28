@@ -1,0 +1,183 @@
+\hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta}{}\doxysection{bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta Class Reference}
+\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta}\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+
+
+\doxysubsection{Detailed Description}
+Stores the meta data of a book as stored by project Gutenberg. 
+
+This object stores the meta data of a book such as its title, author and genre. The meta data come from \href{https://www.gutenberg.org/}{\texttt{ https\+://www.\+gutenberg.\+org/}}.
+
+Objects of this type are typically not constructed by the user but returned by a call to our Gutenberg API such as \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a7f27778f3a8fcd01a2504b19d35eda14}{bridges\+::connect\+::\+Data\+Source\+::get\+Gutenberg\+Book\+Meta\+Data()}} or \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a1f0ec9eb03a7e3631146415c317a1694}{bridges\+::connect\+::\+Data\+Source\+::get\+AGutenberg\+Book\+Meta\+Data(int)}}.
+
+The object does not contain the text of the book itself. Though it can be obtained using \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_ae6a17bd40228b89350fa186a2caad292}{bridges\+::connect\+::\+Data\+Source\+::get\+Gutenberg\+Book\+Text()}}
+
+A tutorial of how to use the Gutenberg data in BRIDGES is available\+: \href{https://bridgesuncc.github.io/tutorials/Data_Gutenberg.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Gutenberg.\+html}} \doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ab734ffe82b6483d89072791818df0296}{Gutenberg\+Meta}} ()
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a2e660696fae5fef7c6b71a71709c2f76}{Gutenberg\+Meta}} (int id, String title, String lang, String date, String\mbox{[}$\,$\mbox{]} authors, String\mbox{[}$\,$\mbox{]} genres, String\mbox{[}$\,$\mbox{]} loc)
+\item 
+int \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a54cd83b548249a3e41815f9596749f12}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gutenberg\+ID of the book. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aa51a477ffc9bf54f1d5d3fb54afc3718}{set\+Id}} (int id)
+\item 
+String \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_abff73e80da749f3597d61f5a18c2ae8b}{get\+Title}} ()
+\begin{DoxyCompactList}\small\item\em Title of the book. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aee6e68f3ea6a5a2fa557c8c95f5f7cda}{set\+Title}} (String title)
+\item 
+String \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ac213a62c78dc156eda5163f70ef6e0f3}{get\+Language}} ()
+\begin{DoxyCompactList}\small\item\em language of the book. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ab832299138ecaa465dc59ac9e00e2612}{set\+Language}} (String lang)
+\item 
+String \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ad7c1fe5ea9aa2dc3db71ac64a35a8cc4}{get\+Date}} ()
+\begin{DoxyCompactList}\small\item\em date at which the book was added to project Gutenberg. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a6668ea9257fd620b7b8f73a720f5dce6}{set\+Date}} (String date)
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ade26e52ccf14390a58c58182fafbd11e}{get\+Authors}} ()
+\begin{DoxyCompactList}\small\item\em List of authors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_acdd4ade8a15ae40bbe6909fedccb8271}{set\+Authors}} (String\mbox{[}$\,$\mbox{]} authors)
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a5e53b89cfac6bf2d731f95b534a1e056}{get\+Genres}} ()
+\begin{DoxyCompactList}\small\item\em List of genres. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a1a7274453a2000525553cbbbe3b9de38}{set\+Genres}} (String\mbox{[}$\,$\mbox{]} genres)
+\item 
+String\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aa1df46217b95819c2b6c19473a950e80}{get\+Loc}} ()
+\begin{DoxyCompactList}\small\item\em List of libary of congress classifications. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aeae2f24531e6377e40b224f22e34961f}{set\+Loc}} (String\mbox{[}$\,$\mbox{]} loc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ab734ffe82b6483d89072791818df0296}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ab734ffe82b6483d89072791818df0296}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!GutenbergMeta@{GutenbergMeta}}
+\index{GutenbergMeta@{GutenbergMeta}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{GutenbergMeta()}{GutenbergMeta()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+Gutenberg\+Meta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a2e660696fae5fef7c6b71a71709c2f76}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a2e660696fae5fef7c6b71a71709c2f76}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!GutenbergMeta@{GutenbergMeta}}
+\index{GutenbergMeta@{GutenbergMeta}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{GutenbergMeta()}{GutenbergMeta()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+Gutenberg\+Meta (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{String}]{title,  }\item[{String}]{lang,  }\item[{String}]{date,  }\item[{String\mbox{[}$\,$\mbox{]}}]{authors,  }\item[{String\mbox{[}$\,$\mbox{]}}]{genres,  }\item[{String\mbox{[}$\,$\mbox{]}}]{loc }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ade26e52ccf14390a58c58182fafbd11e}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ade26e52ccf14390a58c58182fafbd11e}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!getAuthors@{getAuthors}}
+\index{getAuthors@{getAuthors}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{getAuthors()}{getAuthors()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+get\+Authors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+List of authors. 
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ad7c1fe5ea9aa2dc3db71ac64a35a8cc4}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ad7c1fe5ea9aa2dc3db71ac64a35a8cc4}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!getDate@{getDate}}
+\index{getDate@{getDate}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily String bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+date at which the book was added to project Gutenberg. 
+
+This is not a publication date! \mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a5e53b89cfac6bf2d731f95b534a1e056}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a5e53b89cfac6bf2d731f95b534a1e056}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!getGenres@{getGenres}}
+\index{getGenres@{getGenres}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{getGenres()}{getGenres()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+get\+Genres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+List of genres. 
+
+Note that the genres stored by project Gutenberg may more detailled than one could expect. \mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a54cd83b548249a3e41815f9596749f12}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a54cd83b548249a3e41815f9596749f12}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!getId@{getId}}
+\index{getId@{getId}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gutenberg\+ID of the book. 
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ac213a62c78dc156eda5163f70ef6e0f3}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ac213a62c78dc156eda5163f70ef6e0f3}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!getLanguage@{getLanguage}}
+\index{getLanguage@{getLanguage}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{getLanguage()}{getLanguage()}}
+{\footnotesize\ttfamily String bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+get\+Language (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+language of the book. 
+
+Note that translations of a text shows in the translated language and not in the original language. \mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aa1df46217b95819c2b6c19473a950e80}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aa1df46217b95819c2b6c19473a950e80}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!getLoc@{getLoc}}
+\index{getLoc@{getLoc}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{getLoc()}{getLoc()}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+get\+Loc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+List of libary of congress classifications. 
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_abff73e80da749f3597d61f5a18c2ae8b}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_abff73e80da749f3597d61f5a18c2ae8b}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily String bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Title of the book. 
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_acdd4ade8a15ae40bbe6909fedccb8271}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_acdd4ade8a15ae40bbe6909fedccb8271}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!setAuthors@{setAuthors}}
+\index{setAuthors@{setAuthors}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{setAuthors()}{setAuthors()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+set\+Authors (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{authors }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a6668ea9257fd620b7b8f73a720f5dce6}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a6668ea9257fd620b7b8f73a720f5dce6}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!setDate@{setDate}}
+\index{setDate@{setDate}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+set\+Date (\begin{DoxyParamCaption}\item[{String}]{date }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a1a7274453a2000525553cbbbe3b9de38}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_a1a7274453a2000525553cbbbe3b9de38}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!setGenres@{setGenres}}
+\index{setGenres@{setGenres}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{setGenres()}{setGenres()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+set\+Genres (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{genres }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aa51a477ffc9bf54f1d5d3fb54afc3718}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aa51a477ffc9bf54f1d5d3fb54afc3718}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!setId@{setId}}
+\index{setId@{setId}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+set\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ab832299138ecaa465dc59ac9e00e2612}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_ab832299138ecaa465dc59ac9e00e2612}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!setLanguage@{setLanguage}}
+\index{setLanguage@{setLanguage}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{setLanguage()}{setLanguage()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+set\+Language (\begin{DoxyParamCaption}\item[{String}]{lang }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aeae2f24531e6377e40b224f22e34961f}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aeae2f24531e6377e40b224f22e34961f}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!setLoc@{setLoc}}
+\index{setLoc@{setLoc}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{setLoc()}{setLoc()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+set\+Loc (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{loc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aee6e68f3ea6a5a2fa557c8c95f5f7cda}\label{classbridges_1_1data__src__dependent_1_1_gutenberg_meta_aee6e68f3ea6a5a2fa557c8c95f5f7cda}} 
+\index{bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!bridges.data\_src\_dependent.GutenbergMeta@{bridges.data\_src\_dependent.GutenbergMeta}}
+\doxysubsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily void bridges.\+data\+\_\+src\+\_\+dependent.\+Gutenberg\+Meta.\+set\+Title (\begin{DoxyParamCaption}\item[{String}]{title }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/work/bridges/bridges-\/java/src/main/java/bridges/data\+\_\+src\+\_\+dependent/\mbox{\hyperlink{_gutenberg_meta_8java}{Gutenberg\+Meta.\+java}}\end{DoxyCompactItemize}

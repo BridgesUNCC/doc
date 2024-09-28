@@ -1,0 +1,79 @@
+\hypertarget{classbridges_1_1connect_1_1_socket_connection}{}\doxysection{bridges.\+connect.\+Socket\+Connection Class Reference}
+\label{classbridges_1_1connect_1_1_socket_connection}\index{bridges.connect.SocketConnection@{bridges.connect.SocketConnection}}
+
+
+\doxysubsection{Detailed Description}
+This is an internal class to BRIDGES that is not intended to be seen by the end user. 
+
+This class is a wrapper for a socket.\+io socket connection for BRIDGES \doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbridges_1_1connect_1_1_socket_connection_a876856ccf07a3ae6519d7f7b94d0e65a}{Socket\+Connection}} (\mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} b)
+\item 
+void \mbox{\hyperlink{classbridges_1_1connect_1_1_socket_connection_a94dd56d930f24abf547bce3ad0fb723e}{add\+Listener}} (\mbox{\hyperlink{interfacebridges_1_1connect_1_1_keypress_listener}{Keypress\+Listener}} to\+Add)
+\item 
+void \mbox{\hyperlink{classbridges_1_1connect_1_1_socket_connection_ac5467b4da6cd41b0cee00be5b4cbc60d}{setup\+Connection}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1connect_1_1_socket_connection_a9f62a8dbff3debd6d226f9a0d59a4c33}{send\+Data}} (String dataframe)
+\item 
+void \mbox{\hyperlink{classbridges_1_1connect_1_1_socket_connection_aeb96c978c1dd5125f3068ecc7c79e3ca}{close}} ()
+\begin{DoxyCompactList}\small\item\em close the socket \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_socket_connection_a876856ccf07a3ae6519d7f7b94d0e65a}\label{classbridges_1_1connect_1_1_socket_connection_a876856ccf07a3ae6519d7f7b94d0e65a}} 
+\index{bridges.connect.SocketConnection@{bridges.connect.SocketConnection}!SocketConnection@{SocketConnection}}
+\index{SocketConnection@{SocketConnection}!bridges.connect.SocketConnection@{bridges.connect.SocketConnection}}
+\doxysubsubsection{\texorpdfstring{SocketConnection()}{SocketConnection()}}
+{\footnotesize\ttfamily bridges.\+connect.\+Socket\+Connection.\+Socket\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}}}]{b }\end{DoxyParamCaption})}
+
+Pass the BRIDGES object to this class 
+\begin{DoxyParams}{Parameters}
+{\em b} & \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_socket_connection_a94dd56d930f24abf547bce3ad0fb723e}\label{classbridges_1_1connect_1_1_socket_connection_a94dd56d930f24abf547bce3ad0fb723e}} 
+\index{bridges.connect.SocketConnection@{bridges.connect.SocketConnection}!addListener@{addListener}}
+\index{addListener@{addListener}!bridges.connect.SocketConnection@{bridges.connect.SocketConnection}}
+\doxysubsubsection{\texorpdfstring{addListener()}{addListener()}}
+{\footnotesize\ttfamily void bridges.\+connect.\+Socket\+Connection.\+add\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebridges_1_1connect_1_1_keypress_listener}{Keypress\+Listener}}}]{to\+Add }\end{DoxyParamCaption})}
+
+Register listeners to keypress events 
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & keypress listener object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_socket_connection_aeb96c978c1dd5125f3068ecc7c79e3ca}\label{classbridges_1_1connect_1_1_socket_connection_aeb96c978c1dd5125f3068ecc7c79e3ca}} 
+\index{bridges.connect.SocketConnection@{bridges.connect.SocketConnection}!close@{close}}
+\index{close@{close}!bridges.connect.SocketConnection@{bridges.connect.SocketConnection}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void bridges.\+connect.\+Socket\+Connection.\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+close the socket 
+
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_socket_connection_a9f62a8dbff3debd6d226f9a0d59a4c33}\label{classbridges_1_1connect_1_1_socket_connection_a9f62a8dbff3debd6d226f9a0d59a4c33}} 
+\index{bridges.connect.SocketConnection@{bridges.connect.SocketConnection}!sendData@{sendData}}
+\index{sendData@{sendData}!bridges.connect.SocketConnection@{bridges.connect.SocketConnection}}
+\doxysubsubsection{\texorpdfstring{sendData()}{sendData()}}
+{\footnotesize\ttfamily void bridges.\+connect.\+Socket\+Connection.\+send\+Data (\begin{DoxyParamCaption}\item[{String}]{dataframe }\end{DoxyParamCaption})}
+
+Send a dataframe string to the socket server ~\newline
+
+
+{\bfseries{TODO\+:}} this currently emits a gamegrid\+:recv event. We may need to refactor this to consider a variety of dataframe types \mbox{\Hypertarget{classbridges_1_1connect_1_1_socket_connection_ac5467b4da6cd41b0cee00be5b4cbc60d}\label{classbridges_1_1connect_1_1_socket_connection_ac5467b4da6cd41b0cee00be5b4cbc60d}} 
+\index{bridges.connect.SocketConnection@{bridges.connect.SocketConnection}!setupConnection@{setupConnection}}
+\index{setupConnection@{setupConnection}!bridges.connect.SocketConnection@{bridges.connect.SocketConnection}}
+\doxysubsubsection{\texorpdfstring{setupConnection()}{setupConnection()}}
+{\footnotesize\ttfamily void bridges.\+connect.\+Socket\+Connection.\+setup\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Given username and assignment number, set up a connection to the socket server.~\newline
+ {\bfseries{TODO\+:}} this will need to be refactored to sit within BRIDGES, but for now we pass credentials directly 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/work/bridges/bridges-\/java/src/main/java/bridges/connect/\mbox{\hyperlink{_socket_connection_8java}{Socket\+Connection.\+java}}\end{DoxyCompactItemize}

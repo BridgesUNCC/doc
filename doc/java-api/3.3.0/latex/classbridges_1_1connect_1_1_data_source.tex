@@ -1,0 +1,750 @@
+\hypertarget{classbridges_1_1connect_1_1_data_source}{}\doxysection{bridges.\+connect.\+Data\+Source Class Reference}
+\label{classbridges_1_1connect_1_1_data_source}\index{bridges.connect.DataSource@{bridges.connect.DataSource}}
+
+
+\doxysubsection{Detailed Description}
+This class is the main BRIDGES class that facilitates access to external datasets. 
+
+The \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source}{Data\+Source}} class provides the BRIDGES API to all external datasets that are implemented in BRIDGES. These include earthquake data, song data, IMDB actor/movies, Wikidata, Gutenberg book collections, Open\+Street maps, Shakespeare, play, sonnets, poems, Cancer incidence data and IGN games Each dataset is accessed through a function call, which typically returns a list of objects with all associated attributes. These can then be used as part of a data structure, algorithm. Some initial support to import previously built data structures is also provided. \doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a3cd59df33a31f046e5d271dd3c89f6eb}{set\+Source\+Type}} (String st)
+\begin{DoxyCompactList}\small\item\em specify which server to use for accessing datasources. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_earthquake_u_s_g_s}{Earthquake\+USGS}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_af49a5212ae2bb6eed4501152276b79ad}{get\+Earthquake\+USGSData}} (int max\+Elem)  throws IOException 
+\item 
+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_shakespeare}{Shakespeare}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_af2b6e5df074d0a689e8a992b1bea6f3e}{get\+Shakespeare\+Data}} ()  throws Exception 
+\item 
+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_shakespeare}{Shakespeare}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_abf8e8f8ff3eb14fa6c6b5ce6b48dbadb}{get\+Shakespeare\+Data}} (String works, Boolean text\+Only)  throws Exception 
+\begin{DoxyCompactList}\small\item\em This function provides access to a collection of Shakespeare plays, poems and plays. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_shakespeare}{Shakespeare}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a04aa757c45139e52525d4b09156abfe1}{get\+Shakespeare\+Data}} (String works)  throws Exception 
+\item 
+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_cancer_incidence}{Cancer\+Incidence}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a7617a81fe00361c3ae6fed5873739aa2}{get\+Cancer\+Incidence\+Data}} ()  throws Exception 
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_osm_data}{Osm\+Data}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a592a35a9f3285fd1d6e76932bd982eeb}{get\+Osm\+Data}} (String location)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_osm_data}{Osm\+Data}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a2a1b73656312799046cd7bbf8bdebb0e}{get\+Osm\+Data}} (String location, String level)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_osm_data}{Osm\+Data}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a1448b538c2453c922ca24e35c16f9afe}{get\+Osm\+Data}} (double min\+Lat, double min\+Lon, double max\+Lat, double max\+Lon)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_osm_data}{Osm\+Data}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a3ad97225ea5160ba8d38160a7ae69813}{get\+Osm\+Data}} (double min\+Lat, double min\+Lon, double max\+Lat, double max\+Lon, String level)  throws IOException 
+\item 
+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_actor_movie_i_m_d_b}{Actor\+Movie\+IMDB}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_ab18803b850f3c867306723d1a1be337e}{get\+Actor\+Movie\+IMDBData}} (int max\+Elem)  throws IOException, Illegal\+Argument\+Exception 
+\item 
+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_actor_movie_i_m_d_b}{Actor\+Movie\+IMDB}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_ae44e4ed7879e2755f8c66a335d8b6ad5}{get\+Actor\+Movie\+IMDBData2}} ()  throws IOException 
+\item 
+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_game}{Game}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_ab3744c6b103281724bdd832da0924312}{get\+Game\+Data}} ()  throws IOException 
+\item 
+Array\+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_song}{Song}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_aeccb689aeacc094b0621ab5564849fa6}{get\+Song\+Data}} ()  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_song}{Song}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a935ea2005b7de3cb22c1e55027b81460}{get\+Song}} (String song\+Title, String artist\+Name)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_song}{Song}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a4f49b088703c74d68bd854d40edc5ad4}{get\+Song}} (String song\+Title)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenity_data}{Amenity\+Data}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_aa25f4d7521aa1ad788b60816eb2088db}{get\+Amenity\+Data}} (String location, String amenity)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenity_data}{Amenity\+Data}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a4fdb7ddbeecaa30a4e6972c0b537bb44}{get\+Amenity\+Data}} (double min\+Lat, double min\+Lon, double max\+Lat, double max\+Lon, String amenity)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data}{Elevation\+Data}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_ac3aec28786d148e6b3554c78679bb4c2}{get\+Elevation\+Data}} (double min\+Lat, double min\+Lon, double max\+Lat, double max\+Lon, double res)  throws IOException 
+\begin{DoxyCompactList}\small\item\em This method retrieves the elevation map of a region given the lat/long range (bounding box) and resolution level. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta}{Gutenberg\+Meta}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a7f27778f3a8fcd01a2504b19d35eda14}{get\+Gutenberg\+Book\+Meta\+Data}} (String term, String category)  throws IOException
+\begin{DoxyCompactList}\small\item\em Search the gutenberg data for retrieving meta data of books matching a string and a category. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta}{Gutenberg\+Meta}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a1f0ec9eb03a7e3631146415c317a1694}{get\+AGutenberg\+Book\+Meta\+Data}} (int id)  throws IOException 
+\item 
+String \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_ae6a17bd40228b89350fa186a2caad292}{get\+Gutenberg\+Book\+Text}} (int id)  throws IOException
+\item 
+Array\+List$<$ \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_actor_movie_wikidata}{Actor\+Movie\+Wikidata}} $>$ \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a919756dc487ad42a2843d9d9cb71371c}{get\+Wikidata\+Actor\+Movie}} (int year\+Begin, int year\+End)  throws IOException 
+\begin{DoxyCompactList}\small\item\em This function returns the Movie and Actors playing in them between two years from Wiki\+Data. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_af2f6cd7172acb64b2ba49f134b5391f8}{get\+Assignment\+JSON}} (String user, int assignment, int subassignment)  throws IOException 
+\item 
+String \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_af55c85da71b588f64ff4b46dbacab7f4}{get\+Assignment\+JSON}} (String user, int assignment)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_color_grid}{Color\+Grid}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a7bddb93c9196a1109f2bf36054500ed8}{get\+Color\+Grid\+From\+Assignment}} (String user, int assignment, int subassignment)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_color_grid}{Color\+Grid}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a19356653cc7ae56f57f5d28994048ee3}{get\+Color\+Grid\+From\+Assignment}} (String user, int assignment)  throws IOException 
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_color_grid}{Color\+Grid}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a8c2d68431a992a17912ad8c6763a35f2}{get\+Color\+Grid\+From\+Assignment}} (String server, String user, int assignment, int subassignment)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Reconstruct a Color\+Grid from an existing Color\+Grid on the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} server. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_color_grid}{bridges.\+base.\+Color\+Grid}} \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a87126978d697cd1787f2477e551680af}{get\+Color\+Grid\+From\+Assignment}} (String server, String user, int assignment)  throws IOException 
+\begin{DoxyCompactList}\small\item\em Reconstruct a Color\+Grid from an existing Color\+Grid on the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} server. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_a5c365c30f2ae0bbcfea90a7351dcf6af}{get\+Assignment}} (String server, String user, int assignment, int subassignment)  throws IOException 
+\item 
+String \mbox{\hyperlink{classbridges_1_1connect_1_1_data_source_afdd8d0df6dc8d5a5d40b56c3b62c9d86}{get\+Assignment}} (String server, String user, int assignment)  throws IOException, Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_ab18803b850f3c867306723d1a1be337e}\label{classbridges_1_1connect_1_1_data_source_ab18803b850f3c867306723d1a1be337e}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getActorMovieIMDBData@{getActorMovieIMDBData}}
+\index{getActorMovieIMDBData@{getActorMovieIMDBData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getActorMovieIMDBData()}{getActorMovieIMDBData()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_actor_movie_i_m_d_b}{Actor\+Movie\+IMDB}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Actor\+Movie\+IMDBData (\begin{DoxyParamCaption}\item[{int}]{max\+Elem }\end{DoxyParamCaption}) throws IOException, Illegal\+Argument\+Exception}
+
+Get Actor\+Movie IMDB Data retrieved, formatted into a list of Actor\+Movie\+IMDB objects
+
+Check out the tutorial on the IMDB dataset at \href{https://bridgesuncc.github.io/tutorials/Data_IMDB.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+IMDB.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Elem} & the number of actor/movie pairs \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the request fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a list of Actor\+Movie\+IMDB objects, but only actor and movie fields in this version 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_ae44e4ed7879e2755f8c66a335d8b6ad5}\label{classbridges_1_1connect_1_1_data_source_ae44e4ed7879e2755f8c66a335d8b6ad5}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getActorMovieIMDBData2@{getActorMovieIMDBData2}}
+\index{getActorMovieIMDBData2@{getActorMovieIMDBData2}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getActorMovieIMDBData2()}{getActorMovieIMDBData2()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_actor_movie_i_m_d_b}{Actor\+Movie\+IMDB}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Actor\+Movie\+IMDBData2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException}
+
+This helper function provides access to a second curated IMDB dataset; the data is retrieved, formatted into a list of Actor\+Movie\+IMDB objects
+
+This version of the IMDB Actor/\+Movie data contains for each record, actor name, movie name, movie genres, movie rating; refer to 
+
+~~~~~\href{https://bridgesuncc.github.io/datasets.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/datasets.\+html}} 
+
+for more information and to look at the dataset.
+
+Check out the tutorial on the IMDB dataset at \href{https://bridgesuncc.github.io/tutorials/Data_IMDB.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+IMDB.\+html}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the request fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a list of Actor\+Movie\+IMDB objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a1f0ec9eb03a7e3631146415c317a1694}\label{classbridges_1_1connect_1_1_data_source_a1f0ec9eb03a7e3631146415c317a1694}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getAGutenbergBookMetaData@{getAGutenbergBookMetaData}}
+\index{getAGutenbergBookMetaData@{getAGutenbergBookMetaData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getAGutenbergBookMetaData()}{getAGutenbergBookMetaData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta}{Gutenberg\+Meta}} bridges.\+connect.\+Data\+Source.\+get\+AGutenberg\+Book\+Meta\+Data (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) throws IOException}
+
+This function is to retrieve a gutenberg book metadata from a book ID
+
+A tutorial of how to use the Gutenberg data in BRIDGES is available\+: \href{https://bridgesuncc.github.io/tutorials/Data_Gutenberg.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Gutenberg.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & is the id of the book you want to retrieve\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Gutenberg\+Meta object of the book with the ID passed in 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a4fdb7ddbeecaa30a4e6972c0b537bb44}\label{classbridges_1_1connect_1_1_data_source_a4fdb7ddbeecaa30a4e6972c0b537bb44}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getAmenityData@{getAmenityData}}
+\index{getAmenityData@{getAmenityData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getAmenityData()}{getAmenityData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenity_data}{Amenity\+Data}} bridges.\+connect.\+Data\+Source.\+get\+Amenity\+Data (\begin{DoxyParamCaption}\item[{double}]{min\+Lat,  }\item[{double}]{min\+Lon,  }\item[{double}]{max\+Lat,  }\item[{double}]{max\+Lon,  }\item[{String}]{amenity }\end{DoxyParamCaption}) throws IOException}
+
+This method retrieves the specified amenity related data given a bounding box of a region, from a Open Street map
+
+Check out the tutorial on getting amenity data at \href{https://bridgesuncc.github.io/tutorials/Data_Amenity.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Amenity.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Lat} & minimum latitude \\
+\hline
+{\em min\+Lon} & minimumm longitude \\
+\hline
+{\em max\+Lat} & maximum latitude \\
+\hline
+{\em max\+Lon} & maximum longitude \\
+\hline
+{\em amenity} & amenity type \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_aa25f4d7521aa1ad788b60816eb2088db}\label{classbridges_1_1connect_1_1_data_source_aa25f4d7521aa1ad788b60816eb2088db}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getAmenityData@{getAmenityData}}
+\index{getAmenityData@{getAmenityData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getAmenityData()}{getAmenityData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_amenity_data}{Amenity\+Data}} bridges.\+connect.\+Data\+Source.\+get\+Amenity\+Data (\begin{DoxyParamCaption}\item[{String}]{location,  }\item[{String}]{amenity }\end{DoxyParamCaption}) throws IOException}
+
+This method retrieves the specified amenity related data given a location from a specified openstreet mmap location
+
+Check out the tutorial on getting amenity data at \href{https://bridgesuncc.github.io/tutorials/Data_Amenity.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Amenity.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & city/town from where amenity data is sought \\
+\hline
+{\em amenity} & amenity type \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_afdd8d0df6dc8d5a5d40b56c3b62c9d86}\label{classbridges_1_1connect_1_1_data_source_afdd8d0df6dc8d5a5d40b56c3b62c9d86}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getAssignment@{getAssignment}}
+\index{getAssignment@{getAssignment}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getAssignment()}{getAssignment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String bridges.\+connect.\+Data\+Source.\+get\+Assignment (\begin{DoxyParamCaption}\item[{String}]{server,  }\item[{String}]{user,  }\item[{int}]{assignment }\end{DoxyParamCaption}) throws IOException, Exception}
+
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a5c365c30f2ae0bbcfea90a7351dcf6af}\label{classbridges_1_1connect_1_1_data_source_a5c365c30f2ae0bbcfea90a7351dcf6af}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getAssignment@{getAssignment}}
+\index{getAssignment@{getAssignment}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getAssignment()}{getAssignment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String bridges.\+connect.\+Data\+Source.\+get\+Assignment (\begin{DoxyParamCaption}\item[{String}]{server,  }\item[{String}]{user,  }\item[{int}]{assignment,  }\item[{int}]{subassignment }\end{DoxyParamCaption}) throws IOException}
+
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_af55c85da71b588f64ff4b46dbacab7f4}\label{classbridges_1_1connect_1_1_data_source_af55c85da71b588f64ff4b46dbacab7f4}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getAssignmentJSON@{getAssignmentJSON}}
+\index{getAssignmentJSON@{getAssignmentJSON}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getAssignmentJSON()}{getAssignmentJSON()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily String bridges.\+connect.\+Data\+Source.\+get\+Assignment\+JSON (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{int}]{assignment }\end{DoxyParamCaption}) throws IOException}
+
+This function obtains the JSON representation of a particular subassignment.
+
+\begin{DoxyReturn}{Returns}
+a string that is the JSON representation of the subassignment as stored by the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} server. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & the name of the user who uploaded the assignment \\
+\hline
+{\em assignment} & the ID of the assignment to get \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_af2f6cd7172acb64b2ba49f134b5391f8}\label{classbridges_1_1connect_1_1_data_source_af2f6cd7172acb64b2ba49f134b5391f8}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getAssignmentJSON@{getAssignmentJSON}}
+\index{getAssignmentJSON@{getAssignmentJSON}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getAssignmentJSON()}{getAssignmentJSON()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily String bridges.\+connect.\+Data\+Source.\+get\+Assignment\+JSON (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{int}]{assignment,  }\item[{int}]{subassignment }\end{DoxyParamCaption}) throws IOException}
+
+This function obtains the JSON representation of a particular subassignment.
+
+\begin{DoxyReturn}{Returns}
+a string that is the JSON representation of the subassignment as stored by the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} server. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & the name of the user who uploaded the assignment \\
+\hline
+{\em assignment} & the ID of the assignment to get \\
+\hline
+{\em subassignment} & the ID of the subassignment to get \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a7617a81fe00361c3ae6fed5873739aa2}\label{classbridges_1_1connect_1_1_data_source_a7617a81fe00361c3ae6fed5873739aa2}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getCancerIncidenceData@{getCancerIncidenceData}}
+\index{getCancerIncidenceData@{getCancerIncidenceData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getCancerIncidenceData()}{getCancerIncidenceData()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_cancer_incidence}{Cancer\+Incidence}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Cancer\+Incidence\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+This helper function provides access to a cancer dataset from CDC \href{https://www.cdc.gov/cancer/npcr/uscs/download_data.htm}{\texttt{ https\+://www.\+cdc.\+gov/cancer/npcr/uscs/download\+\_\+data.\+htm}} and curated by Austin (Cory) Bart as part of the Corgis data collection \href{https://think.cs.vt.edu/corgis/}{\texttt{ https\+://think.\+cs.\+vt.\+edu/corgis/}}
+
+Each record in this collection has a number of fields detailed in the Cancer\+Incidence class.
+
+For more information and to look at the data, refer to 
+
+~~~~~\href{https://bridgesuncc.github.io/datasets.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/datasets.\+html}} 
+
+Refer to tutorial examples on how to use this dataset\+: \href{https://bridgesuncc.github.io/tutorials/Data_CancerIncidence.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Cancer\+Incidence.\+html}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the request fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a list of Cancer incidence objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a87126978d697cd1787f2477e551680af}\label{classbridges_1_1connect_1_1_data_source_a87126978d697cd1787f2477e551680af}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getColorGridFromAssignment@{getColorGridFromAssignment}}
+\index{getColorGridFromAssignment@{getColorGridFromAssignment}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getColorGridFromAssignment()}{getColorGridFromAssignment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1base_1_1_color_grid}{bridges.\+base.\+Color\+Grid}} bridges.\+connect.\+Data\+Source.\+get\+Color\+Grid\+From\+Assignment (\begin{DoxyParamCaption}\item[{String}]{server,  }\item[{String}]{user,  }\item[{int}]{assignment }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Reconstruct a Color\+Grid from an existing Color\+Grid on the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em server} & base URL of the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} service \\
+\hline
+{\em user} & the name of the user who uploaded the assignment \\
+\hline
+{\em assignment} & the ID of the assignment to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Color\+Grid stored in the bridges server 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a8c2d68431a992a17912ad8c6763a35f2}\label{classbridges_1_1connect_1_1_data_source_a8c2d68431a992a17912ad8c6763a35f2}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getColorGridFromAssignment@{getColorGridFromAssignment}}
+\index{getColorGridFromAssignment@{getColorGridFromAssignment}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getColorGridFromAssignment()}{getColorGridFromAssignment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1base_1_1_color_grid}{Color\+Grid}} bridges.\+connect.\+Data\+Source.\+get\+Color\+Grid\+From\+Assignment (\begin{DoxyParamCaption}\item[{String}]{server,  }\item[{String}]{user,  }\item[{int}]{assignment,  }\item[{int}]{subassignment }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Reconstruct a Color\+Grid from an existing Color\+Grid on the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em server} & base URL of the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} service \\
+\hline
+{\em user} & the name of the user who uploaded the assignment \\
+\hline
+{\em assignment} & the ID of the assignment to get \\
+\hline
+{\em subassignment} & the ID of the subassignment to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Color\+Grid stored in the bridges server 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a19356653cc7ae56f57f5d28994048ee3}\label{classbridges_1_1connect_1_1_data_source_a19356653cc7ae56f57f5d28994048ee3}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getColorGridFromAssignment@{getColorGridFromAssignment}}
+\index{getColorGridFromAssignment@{getColorGridFromAssignment}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getColorGridFromAssignment()}{getColorGridFromAssignment()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1base_1_1_color_grid}{Color\+Grid}} bridges.\+connect.\+Data\+Source.\+get\+Color\+Grid\+From\+Assignment (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{int}]{assignment }\end{DoxyParamCaption}) throws IOException}
+
+Reconstruct a Color\+Grid from an existing Color\+Grid on the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} server
+
+\begin{DoxyReturn}{Returns}
+the Color\+Grid stored in the bridges server 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & the name of the user who uploaded the assignment \\
+\hline
+{\em assignment} & the ID of the assignment to get \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a7bddb93c9196a1109f2bf36054500ed8}\label{classbridges_1_1connect_1_1_data_source_a7bddb93c9196a1109f2bf36054500ed8}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getColorGridFromAssignment@{getColorGridFromAssignment}}
+\index{getColorGridFromAssignment@{getColorGridFromAssignment}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getColorGridFromAssignment()}{getColorGridFromAssignment()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1base_1_1_color_grid}{Color\+Grid}} bridges.\+connect.\+Data\+Source.\+get\+Color\+Grid\+From\+Assignment (\begin{DoxyParamCaption}\item[{String}]{user,  }\item[{int}]{assignment,  }\item[{int}]{subassignment }\end{DoxyParamCaption}) throws IOException}
+
+Reconstruct a Color\+Grid from an existing Color\+Grid on the \mbox{\hyperlink{classbridges_1_1connect_1_1_bridges}{Bridges}} server
+
+\begin{DoxyReturn}{Returns}
+the Color\+Grid stored in the bridges server 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em user} & the name of the user who uploaded the assignment \\
+\hline
+{\em assignment} & the ID of the assignment to get \\
+\hline
+{\em subassignment} & the ID of the subassignment to get \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_af49a5212ae2bb6eed4501152276b79ad}\label{classbridges_1_1connect_1_1_data_source_af49a5212ae2bb6eed4501152276b79ad}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getEarthquakeUSGSData@{getEarthquakeUSGSData}}
+\index{getEarthquakeUSGSData@{getEarthquakeUSGSData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getEarthquakeUSGSData()}{getEarthquakeUSGSData()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_earthquake_u_s_g_s}{Earthquake\+USGS}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Earthquake\+USGSData (\begin{DoxyParamCaption}\item[{int}]{max\+Elem }\end{DoxyParamCaption}) throws IOException}
+
+This helper function provides a simple API to retrieve current USGS earthquake Tweet data from the USGS website (\href{https://earthquake.usgs.gov/earthquakes/map/}{\texttt{ https\+://earthquake.\+usgs.\+gov/earthquakes/map/}}); The data is retrieved and formatted into a list of Earthquake\+USGS objects.
+
+More information on the dataset can be found at \href{https://bridgesuncc.github.io/datasets.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/datasets.\+html}}
+
+Refer to the tutorial on how to use this dataset\+: \href{https://bridgesuncc.github.io/tutorials/Data_EQ_USGS.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+EQ\+\_\+\+USGS.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Elem} & the number of earthquake records retrieved, limited to 5000 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the request fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a list of earthquake records 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_ac3aec28786d148e6b3554c78679bb4c2}\label{classbridges_1_1connect_1_1_data_source_ac3aec28786d148e6b3554c78679bb4c2}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getElevationData@{getElevationData}}
+\index{getElevationData@{getElevationData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getElevationData()}{getElevationData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_elevation_data}{Elevation\+Data}} bridges.\+connect.\+Data\+Source.\+get\+Elevation\+Data (\begin{DoxyParamCaption}\item[{double}]{min\+Lat,  }\item[{double}]{min\+Lon,  }\item[{double}]{max\+Lat,  }\item[{double}]{max\+Lon,  }\item[{double}]{res }\end{DoxyParamCaption}) throws IOException}
+
+
+
+This method retrieves the elevation map of a region given the lat/long range (bounding box) and resolution level. 
+
+Note that the Elevation\+Data that is returned may have slightly different location and resolution.
+
+A tutorial on how to use the Elevation dataset is available at\+: \href{https://bridgesuncc.github.io/tutorials/Data_Elevation.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Elevation.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Lat} & minimum latitude requested \\
+\hline
+{\em min\+Lon} & minimum longitude requested \\
+\hline
+{\em max\+Lat} & maximum latitude requested \\
+\hline
+{\em max\+Lon} & maximum longitude requested \\
+\hline
+{\em res} & spatial resolution, aka the distance between two samples (in degrees) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Elevation\+Data object mapping a region close to the box requested 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_ab3744c6b103281724bdd832da0924312}\label{classbridges_1_1connect_1_1_data_source_ab3744c6b103281724bdd832da0924312}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getGameData@{getGameData}}
+\index{getGameData@{getGameData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getGameData()}{getGameData()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_game}{Game}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Game\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException}
+
+This helper function provides access to the meta-\/data of the video game collection.
+
+Each record in this collection has information on game title, platform, rating, and genre. For more information and to look at the data, refer to 
+
+~~~~~\href{https://bridgesuncc.github.io/datasets.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/datasets.\+html}} 
+
+Refer to tutorial examples on how to use this dataset\+: \href{https://bridgesuncc.github.io/tutorials/Data_IGN_Games.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+IGN\+\_\+\+Games.\+html}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the request fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a list of Game objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a7f27778f3a8fcd01a2504b19d35eda14}\label{classbridges_1_1connect_1_1_data_source_a7f27778f3a8fcd01a2504b19d35eda14}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getGutenbergBookMetaData@{getGutenbergBookMetaData}}
+\index{getGutenbergBookMetaData@{getGutenbergBookMetaData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getGutenbergBookMetaData()}{getGutenbergBookMetaData()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_gutenberg_meta}{Gutenberg\+Meta}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Gutenberg\+Book\+Meta\+Data (\begin{DoxyParamCaption}\item[{String}]{term,  }\item[{String}]{category }\end{DoxyParamCaption}) throws IOException}
+
+
+
+Search the gutenberg data for retrieving meta data of books matching a string and a category. 
+
+Data is retrieved into a vector of book records.
+
+A tutorial of how to use the Gutenberg data in bridges is presented here\+: \href{https://bridgesuncc.github.io/tutorials/Data_Gutenberg.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Gutenberg.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em term} & a string that matches the category \\
+\hline
+{\em category} & category can be any book attribute (title, genre, date, Library of Congress class, language) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_ae6a17bd40228b89350fa186a2caad292}\label{classbridges_1_1connect_1_1_data_source_ae6a17bd40228b89350fa186a2caad292}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getGutenbergBookText@{getGutenbergBookText}}
+\index{getGutenbergBookText@{getGutenbergBookText}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getGutenbergBookText()}{getGutenbergBookText()}}
+{\footnotesize\ttfamily String bridges.\+connect.\+Data\+Source.\+get\+Gutenberg\+Book\+Text (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) throws IOException}
+
+This function gets the text of a gutenberg book based on the ID
+
+A tutorial of how to use the Gutenberg data in BRIDGES is available\+: \href{https://bridgesuncc.github.io/tutorials/Data_Gutenberg.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Gutenberg.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & is the id of the book you want the text of\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string of the book\textquotesingle{}s text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a1448b538c2453c922ca24e35c16f9afe}\label{classbridges_1_1connect_1_1_data_source_a1448b538c2453c922ca24e35c16f9afe}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getOsmData@{getOsmData}}
+\index{getOsmData@{getOsmData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getOsmData()}{getOsmData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_osm_data}{Osm\+Data}} bridges.\+connect.\+Data\+Source.\+get\+Osm\+Data (\begin{DoxyParamCaption}\item[{double}]{min\+Lat,  }\item[{double}]{min\+Lon,  }\item[{double}]{max\+Lat,  }\item[{double}]{max\+Lon }\end{DoxyParamCaption}) throws IOException}
+
+Generates Open Street Map URL request for a given set of coordinates with default level and returns the map data
+
+Check out how to use OSM data at\+: \href{https://bridgesuncc.github.io/tutorials/Data_OSM.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+OSM.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Lat} & minimum latitude value for the area requested \\
+\hline
+{\em min\+Lon} & minimum longitude value for the area requested \\
+\hline
+{\em max\+Lat} & maximum latitude value for the area requested \\
+\hline
+{\em max\+Lon} & maximum longitude value for the area requested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Osm\+Data vertices and edges of Open Street Map data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If there is an error parsing response from server or is an invalid location name \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a3ad97225ea5160ba8d38160a7ae69813}\label{classbridges_1_1connect_1_1_data_source_a3ad97225ea5160ba8d38160a7ae69813}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getOsmData@{getOsmData}}
+\index{getOsmData@{getOsmData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getOsmData()}{getOsmData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_osm_data}{Osm\+Data}} bridges.\+connect.\+Data\+Source.\+get\+Osm\+Data (\begin{DoxyParamCaption}\item[{double}]{min\+Lat,  }\item[{double}]{min\+Lon,  }\item[{double}]{max\+Lat,  }\item[{double}]{max\+Lon,  }\item[{String}]{level }\end{DoxyParamCaption}) throws IOException}
+
+Generates Open Street Map URL request for a given set of coordinates with default level and returns the map data
+
+Check out how to use OSM data at\+: \href{https://bridgesuncc.github.io/tutorials/Data_OSM.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+OSM.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Lat} & minimum latitude value for the area requested \\
+\hline
+{\em min\+Lon} & minimum longitude value for the area requested \\
+\hline
+{\em max\+Lat} & maximum latitude value for the area requested \\
+\hline
+{\em max\+Lon} & maximum longitude value for the area requested \\
+\hline
+{\em level} & resolution at which the data is to be retrieved\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Osm\+Data vertices and edges of Open Street Map data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If there is an error parsing response from server or is an invalid location name \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a592a35a9f3285fd1d6e76932bd982eeb}\label{classbridges_1_1connect_1_1_data_source_a592a35a9f3285fd1d6e76932bd982eeb}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getOsmData@{getOsmData}}
+\index{getOsmData@{getOsmData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getOsmData()}{getOsmData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_osm_data}{Osm\+Data}} bridges.\+connect.\+Data\+Source.\+get\+Osm\+Data (\begin{DoxyParamCaption}\item[{String}]{location }\end{DoxyParamCaption}) throws IOException}
+
+Generates Open Street Map URL request for a given location at general level of details and returns the map data
+
+Check out how to use OSM data at\+: \href{https://bridgesuncc.github.io/tutorials/Data_OSM.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+OSM.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & name of city or area that the server supports \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Osm\+Data vertices and edges of Open Street Map data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If there is an error parsing response from server or is an invalid location name \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a2a1b73656312799046cd7bbf8bdebb0e}\label{classbridges_1_1connect_1_1_data_source_a2a1b73656312799046cd7bbf8bdebb0e}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getOsmData@{getOsmData}}
+\index{getOsmData@{getOsmData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getOsmData()}{getOsmData()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_osm_data}{Osm\+Data}} bridges.\+connect.\+Data\+Source.\+get\+Osm\+Data (\begin{DoxyParamCaption}\item[{String}]{location,  }\item[{String}]{level }\end{DoxyParamCaption}) throws IOException}
+
+Generates Open Street Map URL request for a given location and returns the map data
+
+Check out how to use OSM data at\+: \href{https://bridgesuncc.github.io/tutorials/Data_OSM.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+OSM.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & name of city or area that the server supports \\
+\hline
+{\em level} & level of road detail on requested map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Osm\+Data vertices and edges of Open Street Map data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If there is an error parsing response from server or is an invalid location name \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_af2b6e5df074d0a689e8a992b1bea6f3e}\label{classbridges_1_1connect_1_1_data_source_af2b6e5df074d0a689e8a992b1bea6f3e}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getShakespeareData@{getShakespeareData}}
+\index{getShakespeareData@{getShakespeareData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getShakespeareData()}{getShakespeareData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_shakespeare}{Shakespeare}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Shakespeare\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+\begin{DoxyVerb} @brief This function provides access to a collection of Shakespeare plays,
+    poems and plays.
+
+This function return all the works of Shakespeare in the collection.
+
+ Each record in this collection has
+information on title, type (poem, Sonnet, play) and text.
+
+For more information and to look at the data, refer to https://bridgesuncc.github.io/datasets.html
+\end{DoxyVerb}
+ Refer to the tutorial on how to use this dataset\+: \href{https://bridgesuncc.github.io/tutorials/Data_Shakespeare.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Shakespeare.\+html}} \begin{DoxyVerb} @throws Exception if the request fails
+
+ @return a list of Shakespeare objects.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a04aa757c45139e52525d4b09156abfe1}\label{classbridges_1_1connect_1_1_data_source_a04aa757c45139e52525d4b09156abfe1}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getShakespeareData@{getShakespeareData}}
+\index{getShakespeareData@{getShakespeareData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getShakespeareData()}{getShakespeareData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_shakespeare}{Shakespeare}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Shakespeare\+Data (\begin{DoxyParamCaption}\item[{String}]{works }\end{DoxyParamCaption}) throws Exception}
+
+Refer to the tutorial on how to use this dataset\+: \href{https://bridgesuncc.github.io/tutorials/Data_Shakespeare.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Shakespeare.\+html}} \mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_abf8e8f8ff3eb14fa6c6b5ce6b48dbadb}\label{classbridges_1_1connect_1_1_data_source_abf8e8f8ff3eb14fa6c6b5ce6b48dbadb}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getShakespeareData@{getShakespeareData}}
+\index{getShakespeareData@{getShakespeareData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getShakespeareData()}{getShakespeareData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_shakespeare}{Shakespeare}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Shakespeare\+Data (\begin{DoxyParamCaption}\item[{String}]{works,  }\item[{Boolean}]{text\+Only }\end{DoxyParamCaption}) throws Exception}
+
+
+
+This function provides access to a collection of Shakespeare plays, poems and plays. 
+
+Each record in this collection has information on title, type (poem, Sonnet, play) and text.
+
+For more information and to look at the data, refer to \href{https://bridgesuncc.github.io/datasets.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/datasets.\+html}}
+
+This function returns only some of the works, either the plays, or the poems, depending on the parameters.
+
+Refer to the tutorial on how to use this dataset\+: \href{https://bridgesuncc.github.io/tutorials/Data_Shakespeare.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Shakespeare.\+html}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the request fails\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em works} & return only some of the works. \char`\"{}\+Plays\char`\"{} for only the plays, \char`\"{}\+Poems\char`\"{}, or \char`\"{}\char`\"{} for all.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a list of Shakespeare objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a4f49b088703c74d68bd854d40edc5ad4}\label{classbridges_1_1connect_1_1_data_source_a4f49b088703c74d68bd854d40edc5ad4}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getSong@{getSong}}
+\index{getSong@{getSong}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getSong()}{getSong()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_song}{Song}} bridges.\+connect.\+Data\+Source.\+get\+Song (\begin{DoxyParamCaption}\item[{String}]{song\+Title }\end{DoxyParamCaption}) throws IOException}
+
+These helper functions provides access to a particular song.
+
+The record has information such as song title, artist, album, year, lyrics, and genre. For more information and to look at the data, refer to 
+
+~~~~~\href{https://bridgesdata.herokuapp.com/api/datasets/songs}{\texttt{ https\+://bridgesdata.\+herokuapp.\+com/api/datasets/songs}} 
+
+Refer to tutorial for example of using this feature\+: \href{https://bridgesuncc.github.io/tutorials/Data_Song_Lyrics.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Data\+\_\+\+Song\+\_\+\+Lyrics.\+html}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Title} & title of song (string) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the request fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a Song object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a935ea2005b7de3cb22c1e55027b81460}\label{classbridges_1_1connect_1_1_data_source_a935ea2005b7de3cb22c1e55027b81460}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getSong@{getSong}}
+\index{getSong@{getSong}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getSong()}{getSong()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_song}{Song}} bridges.\+connect.\+Data\+Source.\+get\+Song (\begin{DoxyParamCaption}\item[{String}]{song\+Title,  }\item[{String}]{artist\+Name }\end{DoxyParamCaption}) throws IOException}
+
+These helper functions provides access to a particular song.
+
+The record has information such as song title, artist, album, year, lyrics, and genre. For more information and to look at the data, refer to 
+
+~~~~~\href{https://bridgesdata.herokuapp.com/api/datasets/songs}{\texttt{ https\+://bridgesdata.\+herokuapp.\+com/api/datasets/songs}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song\+Title} & title of song (string) \\
+\hline
+{\em artist\+Name} & name of artist (string), empty string for unspecified \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the request fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a Song object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_aeccb689aeacc094b0621ab5564849fa6}\label{classbridges_1_1connect_1_1_data_source_aeccb689aeacc094b0621ab5564849fa6}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getSongData@{getSongData}}
+\index{getSongData@{getSongData}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getSongData()}{getSongData()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_song}{Song}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Song\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws IOException}
+
+This helper function provides access to the meta-\/data of the lyrics collection.
+
+Each record in this collection has information on song title, artist, album, year, lyrics, and genre. For more information and to look at the data, refer to 
+
+~~~~~\href{https://bridgesdata.herokuapp.com/api/datasets/songs}{\texttt{ https\+://bridgesdata.\+herokuapp.\+com/api/datasets/songs}} 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if the request fails\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+a list of Song objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a919756dc487ad42a2843d9d9cb71371c}\label{classbridges_1_1connect_1_1_data_source_a919756dc487ad42a2843d9d9cb71371c}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!getWikidataActorMovie@{getWikidataActorMovie}}
+\index{getWikidataActorMovie@{getWikidataActorMovie}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{getWikidataActorMovie()}{getWikidataActorMovie()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classbridges_1_1data__src__dependent_1_1_actor_movie_wikidata}{Actor\+Movie\+Wikidata}}$>$ bridges.\+connect.\+Data\+Source.\+get\+Wikidata\+Actor\+Movie (\begin{DoxyParamCaption}\item[{int}]{year\+Begin,  }\item[{int}]{year\+End }\end{DoxyParamCaption}) throws IOException}
+
+
+
+This function returns the Movie and Actors playing in them between two years from Wiki\+Data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year\+Begin} & inclusive start year \\
+\hline
+{\em year\+End} & inclusive end year \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array\+List of all Actor\+Movie pairs in Wikidata between the years provided 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & If the response from Wiki\+Data is malformed or an issue occurs making the request \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classbridges_1_1connect_1_1_data_source_a3cd59df33a31f046e5d271dd3c89f6eb}\label{classbridges_1_1connect_1_1_data_source_a3cd59df33a31f046e5d271dd3c89f6eb}} 
+\index{bridges.connect.DataSource@{bridges.connect.DataSource}!setSourceType@{setSourceType}}
+\index{setSourceType@{setSourceType}!bridges.connect.DataSource@{bridges.connect.DataSource}}
+\doxysubsubsection{\texorpdfstring{setSourceType()}{setSourceType()}}
+{\footnotesize\ttfamily void bridges.\+connect.\+Data\+Source.\+set\+Source\+Type (\begin{DoxyParamCaption}\item[{String}]{st }\end{DoxyParamCaption})}
+
+
+
+specify which server to use for accessing datasources. 
+
+This is mostly useful for the BRIDGES team to debug issues with accessing data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & should be "{}live"{}, "{}testing"{}, or "{}local"{} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/work/bridges/bridges-\/java/src/main/java/bridges/connect/\mbox{\hyperlink{_data_source_8java}{Data\+Source.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classbridges_1_1base_1_1_symbol_group}{}\doxysection{bridges.\+base.\+Symbol\+Group Class Reference}
+\label{classbridges_1_1base_1_1_symbol_group}\index{bridges.base.SymbolGroup@{bridges.base.SymbolGroup}}
+Inheritance diagram for bridges.\+base.\+Symbol\+Group\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbridges_1_1base_1_1_symbol_group}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+This class defines a group of Symbols and is part of the \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_collection}{bridges\+::base\+::\+Symbol\+Collection}}. 
+
+One would use \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_group}{Symbol\+Group}} to bundle together a set of \mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}} that can be used and placed at one. For instance, one could create a group representing a house and then place that house in a scene.
+
+Setting properties of groups may have surprising consequences. For instance setting the opacity of a \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_group}{Symbol\+Group}} will apply a multiplicative opacity to all the objects in the group, but setting an fill color will only impact the \mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}} in the \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_group}{Symbol\+Group}} that do not have a defined fill color.
+
+\begin{DoxySeeAlso}{See also}
+An example tutorial can be found at \href{https://bridgesuncc.github.io/tutorials/Symbol_Collection.html}{\texttt{ https\+://bridgesuncc.\+github.\+io/tutorials/\+Symbol\+\_\+\+Collection.\+html}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Erik Saule
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+6/22/21 
+\end{DoxyDate}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbridges_1_1base_1_1_symbol_group_a59cb891024b24450109cf16d07b0ad84}{Symbol\+Group}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_group_a58c04ce707a24128b8a1aa29042e8bf2}{add\+Symbol}} (\mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}} s)
+\item 
+String \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_group_a93c41b2ec53ed4dbfcc532cf61bea732}{get\+Shape\+Type}} ()
+\item 
+void \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_group_a87afa9029b9f6def0e02ffd37ea6403f}{add\+All\+JSON}} (JSONArray symbol\+\_\+json, Integer parent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbridges_1_1base_1_1_symbol_group_a59cb891024b24450109cf16d07b0ad84}\label{classbridges_1_1base_1_1_symbol_group_a59cb891024b24450109cf16d07b0ad84}} 
+\index{bridges.base.SymbolGroup@{bridges.base.SymbolGroup}!SymbolGroup@{SymbolGroup}}
+\index{SymbolGroup@{SymbolGroup}!bridges.base.SymbolGroup@{bridges.base.SymbolGroup}}
+\doxysubsubsection{\texorpdfstring{SymbolGroup()}{SymbolGroup()}}
+{\footnotesize\ttfamily bridges.\+base.\+Symbol\+Group.\+Symbol\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a default symbol object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbridges_1_1base_1_1_symbol_group_a87afa9029b9f6def0e02ffd37ea6403f}\label{classbridges_1_1base_1_1_symbol_group_a87afa9029b9f6def0e02ffd37ea6403f}} 
+\index{bridges.base.SymbolGroup@{bridges.base.SymbolGroup}!addAllJSON@{addAllJSON}}
+\index{addAllJSON@{addAllJSON}!bridges.base.SymbolGroup@{bridges.base.SymbolGroup}}
+\doxysubsubsection{\texorpdfstring{addAllJSON()}{addAllJSON()}}
+{\footnotesize\ttfamily void bridges.\+base.\+Symbol\+Group.\+add\+All\+JSON (\begin{DoxyParamCaption}\item[{JSONArray}]{symbol\+\_\+json,  }\item[{Integer}]{parent }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_ad27f1041dad61e288bba42e3c1cf4d52}{bridges.\+base.\+Symbol}}.
+
+\mbox{\Hypertarget{classbridges_1_1base_1_1_symbol_group_a58c04ce707a24128b8a1aa29042e8bf2}\label{classbridges_1_1base_1_1_symbol_group_a58c04ce707a24128b8a1aa29042e8bf2}} 
+\index{bridges.base.SymbolGroup@{bridges.base.SymbolGroup}!addSymbol@{addSymbol}}
+\index{addSymbol@{addSymbol}!bridges.base.SymbolGroup@{bridges.base.SymbolGroup}}
+\doxysubsubsection{\texorpdfstring{addSymbol()}{addSymbol()}}
+{\footnotesize\ttfamily void bridges.\+base.\+Symbol\+Group.\+add\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbridges_1_1base_1_1_symbol}{Symbol}}}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbridges_1_1base_1_1_symbol_group_a93c41b2ec53ed4dbfcc532cf61bea732}\label{classbridges_1_1base_1_1_symbol_group_a93c41b2ec53ed4dbfcc532cf61bea732}} 
+\index{bridges.base.SymbolGroup@{bridges.base.SymbolGroup}!getShapeType@{getShapeType}}
+\index{getShapeType@{getShapeType}!bridges.base.SymbolGroup@{bridges.base.SymbolGroup}}
+\doxysubsubsection{\texorpdfstring{getShapeType()}{getShapeType()}}
+{\footnotesize\ttfamily String bridges.\+base.\+Symbol\+Group.\+get\+Shape\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the shape type
+
+\begin{DoxyReturn}{Returns}
+shape type 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classbridges_1_1base_1_1_symbol_a10f3cde5331f1af9303b08249e719a9d}{bridges.\+base.\+Symbol}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/erik/work/bridges/bridges-\/java/src/main/java/bridges/base/\mbox{\hyperlink{_symbol_group_8java}{Symbol\+Group.\+java}}\end{DoxyCompactItemize}
