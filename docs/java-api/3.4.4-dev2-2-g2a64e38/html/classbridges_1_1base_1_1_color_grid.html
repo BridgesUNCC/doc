@@ -75,6 +75,9 @@ $(function() {
 <div class="title">bridges.base.ColorGrid Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is a class in BRIDGES for representing an image.  
+ <a href="classbridges_1_1base_1_1_color_grid.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for bridges.base.ColorGrid:</div>
 <div class="dyncontent">
@@ -84,16 +87,7 @@ Inheritance diagram for bridges.base.ColorGrid:</div>
 <area href="classbridges_1_1base_1_1_grid.html" alt="bridges.base.Grid&lt; Color &gt;" shape="rect" coords="0,0,168,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is a class in BRIDGES for representing an image. </p>
-<p>A <a class="el" href="classbridges_1_1base_1_1_color_grid.html" title="This is a class in BRIDGES for representing an image.">ColorGrid</a> is essentially an image. One can construct an image of a particular size using the <a class="el" href="classbridges_1_1base_1_1_color_grid.html#af434a5a3dcbaf86e51ac6f9e1c1d7e5f">ColorGrid()</a> constructor to be either blank or filled with a particular <a class="el" href="classbridges_1_1base_1_1_color.html">Color</a> depending on which constructor is called.</p>
-<p>One can change the color of a pixel with <a class="el" href="classbridges_1_1base_1_1_grid.html#ab79ceb737423bb28ea2348e61a625a17">set()</a>. For instance, like that: </p><div class="fragment"><div class="line"><a class="code" href="classbridges_1_1base_1_1_color_grid.html#af434a5a3dcbaf86e51ac6f9e1c1d7e5f">ColorGrid</a> cg = <span class="keyword">new</span> <a class="code" href="classbridges_1_1base_1_1_color_grid.html#af434a5a3dcbaf86e51ac6f9e1c1d7e5f">ColorGrid</a>(rows, columns);</div>
-<div class="line">cg.set (2, 3, <span class="keyword">new</span> Color(<span class="stringliteral">&quot;lightsalmon&quot;</span>);</div>
-<div class="ttc" id="aclassbridges_1_1base_1_1_color_grid_html_af434a5a3dcbaf86e51ac6f9e1c1d7e5f"><div class="ttname"><a href="classbridges_1_1base_1_1_color_grid.html#af434a5a3dcbaf86e51ac6f9e1c1d7e5f">bridges.base.ColorGrid.ColorGrid</a></div><div class="ttdeci">ColorGrid()</div><div class="ttdef"><b>Definition:</b> ColorGrid.java:44</div></div>
-</div><!-- fragment --><p>You can get a <a class="el" href="classbridges_1_1base_1_1_color_grid.html" title="This is a class in BRIDGES for representing an image.">ColorGrid</a> from an existing Bridges <a class="el" href="classbridges_1_1base_1_1_color_grid.html" title="This is a class in BRIDGES for representing an image.">ColorGrid</a> assignment using <a class="el" href="classbridges_1_1connect_1_1_data_source.html#a7bddb93c9196a1109f2bf36054500ed8">bridges.connect.DataSource.getColorGridFromAssignment()</a></p>
-<dl class="section see"><dt>See also</dt><dd>See the tutorial about <a class="el" href="classbridges_1_1base_1_1_color_grid.html" title="This is a class in BRIDGES for representing an image.">ColorGrid</a> : <a href="https://bridgesuncc.github.io/tutorials/Grid.html">https://bridgesuncc.github.io/tutorials/Grid.html</a></dd></dl>
-<dl class="section author"><dt>Author</dt><dd>David Burlinson, Erik Saule </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a53a1f3f105f8545796f98e5fac559b5b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_color_grid.html#a53a1f3f105f8545796f98e5fac559b5b">getDataStructType</a> ()</td></tr>
@@ -152,7 +146,16 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a803fd4c070a22863c82581f0bb258c1c inherit pro_static_attribs_classbridges_1_1base_1_1_grid"><td class="memItemLeft" align="right" valign="top">static int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_grid.html#a803fd4c070a22863c82581f0bb258c1c">maxGridSize</a></td></tr>
 <tr class="separator:a803fd4c070a22863c82581f0bb258c1c inherit pro_static_attribs_classbridges_1_1base_1_1_grid"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is a class in BRIDGES for representing an image. </p>
+<p>A <a class="el" href="classbridges_1_1base_1_1_color_grid.html" title="This is a class in BRIDGES for representing an image.">ColorGrid</a> is essentially an image. One can construct an image of a particular size using the <a class="el" href="classbridges_1_1base_1_1_color_grid.html#af434a5a3dcbaf86e51ac6f9e1c1d7e5f">ColorGrid()</a> constructor to be either blank or filled with a particular <a class="el" href="classbridges_1_1base_1_1_color.html">Color</a> depending on which constructor is called.</p>
+<p>One can change the color of a pixel with <a class="el" href="classbridges_1_1base_1_1_grid.html#ab79ceb737423bb28ea2348e61a625a17">set()</a>. For instance, like that: </p><div class="fragment"><div class="line"><a class="code" href="classbridges_1_1base_1_1_color_grid.html#af434a5a3dcbaf86e51ac6f9e1c1d7e5f">ColorGrid</a> cg = <span class="keyword">new</span> <a class="code" href="classbridges_1_1base_1_1_color_grid.html#af434a5a3dcbaf86e51ac6f9e1c1d7e5f">ColorGrid</a>(rows, columns);</div>
+<div class="line">cg.set (2, 3, <span class="keyword">new</span> Color(<span class="stringliteral">&quot;lightsalmon&quot;</span>);</div>
+<div class="ttc" id="aclassbridges_1_1base_1_1_color_grid_html_af434a5a3dcbaf86e51ac6f9e1c1d7e5f"><div class="ttname"><a href="classbridges_1_1base_1_1_color_grid.html#af434a5a3dcbaf86e51ac6f9e1c1d7e5f">bridges.base.ColorGrid.ColorGrid</a></div><div class="ttdeci">ColorGrid()</div><div class="ttdef"><b>Definition:</b> ColorGrid.java:44</div></div>
+</div><!-- fragment --><p>You can get a <a class="el" href="classbridges_1_1base_1_1_color_grid.html" title="This is a class in BRIDGES for representing an image.">ColorGrid</a> from an existing Bridges <a class="el" href="classbridges_1_1base_1_1_color_grid.html" title="This is a class in BRIDGES for representing an image.">ColorGrid</a> assignment using <a class="el" href="classbridges_1_1connect_1_1_data_source.html#a7bddb93c9196a1109f2bf36054500ed8">bridges.connect.DataSource.getColorGridFromAssignment()</a></p>
+<dl class="section see"><dt>See also</dt><dd>See the tutorial about <a class="el" href="classbridges_1_1base_1_1_color_grid.html" title="This is a class in BRIDGES for representing an image.">ColorGrid</a> : <a href="https://bridgesuncc.github.io/tutorials/Grid.html">https://bridgesuncc.github.io/tutorials/Grid.html</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>David Burlinson, Erik Saule </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af434a5a3dcbaf86e51ac6f9e1c1d7e5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af434a5a3dcbaf86e51ac6f9e1c1d7e5f">&#9670;&nbsp;</a></span>ColorGrid() <span class="overload">[1/3]</span></h2>
 
@@ -355,12 +358,12 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-java/src/main/java/bridges/base/<a class="el" href="_color_grid_8java.html">ColorGrid.java</a></li>
+<li>bridges-java/src/main/java/bridges/base/<a class="el" href="_color_grid_8java.html">ColorGrid.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:57 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:43 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

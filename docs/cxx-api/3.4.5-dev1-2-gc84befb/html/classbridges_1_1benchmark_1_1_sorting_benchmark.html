@@ -76,22 +76,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Benchmarks sorting algorithm.  
+ <a href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_sorting_benchmark_8h_source.html">SortingBenchmark.h</a>&gt;</code></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Benchmarks sorting algorithm. </p>
-<p>Benchmarks sorting algorithms and add time series to a LineChart.</p>
-<p>The benchmark goes from an initial size controlled by <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#afe0474d148c185ed1e479ff11f42ae51" title="Smallest array to be used.">setBaseSize()</a> to a largest size controlled by <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#abdca289b823c7f240b648e248c07b059" title="Puts a cap on the largest array to be used.">setMaxSize()</a>. One can also set a maximum time spent on a particular run using <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#a59b95f2510d62ac5a31bb33d472fdffc" title="sets an upper bound to the time of a run.">setTimeCap()</a>.</p>
-<p>The benchmark goes from a array size of n to the next one of geoBase * n + increment, where the base is controlled by <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#ade76a5749b07d35b02623cce27c046ab" title="Sets a geometric progression for the benchmark size.">setGeometric()</a> and increment is controlled by <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#ae168533dc5756f3ede3436bdd7840047" title="Sets the increment for the benchmark size.">setIncrement()</a>. For simpler use one can set a purley linear sampling with <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#a993de51c8b82ec50eb186afef5dc7003" title="The benchmark will sample a range with a fixed number of points.">linearRange()</a> or a purely geometric one with <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#a32fa712ee712b633aabfd7bcaa83008a" title="The benchmark will sample a range using in geometrically increasing sequence.">geometricRange()</a>.</p>
-<p>The sorting algorithms must have for prototype: void (<em>sort)(int</em> array, int arraysize); and can be passed to the run function for being benchmarked. A typical use would look something like</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> mysort(<span class="keywordtype">int</span>* array, <span class="keywordtype">int</span> arraysize);</div>
-<div class="line">LineChart lc;</div>
-<div class="line"><a class="code" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#aed5731a3b5add3a7f4c80891b22b3093">SortingBenchmark</a> sb (lc);</div>
-<div class="line">sb.linearRange (100, 1000, 5);</div>
-<div class="line">sb.run(<span class="stringliteral">&quot;mysortingalgorithm&quot;</span>, mysort);</div>
-<div class="ttc" id="aclassbridges_1_1benchmark_1_1_sorting_benchmark_html_aed5731a3b5add3a7f4c80891b22b3093"><div class="ttname"><a href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#aed5731a3b5add3a7f4c80891b22b3093">bridges::benchmark::SortingBenchmark::SortingBenchmark</a></div><div class="ttdeci">SortingBenchmark(LineChart &amp;p)</div><div class="ttdef"><b>Definition:</b> SortingBenchmark.h:127</div></div>
-</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>07/20/2019 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aed5731a3b5add3a7f4c80891b22b3093"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#aed5731a3b5add3a7f4c80891b22b3093">SortingBenchmark</a> (<a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html">LineChart</a> &amp;p)</td></tr>
@@ -125,7 +114,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a790e43dd840f6787286133eedec32628"><td class="mdescLeft">&#160;</td><td class="mdescRight">benchmark one implementation  <a href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#a790e43dd840f6787286133eedec32628">More...</a><br /></td></tr>
 <tr class="separator:a790e43dd840f6787286133eedec32628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Benchmarks sorting algorithm. </p>
+<p>Benchmarks sorting algorithms and add time series to a LineChart.</p>
+<p>The benchmark goes from an initial size controlled by <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#afe0474d148c185ed1e479ff11f42ae51" title="Smallest array to be used.">setBaseSize()</a> to a largest size controlled by <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#abdca289b823c7f240b648e248c07b059" title="Puts a cap on the largest array to be used.">setMaxSize()</a>. One can also set a maximum time spent on a particular run using <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#a59b95f2510d62ac5a31bb33d472fdffc" title="sets an upper bound to the time of a run.">setTimeCap()</a>.</p>
+<p>The benchmark goes from a array size of n to the next one of geoBase * n + increment, where the base is controlled by <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#ade76a5749b07d35b02623cce27c046ab" title="Sets a geometric progression for the benchmark size.">setGeometric()</a> and increment is controlled by <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#ae168533dc5756f3ede3436bdd7840047" title="Sets the increment for the benchmark size.">setIncrement()</a>. For simpler use one can set a purley linear sampling with <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#a993de51c8b82ec50eb186afef5dc7003" title="The benchmark will sample a range with a fixed number of points.">linearRange()</a> or a purely geometric one with <a class="el" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#a32fa712ee712b633aabfd7bcaa83008a" title="The benchmark will sample a range using in geometrically increasing sequence.">geometricRange()</a>.</p>
+<p>The sorting algorithms must have for prototype: void (<em>sort)(int</em> array, int arraysize); and can be passed to the run function for being benchmarked. A typical use would look something like</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> mysort(<span class="keywordtype">int</span>* array, <span class="keywordtype">int</span> arraysize);</div>
+<div class="line">LineChart lc;</div>
+<div class="line"><a class="code" href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#aed5731a3b5add3a7f4c80891b22b3093">SortingBenchmark</a> sb (lc);</div>
+<div class="line">sb.linearRange (100, 1000, 5);</div>
+<div class="line">sb.run(<span class="stringliteral">&quot;mysortingalgorithm&quot;</span>, mysort);</div>
+<div class="ttc" id="aclassbridges_1_1benchmark_1_1_sorting_benchmark_html_aed5731a3b5add3a7f4c80891b22b3093"><div class="ttname"><a href="classbridges_1_1benchmark_1_1_sorting_benchmark.html#aed5731a3b5add3a7f4c80891b22b3093">bridges::benchmark::SortingBenchmark::SortingBenchmark</a></div><div class="ttdeci">SortingBenchmark(LineChart &amp;p)</div><div class="ttdef"><b>Definition:</b> SortingBenchmark.h:127</div></div>
+</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>07/20/2019 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aed5731a3b5add3a7f4c80891b22b3093"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed5731a3b5add3a7f4c80891b22b3093">&#9670;&nbsp;</a></span>SortingBenchmark()</h2>
 
@@ -533,12 +536,12 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-cxx/src/<a class="el" href="_sorting_benchmark_8h_source.html">SortingBenchmark.h</a></li>
+<li>bridges-cxx/src/<a class="el" href="_sorting_benchmark_8h_source.html">SortingBenchmark.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:56 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 20:25:46 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

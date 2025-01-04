@@ -75,6 +75,9 @@ $(function() {
 <div class="title">bridges.base.GraphAdjList&lt; K, E1, E2 &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES.  
+ <a href="classbridges_1_1base_1_1_graph_adj_list.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for bridges.base.GraphAdjList&lt; K, E1, E2 &gt;:</div>
 <div class="dyncontent">
@@ -84,45 +87,7 @@ Inheritance diagram for bridges.base.GraphAdjList&lt; K, E1, E2 &gt;:</div>
 <area href="classbridges_1_1base_1_1_data_struct.html" title="This is an abstract super class that is extended by all Bridges subclasses and provides some methods ..." alt="bridges.base.DataStruct" shape="rect" coords="0,0,242,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES. </p>
-<p>The <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES; it takes 3 generic parameters: (1) K, which is an orderable key value used in accessing vertices (in constant time) using a hashmap. This permits data sets that need to be accessed by keys that are strings, (2) E1, for maintaining vertex specific data, and (3) E2, for maintaining edge specific data. The class is a wrapper around the Java Hashmap class and, thus, derives all its operations from it. BRIDGES provides methods to visualize the graph and its contents.</p>
-<p>In most cases, you want all the three types to be the same, or in cases where you only care about the vertex key type, one can use the <a class="el" href="classbridges_1_1base_1_1_graph_adj_list_simple.html" title="The GraphAdjListSimple class is a simplification of the GraphAdjList class; this class is useful in a...">GraphAdjListSimple</a> helper class.</p>
-<p>The vertices of the graph are held in a Java hashmap, for near constant time access; this enables to use strings or integer ids for vertices. The adjacency lists, also a Java hashmap are built for each vertex and contain the edge (source, destination vertices) in the <a class="el" href="classbridges_1_1base_1_1_edge.html" title="This class is used to represent the edges in a graph and will appear as links in the BRIDGES graph vi...">Edge</a> structure, defined separately.</p>
-<p>Convenience method <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#aca59a3c40af4ae82716ebbfa1751f267" title="adds a new vertex to the graph.">addVertex()</a> is provided to add vertices to the graph, and <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#a43041976184920e1db1dbe3ad696c6cd" title="adds a new edge to the graph.">addEdge()</a> is provided to add edges. Edges are retrieved by using the dual hashmap, given the vertex ids of the edge. Vertices can be styled directly from the vertex element returned by <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#aa19cd300a85b05352bdf58720310a112" title="returns a vertex from its key">getVertex()</a>, and edges are styled from a <a class="el" href="classbridges_1_1base_1_1_link_visualizer.html" title="This class maintains the visual attributes of links that join Bridges elements.">LinkVisualizer</a> one can access through <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#af93888dbd2a768a2401619ad5dc95560" title="Access a LinkVisualizer associated with an edge.">getLinkVisualizer()</a>. Here is a simple example:</p>
-<div class="fragment"><div class="line">GraphAdjList&lt;string, Integer, Double&gt; graph = <span class="keyword">new</span> GraphAdjList&lt;String, Integer, Double&gt; ();</div>
-<div class="line">   graph.addVertex(<span class="stringliteral">&quot;a&quot;</span>);</div>
-<div class="line">   graph.addVertex(<span class="stringliteral">&quot;b&quot;</span>);</div>
-<div class="line">   graph.addEdge(<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;b&quot;</span>);</div>
-<div class="line">   graph.getVertex(<span class="stringliteral">&quot;a&quot;</span>).setShape(<span class="stringliteral">&quot;square&quot;</span>);</div>
-<div class="line">   graph.getLinkVisualizer(<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;b&quot;</span>).setColor(<span class="stringliteral">&quot;yellow&quot;</span>);</div>
-</div><!-- fragment --><p>Adjacency lists are singly linked lists using the BRIDGES <a class="el" href="classbridges_1_1base_1_1_s_lelement.html">SLelement</a>. Iterators are provided for easy traversal of the adjacency lists. For instance,</p>
-<div class="fragment"><div class="line">GraphAdjList&lt;String, Integer, Double&gt; graph = something();</div>
-<div class="line"><span class="keywordflow">for</span> (Edge&lt;String, Double&gt; e : graph.outgoingEdgeSetOf(<span class="stringliteral">&quot;a&quot;</span>))</div>
-<div class="line">  System.out.println(<span class="stringliteral">&quot;a -&gt; &quot;</span>+e.getTo());</div>
-</div><!-- fragment --><p>Graphs can have their nodes and links affected by visual attributes. Nodes can have color, size, opacity and shape and detailed in the <a class="el" href="classbridges_1_1base_1_1_element_visualizer.html" title="This class maintains the visual attributes of each BRIDGES element.">ElementVisualizer</a> class. Edges support attributes such as color, thickness and opacity and are detailed in the <a class="el" href="classbridges_1_1base_1_1_link_visualizer.html" title="This class maintains the visual attributes of links that join Bridges elements.">LinkVisualizer</a> class. <a class="el" href="classbridges_1_1base_1_1_element.html" title="This is the main superclass in BRIDGES for deriving a number of objects used in building arrays,...">Element</a> and link attributes are set using the <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#aafb45833cd5c13b6ce9bdece3fefde6a" title="Access the ElementVisualizer associated with a vertex.">getVisualizer()</a> and <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#af93888dbd2a768a2401619ad5dc95560" title="Access a LinkVisualizer associated with an edge.">getLinkVisualizer()</a> methods. For instance,</p>
-<div class="fragment"><div class="line">GraphAdjList&lt;String, Integer, Double&gt; graph = something();</div>
-<div class="line">  graph.addVertex(<span class="stringliteral">&quot;baskin&quot;</span>);</div>
-<div class="line">  graph.addVertex(<span class="stringliteral">&quot;robins&quot;</span>);</div>
-<div class="line">  graph.addEdge(<span class="stringliteral">&quot;baskin&quot;</span>,<span class="stringliteral">&quot;robins&quot;</span>);</div>
-<div class="line">  graph.getVisualizer().setColor(<span class="stringliteral">&quot;cyan&quot;</span>);</div>
-<div class="line">  graph.getVisualizer().setShape(<span class="stringliteral">&quot;square&quot;</span>);</div>
-<div class="line">  graph.getLinkVisualizer(<span class="stringliteral">&quot;baskin&quot;</span>, <span class="stringliteral">&quot;robins&quot;</span>).setColor(<span class="stringliteral">&quot;green&quot;</span>);</div>
-<div class="line">  graph.getLinkVisualizer(<span class="stringliteral">&quot;baskin&quot;</span>, <span class="stringliteral">&quot;robins&quot;</span>).setOpacity(<span class="stringliteral">&quot;0.5f&quot;</span>);</div>
-</div><!-- fragment --><p>There are two visualization engines available for graph. The small graph visualization supports all attributes of vertices and edges but is prohibitively slow on large graphs. The large graph visualization only supports locations (actually they are mandatory) and colors, all other attributes are ignored.</p>
-<p>BRIDGES picks the rendering engine automatically. But it can be forced to pick one used forceLargeVizualization() and forceSmallVizualization</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">K</td><td>orderable key (String, Integer, etc) that is used to index into vertex </td></tr>
-    <tr><td class="paramname">E1</td><td>holds vertex specific information, defined by application </td></tr>
-    <tr><td class="paramname">E2</td><td>holds edge specific information, defined by application</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd>Example tutorial at <a href="https://bridgesuncc.github.io/tutorials/Graph.html">https://bridgesuncc.github.io/tutorials/Graph.html</a></dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Erik Saule</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>6/29/15, 5/18/17, 4/24/18, 7/14/19, 1/5/21 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aba7e066f43d361418ae6bdf53a23b1de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#aba7e066f43d361418ae6bdf53a23b1de">GraphAdjList</a> ()</td></tr>
@@ -204,7 +169,45 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a8b3dbe53c49bcb3c6e82cef8fcd3e935 inherit pac_attribs_classbridges_1_1base_1_1_data_struct"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_data_struct.html#a8b3dbe53c49bcb3c6e82cef8fcd3e935">CLOSE_BOX</a> = &quot;]&quot;</td></tr>
 <tr class="separator:a8b3dbe53c49bcb3c6e82cef8fcd3e935 inherit pac_attribs_classbridges_1_1base_1_1_data_struct"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES. </p>
+<p>The <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES; it takes 3 generic parameters: (1) K, which is an orderable key value used in accessing vertices (in constant time) using a hashmap. This permits data sets that need to be accessed by keys that are strings, (2) E1, for maintaining vertex specific data, and (3) E2, for maintaining edge specific data. The class is a wrapper around the Java Hashmap class and, thus, derives all its operations from it. BRIDGES provides methods to visualize the graph and its contents.</p>
+<p>In most cases, you want all the three types to be the same, or in cases where you only care about the vertex key type, one can use the <a class="el" href="classbridges_1_1base_1_1_graph_adj_list_simple.html" title="The GraphAdjListSimple class is a simplification of the GraphAdjList class; this class is useful in a...">GraphAdjListSimple</a> helper class.</p>
+<p>The vertices of the graph are held in a Java hashmap, for near constant time access; this enables to use strings or integer ids for vertices. The adjacency lists, also a Java hashmap are built for each vertex and contain the edge (source, destination vertices) in the <a class="el" href="classbridges_1_1base_1_1_edge.html" title="This class is used to represent the edges in a graph and will appear as links in the BRIDGES graph vi...">Edge</a> structure, defined separately.</p>
+<p>Convenience method <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#aca59a3c40af4ae82716ebbfa1751f267" title="adds a new vertex to the graph.">addVertex()</a> is provided to add vertices to the graph, and <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#a43041976184920e1db1dbe3ad696c6cd" title="adds a new edge to the graph.">addEdge()</a> is provided to add edges. Edges are retrieved by using the dual hashmap, given the vertex ids of the edge. Vertices can be styled directly from the vertex element returned by <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#aa19cd300a85b05352bdf58720310a112" title="returns a vertex from its key">getVertex()</a>, and edges are styled from a <a class="el" href="classbridges_1_1base_1_1_link_visualizer.html" title="This class maintains the visual attributes of links that join Bridges elements.">LinkVisualizer</a> one can access through <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#af93888dbd2a768a2401619ad5dc95560" title="Access a LinkVisualizer associated with an edge.">getLinkVisualizer()</a>. Here is a simple example:</p>
+<div class="fragment"><div class="line">GraphAdjList&lt;string, Integer, Double&gt; graph = <span class="keyword">new</span> GraphAdjList&lt;String, Integer, Double&gt; ();</div>
+<div class="line">   graph.addVertex(<span class="stringliteral">&quot;a&quot;</span>);</div>
+<div class="line">   graph.addVertex(<span class="stringliteral">&quot;b&quot;</span>);</div>
+<div class="line">   graph.addEdge(<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;b&quot;</span>);</div>
+<div class="line">   graph.getVertex(<span class="stringliteral">&quot;a&quot;</span>).setShape(<span class="stringliteral">&quot;square&quot;</span>);</div>
+<div class="line">   graph.getLinkVisualizer(<span class="stringliteral">&quot;a&quot;</span>, <span class="stringliteral">&quot;b&quot;</span>).setColor(<span class="stringliteral">&quot;yellow&quot;</span>);</div>
+</div><!-- fragment --><p>Adjacency lists are singly linked lists using the BRIDGES <a class="el" href="classbridges_1_1base_1_1_s_lelement.html">SLelement</a>. Iterators are provided for easy traversal of the adjacency lists. For instance,</p>
+<div class="fragment"><div class="line">GraphAdjList&lt;String, Integer, Double&gt; graph = something();</div>
+<div class="line"><span class="keywordflow">for</span> (Edge&lt;String, Double&gt; e : graph.outgoingEdgeSetOf(<span class="stringliteral">&quot;a&quot;</span>))</div>
+<div class="line">  System.out.println(<span class="stringliteral">&quot;a -&gt; &quot;</span>+e.getTo());</div>
+</div><!-- fragment --><p>Graphs can have their nodes and links affected by visual attributes. Nodes can have color, size, opacity and shape and detailed in the <a class="el" href="classbridges_1_1base_1_1_element_visualizer.html" title="This class maintains the visual attributes of each BRIDGES element.">ElementVisualizer</a> class. Edges support attributes such as color, thickness and opacity and are detailed in the <a class="el" href="classbridges_1_1base_1_1_link_visualizer.html" title="This class maintains the visual attributes of links that join Bridges elements.">LinkVisualizer</a> class. <a class="el" href="classbridges_1_1base_1_1_element.html" title="This is the main superclass in BRIDGES for deriving a number of objects used in building arrays,...">Element</a> and link attributes are set using the <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#aafb45833cd5c13b6ce9bdece3fefde6a" title="Access the ElementVisualizer associated with a vertex.">getVisualizer()</a> and <a class="el" href="classbridges_1_1base_1_1_graph_adj_list.html#af93888dbd2a768a2401619ad5dc95560" title="Access a LinkVisualizer associated with an edge.">getLinkVisualizer()</a> methods. For instance,</p>
+<div class="fragment"><div class="line">GraphAdjList&lt;String, Integer, Double&gt; graph = something();</div>
+<div class="line">  graph.addVertex(<span class="stringliteral">&quot;baskin&quot;</span>);</div>
+<div class="line">  graph.addVertex(<span class="stringliteral">&quot;robins&quot;</span>);</div>
+<div class="line">  graph.addEdge(<span class="stringliteral">&quot;baskin&quot;</span>,<span class="stringliteral">&quot;robins&quot;</span>);</div>
+<div class="line">  graph.getVisualizer().setColor(<span class="stringliteral">&quot;cyan&quot;</span>);</div>
+<div class="line">  graph.getVisualizer().setShape(<span class="stringliteral">&quot;square&quot;</span>);</div>
+<div class="line">  graph.getLinkVisualizer(<span class="stringliteral">&quot;baskin&quot;</span>, <span class="stringliteral">&quot;robins&quot;</span>).setColor(<span class="stringliteral">&quot;green&quot;</span>);</div>
+<div class="line">  graph.getLinkVisualizer(<span class="stringliteral">&quot;baskin&quot;</span>, <span class="stringliteral">&quot;robins&quot;</span>).setOpacity(<span class="stringliteral">&quot;0.5f&quot;</span>);</div>
+</div><!-- fragment --><p>There are two visualization engines available for graph. The small graph visualization supports all attributes of vertices and edges but is prohibitively slow on large graphs. The large graph visualization only supports locations (actually they are mandatory) and colors, all other attributes are ignored.</p>
+<p>BRIDGES picks the rendering engine automatically. But it can be forced to pick one used forceLargeVizualization() and forceSmallVizualization</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">K</td><td>orderable key (String, Integer, etc) that is used to index into vertex </td></tr>
+    <tr><td class="paramname">E1</td><td>holds vertex specific information, defined by application </td></tr>
+    <tr><td class="paramname">E2</td><td>holds edge specific information, defined by application</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>Example tutorial at <a href="https://bridgesuncc.github.io/tutorials/Graph.html">https://bridgesuncc.github.io/tutorials/Graph.html</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Erik Saule</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>6/29/15, 5/18/17, 4/24/18, 7/14/19, 1/5/21 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aba7e066f43d361418ae6bdf53a23b1de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba7e066f43d361418ae6bdf53a23b1de">&#9670;&nbsp;</a></span>GraphAdjList()</h2>
 
@@ -770,12 +773,12 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-java/src/main/java/bridges/base/<a class="el" href="_graph_adj_list_8java.html">GraphAdjList.java</a></li>
+<li>bridges-java/src/main/java/bridges/base/<a class="el" href="_graph_adj_list_8java.html">GraphAdjList.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:57 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:43 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

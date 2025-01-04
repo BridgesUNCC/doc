@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class provides methods to represent adjacency matrix based graphs.  
+ <a href="classbridges_1_1datastructure_1_1_graph_adj_matrix.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_graph_adj_matrix_8h_source.html">GraphAdjMatrix.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for bridges::datastructure::GraphAdjMatrix&lt; K, E1, E2 &gt;:</div>
@@ -86,18 +89,7 @@ Inheritance diagram for bridges::datastructure::GraphAdjMatrix&lt; K, E1, E2 &gt
 <area href="classbridges_1_1datastructure_1_1_data_structure.html" title="This is the superclass of all data structure types in BRIDGES." alt="bridges::datastructure::DataStructure" shape="rect" coords="0,0,309,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename K, typename E1 = K, typename E2 = E1&gt;<br />
-class bridges::datastructure::GraphAdjMatrix&lt; K, E1, E2 &gt;</h3>
-
-<p>This class provides methods to represent adjacency matrix based graphs. </p>
-<p>The class is simply a wrapper around the C++ STL unordered_map class and thus derives all its operations from it. Given the use of operator overloading, the adjacency matrix implementation is almost identical to a normal array representation, except that any ordered type can be used to index into the matrix.</p>
-<p>Since the adjacency matrix typically contains only a numerical value, we keep edge specific information in a separate map using a generic parameter for the type.</p>
-<p>Generic Parameters: K that is used as an index, E1 information specific to graph vertices E2 information specific to graph edges</p>
-<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Dakota Carmer </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>6/29/15, 7/10/16, 11/27/16, 4/22/18</dd></dl>
-<p>There is a tutorial about Graph Adjacency Matrix : <a href="https://bridgesuncc.github.io/tutorials/Graph_AM.html">https://bridgesuncc.github.io/tutorials/Graph_AM.html</a> </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2f8c67da1078354156fc646097152c6d"><td class="memItemLeft" align="right" valign="top">virtual const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1datastructure_1_1_graph_adj_matrix.html#a2f8c67da1078354156fc646097152c6d">getDStype</a> () const override</td></tr>
@@ -141,7 +133,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54bde1c8f14ca3bff47910a2e48d586a inherit pub_methods_classbridges_1_1datastructure_1_1_data_structure"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1datastructure_1_1_data_structure.html#a54bde1c8f14ca3bff47910a2e48d586a">~DataStructure</a> ()=default</td></tr>
 <tr class="separator:a54bde1c8f14ca3bff47910a2e48d586a inherit pub_methods_classbridges_1_1datastructure_1_1_data_structure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename K, typename E1 = K, typename E2 = E1&gt;<br />
+class bridges::datastructure::GraphAdjMatrix&lt; K, E1, E2 &gt;</h3>
+
+<p>This class provides methods to represent adjacency matrix based graphs. </p>
+<p>The class is simply a wrapper around the C++ STL unordered_map class and thus derives all its operations from it. Given the use of operator overloading, the adjacency matrix implementation is almost identical to a normal array representation, except that any ordered type can be used to index into the matrix.</p>
+<p>Since the adjacency matrix typically contains only a numerical value, we keep edge specific information in a separate map using a generic parameter for the type.</p>
+<p>Generic Parameters: K that is used as an index, E1 information specific to graph vertices E2 information specific to graph edges</p>
+<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Dakota Carmer </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>6/29/15, 7/10/16, 11/27/16, 4/22/18</dd></dl>
+<p>There is a tutorial about Graph Adjacency Matrix : <a href="https://bridgesuncc.github.io/tutorials/Graph_AM.html">https://bridgesuncc.github.io/tutorials/Graph_AM.html</a> </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad4715c14dccce7f40fb91f8d31c9e55b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4715c14dccce7f40fb91f8d31c9e55b">&#9670;&nbsp;</a></span>~GraphAdjMatrix()</h2>
 
@@ -804,13 +807,13 @@ template&lt;typename K , typename E1  = K, typename E2  = E1&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/erik/work/bridges/bridges-cxx/src/<a class="el" href="_element_8h_source.html">Element.h</a></li>
-<li>/home/erik/work/bridges/bridges-cxx/src/<a class="el" href="_graph_adj_matrix_8h_source.html">GraphAdjMatrix.h</a></li>
+<li>bridges-cxx/src/<a class="el" href="_element_8h_source.html">Element.h</a></li>
+<li>bridges-cxx/src/<a class="el" href="_graph_adj_matrix_8h_source.html">GraphAdjMatrix.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:56 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 20:25:46 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

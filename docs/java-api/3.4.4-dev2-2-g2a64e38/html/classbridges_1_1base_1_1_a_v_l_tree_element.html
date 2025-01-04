@@ -76,6 +76,9 @@ $(function() {
 <div class="title">bridges.base.AVLTreeElement&lt; K, E &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class extends the <a class="el" href="classbridges_1_1base_1_1_b_s_t_element.html" title="The BSTElement class is the building block for creating binary search trees.">BSTElement</a> class by adding a height and balance factor fields that are useful in AVL tree implementations.  
+ <a href="classbridges_1_1base_1_1_a_v_l_tree_element.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for bridges.base.AVLTreeElement&lt; K, E &gt;:</div>
 <div class="dyncontent">
@@ -89,22 +92,7 @@ Inheritance diagram for bridges.base.AVLTreeElement&lt; K, E &gt;:</div>
 <area href="classbridges_1_1base_1_1_data_struct.html" title="This is an abstract super class that is extended by all Bridges subclasses and provides some methods ..." alt="bridges.base.DataStruct" shape="rect" coords="0,0,233,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class extends the <a class="el" href="classbridges_1_1base_1_1_b_s_t_element.html" title="The BSTElement class is the building block for creating binary search trees.">BSTElement</a> class by adding a height and balance factor fields that are useful in AVL tree implementations. </p>
-<p>AVL tree elements include a 'height' and a 'balFactor' value, representing the height and balance factor of the AVL tree at that node, respectively. This is useful in representing AVL trees.</p>
-<p>AVLTree elements contain a visualizer (<a class="el" href="classbridges_1_1base_1_1_element_visualizer.html" title="This class maintains the visual attributes of each BRIDGES element.">ElementVisualizer</a>) object for setting visual attributes (color, shape, opacity, size), necessary for displaying them in a web browser.</p>
-<p>AVLTree elements also have a <a class="el" href="classbridges_1_1base_1_1_link_visualizer.html" title="This class maintains the visual attributes of links that join Bridges elements.">LinkVisualizer</a> object, that is used when they are linked to another element, appropriate for setting link attributes, for instance, between the current element and its left or right child</p>
-<dl class="section see"><dt>See also</dt><dd>Example tutorial using <a class="el" href="classbridges_1_1base_1_1_a_v_l_tree_element.html" title="This class extends the BSTElement class by adding a height and balance factor fields that are useful ...">AVLTreeElement</a> at <a href="https://bridgesuncc.github.io/tutorials/AVL.html">https://bridgesuncc.github.io/tutorials/AVL.html</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">E</td><td>the generic parameter object that is part of this element, representing application specific data. </td></tr>
-    <tr><td class="paramname">K</td><td>is the search key parameter in the AVL tree node; K must be orderable, such as integer, float, string, etc., on which relational operators work.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Mihai Mehedint</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>6/22/16, 1/7/17, 5/17/17, 7/12/19 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fe4490d3d5d16991736bd1a7243b904"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_a_v_l_tree_element.html#a8fe4490d3d5d16991736bd1a7243b904">AVLTreeElement</a> ()</td></tr>
@@ -287,7 +275,22 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a73a5372627ac7fa39673f82b7b40fd81 inherit pac_static_attribs_classbridges_1_1base_1_1_element"><td class="memItemLeft" align="right" valign="top">static Integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_element.html#a73a5372627ac7fa39673f82b7b40fd81">ids</a> = 0</td></tr>
 <tr class="separator:a73a5372627ac7fa39673f82b7b40fd81 inherit pac_static_attribs_classbridges_1_1base_1_1_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class extends the <a class="el" href="classbridges_1_1base_1_1_b_s_t_element.html" title="The BSTElement class is the building block for creating binary search trees.">BSTElement</a> class by adding a height and balance factor fields that are useful in AVL tree implementations. </p>
+<p>AVL tree elements include a 'height' and a 'balFactor' value, representing the height and balance factor of the AVL tree at that node, respectively. This is useful in representing AVL trees.</p>
+<p>AVLTree elements contain a visualizer (<a class="el" href="classbridges_1_1base_1_1_element_visualizer.html" title="This class maintains the visual attributes of each BRIDGES element.">ElementVisualizer</a>) object for setting visual attributes (color, shape, opacity, size), necessary for displaying them in a web browser.</p>
+<p>AVLTree elements also have a <a class="el" href="classbridges_1_1base_1_1_link_visualizer.html" title="This class maintains the visual attributes of links that join Bridges elements.">LinkVisualizer</a> object, that is used when they are linked to another element, appropriate for setting link attributes, for instance, between the current element and its left or right child</p>
+<dl class="section see"><dt>See also</dt><dd>Example tutorial using <a class="el" href="classbridges_1_1base_1_1_a_v_l_tree_element.html" title="This class extends the BSTElement class by adding a height and balance factor fields that are useful ...">AVLTreeElement</a> at <a href="https://bridgesuncc.github.io/tutorials/AVL.html">https://bridgesuncc.github.io/tutorials/AVL.html</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">E</td><td>the generic parameter object that is part of this element, representing application specific data. </td></tr>
+    <tr><td class="paramname">K</td><td>is the search key parameter in the AVL tree node; K must be orderable, such as integer, float, string, etc., on which relational operators work.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Mihai Mehedint</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>6/22/16, 1/7/17, 5/17/17, 7/12/19 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8fe4490d3d5d16991736bd1a7243b904"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8fe4490d3d5d16991736bd1a7243b904">&#9670;&nbsp;</a></span>AVLTreeElement() <span class="overload">[1/2]</span></h2>
 
@@ -539,12 +542,12 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-java/src/main/java/bridges/base/<a class="el" href="_a_v_l_tree_element_8java.html">AVLTreeElement.java</a></li>
+<li>bridges-java/src/main/java/bridges/base/<a class="el" href="_a_v_l_tree_element_8java.html">AVLTreeElement.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:57 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:43 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -76,20 +76,10 @@ $(function() {
 <div class="title">bridges.sorting_benchmark.SortingBenchmark Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Benchmarks sorting algorithm. </p>
-<p>Benchmarks sorting algorithms and add time series to a LineChart.</p>
-<p>The benchmark goes from an initial size controlled by setBaseSize() to a largest size controlled by setMaxSize(). One can also set a maximum time spent on a particular run using setTimeCap().</p>
-<p>The benchmark goes from a array size of n to the next one of geoBase n + increment, where the base is controlled by geometric and increment is controlled by increment. For simpler use one can set a purley linear sampling with <a class="el" href="classbridges_1_1sorting__benchmark_1_1_sorting_benchmark.html#ab5bfca8680018f4c043a78b25dbc1948">linear_range()</a> or a purely geometric one with <a class="el" href="classbridges_1_1sorting__benchmark_1_1_sorting_benchmark.html#ac9bc45a12b3ebab79d05785c01e4a99e">geometric_range()</a>.</p>
-<p>sorting algorithms can be passed to the run function for being benchmarked. A typical use would look something like</p>
-<div class="fragment"><div class="line">   <span class="keyword">def </span>mysort(int array, int arraysize)</div>
-<div class="line">@code</div>
-<div class="line">   lc = LineChart();</div>
-</div><!-- fragment --><p> sb SortingBenchmark(lc); </p><div class="fragment"><div class="line">sb.linear_range (100, 1000, 5);</div>
-<div class="line">sb.run(<span class="stringliteral">&quot;mysortingalgorithm&quot;</span>, mysort);</div>
-</div><!-- fragment --> <dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>07/20/2019 </dd></dl>
-</div><table class="memberdecls">
+
+<p>Benchmarks sorting algorithm.  
+ <a href="classbridges_1_1sorting__benchmark_1_1_sorting_benchmark.html#details">More...</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a703f01c41d21cf5127eeff8918a4adbd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1sorting__benchmark_1_1_sorting_benchmark.html#a703f01c41d21cf5127eeff8918a4adbd">__init__</a> (self, p)</td></tr>
@@ -150,7 +140,20 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3f5b4fe45cba8268f53716f6eb322a66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1sorting__benchmark_1_1_sorting_benchmark.html#a3f5b4fe45cba8268f53716f6eb322a66">geometric</a></td></tr>
 <tr class="separator:a3f5b4fe45cba8268f53716f6eb322a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Benchmarks sorting algorithm. </p>
+<p>Benchmarks sorting algorithms and add time series to a LineChart.</p>
+<p>The benchmark goes from an initial size controlled by setBaseSize() to a largest size controlled by setMaxSize(). One can also set a maximum time spent on a particular run using setTimeCap().</p>
+<p>The benchmark goes from a array size of n to the next one of geoBase n + increment, where the base is controlled by geometric and increment is controlled by increment. For simpler use one can set a purley linear sampling with <a class="el" href="classbridges_1_1sorting__benchmark_1_1_sorting_benchmark.html#ab5bfca8680018f4c043a78b25dbc1948">linear_range()</a> or a purely geometric one with <a class="el" href="classbridges_1_1sorting__benchmark_1_1_sorting_benchmark.html#ac9bc45a12b3ebab79d05785c01e4a99e">geometric_range()</a>.</p>
+<p>sorting algorithms can be passed to the run function for being benchmarked. A typical use would look something like</p>
+<div class="fragment"><div class="line">   <span class="keyword">def </span>mysort(int array, int arraysize)</div>
+<div class="line">@code</div>
+<div class="line">   lc = LineChart();</div>
+</div><!-- fragment --><p> sb SortingBenchmark(lc); </p><div class="fragment"><div class="line">sb.linear_range (100, 1000, 5);</div>
+<div class="line">sb.run(<span class="stringliteral">&quot;mysortingalgorithm&quot;</span>, mysort);</div>
+</div><!-- fragment --> <dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>07/20/2019 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a703f01c41d21cf5127eeff8918a4adbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a703f01c41d21cf5127eeff8918a4adbd">&#9670;&nbsp;</a></span>__init__()</h2>
 
@@ -752,12 +755,12 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-python/bridges/<a class="el" href="sorting__benchmark_8py.html">sorting_benchmark.py</a></li>
+<li>bridges-python/bridges/<a class="el" href="sorting__benchmark_8py.html">sorting_benchmark.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:33:05 for Bridges-Python by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:53 for Bridges-Python by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -78,6 +78,9 @@ $(function() {
 <div class="title">bridges.base.Symbol Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is a class in BRIDGES for deriving a number of <a class="el" href="classbridges_1_1base_1_1_symbol.html" title="This is a class in BRIDGES for deriving a number of Symbol objects for use in a SymbolCollection.">Symbol</a> objects for use in a <a class="el" href="classbridges_1_1base_1_1_symbol_collection.html" title="SymbolCollection represents a collection of symbols to visualize in Bridges This class is a container...">SymbolCollection</a>.  
+ <a href="classbridges_1_1base_1_1_symbol.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for bridges.base.Symbol:</div>
 <div class="dyncontent">
@@ -92,20 +95,7 @@ Inheritance diagram for bridges.base.Symbol:</div>
 <area href="classbridges_1_1base_1_1_polygon.html" title="This class defines a polygon and can be used as a part of a SymbolCollection." alt="bridges.base.Polygon" shape="rect" coords="175,112,340,136"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is a class in BRIDGES for deriving a number of <a class="el" href="classbridges_1_1base_1_1_symbol.html" title="This is a class in BRIDGES for deriving a number of Symbol objects for use in a SymbolCollection.">Symbol</a> objects for use in a <a class="el" href="classbridges_1_1base_1_1_symbol_collection.html" title="SymbolCollection represents a collection of symbols to visualize in Bridges This class is a container...">SymbolCollection</a>. </p>
-<p>It is not intended that objects from this class will be directly created. Rather, we expect that classes that derive from this class be instantiated such as <a class="el" href="classbridges_1_1base_1_1_circle.html" title="This class defines a circle and is part of the bridges::base::SymbolCollection.">Circle</a>, <a class="el" href="classbridges_1_1base_1_1_polyline.html" title="This class defines a polyline and is used as part of a SymbolCollection.">Polyline</a>, <a class="el" href="classbridges_1_1base_1_1_polygon.html" title="This class defines a polygon and can be used as a part of a SymbolCollection.">Polygon</a>, <a class="el" href="classbridges_1_1base_1_1_rectangle.html" title="This class defines a rectangle and is part of the bridges::base::SymbolCollection.">Rectangle</a>, <a class="el" href="classbridges_1_1base_1_1_text.html" title="This class used to render text as part of a SymbolCollection.">Text</a>.</p>
-<p>Symbols correspond to a simplified subset of SVG paths and shapes for custom visual representations in BRIDGES.</p>
-<p>The stroke is the actual lines that get drawn (such as the perimeter of a rectangle) and its style is controlled by <a class="el" href="classbridges_1_1base_1_1_symbol.html#a10abfbf4651ffdc630121da84e23b116">setStrokeColor()</a>, <a class="el" href="classbridges_1_1base_1_1_symbol.html#a4b1ce1fdbc8e76538e67a292e150083c" title="This method sets the symbol stroke width.">setStrokeWidth()</a>, and <a class="el" href="classbridges_1_1base_1_1_symbol.html#ad36224ec7cb588dbbaa8040ef59ffbfc">setStrokeDash()</a>.</p>
-<p>The inside of the <a class="el" href="classbridges_1_1base_1_1_symbol.html" title="This is a class in BRIDGES for deriving a number of Symbol objects for use in a SymbolCollection.">Symbol</a> can be colored independently from the stroke using <a class="el" href="classbridges_1_1base_1_1_symbol.html#a5d3faeffe2dbff7207a4f3d663a34763">setFillColor()</a>.</p>
-<p>Affine transformations are supported with each symbol. If specified, these will transform the shape (pre-multiply); translation, rotation and scale transforms are supported. These can be chained to form a composite transform</p>
-<p>The overall <a class="el" href="classbridges_1_1base_1_1_symbol.html" title="This is a class in BRIDGES for deriving a number of Symbol objects for use in a SymbolCollection.">Symbol</a> can be made more of less visible by adjusting its opacity using <a class="el" href="classbridges_1_1base_1_1_symbol.html#abac237b439448cbef3744817d14061c5" title="This method sets the symbol opacity.">setOpacity()</a>.</p>
-<dl class="section see"><dt>See also</dt><dd>An example tutorial can be found at <a href="https://bridgesuncc.github.io/tutorials/Symbol_Collection.html">https://bridgesuncc.github.io/tutorials/Symbol_Collection.html</a></dd></dl>
-<pre class="fragment">@author David Burlinson, Kalpathi Subramanian, Erik Saule
-</pre> <dl class="section date"><dt>Date</dt><dd>2018, 7/15/19 </dd>
-<dd>
-2020, 6/22/21 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5449cffb7ffdbab093a110957158acc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_symbol.html#a5449cffb7ffdbab093a110957158acc6">Symbol</a> ()</td></tr>
@@ -196,7 +186,20 @@ Package Attributes</h2></td></tr>
 <tr class="memitem:abc1347926664cc0fd96b9e6f454f131b"><td class="memItemLeft" align="right" valign="top">Boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_symbol.html#abc1347926664cc0fd96b9e6f454f131b">xform_flag</a> = false</td></tr>
 <tr class="separator:abc1347926664cc0fd96b9e6f454f131b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is a class in BRIDGES for deriving a number of <a class="el" href="classbridges_1_1base_1_1_symbol.html" title="This is a class in BRIDGES for deriving a number of Symbol objects for use in a SymbolCollection.">Symbol</a> objects for use in a <a class="el" href="classbridges_1_1base_1_1_symbol_collection.html" title="SymbolCollection represents a collection of symbols to visualize in Bridges This class is a container...">SymbolCollection</a>. </p>
+<p>It is not intended that objects from this class will be directly created. Rather, we expect that classes that derive from this class be instantiated such as <a class="el" href="classbridges_1_1base_1_1_circle.html" title="This class defines a circle and is part of the bridges::base::SymbolCollection.">Circle</a>, <a class="el" href="classbridges_1_1base_1_1_polyline.html" title="This class defines a polyline and is used as part of a SymbolCollection.">Polyline</a>, <a class="el" href="classbridges_1_1base_1_1_polygon.html" title="This class defines a polygon and can be used as a part of a SymbolCollection.">Polygon</a>, <a class="el" href="classbridges_1_1base_1_1_rectangle.html" title="This class defines a rectangle and is part of the bridges::base::SymbolCollection.">Rectangle</a>, <a class="el" href="classbridges_1_1base_1_1_text.html" title="This class used to render text as part of a SymbolCollection.">Text</a>.</p>
+<p>Symbols correspond to a simplified subset of SVG paths and shapes for custom visual representations in BRIDGES.</p>
+<p>The stroke is the actual lines that get drawn (such as the perimeter of a rectangle) and its style is controlled by <a class="el" href="classbridges_1_1base_1_1_symbol.html#a10abfbf4651ffdc630121da84e23b116">setStrokeColor()</a>, <a class="el" href="classbridges_1_1base_1_1_symbol.html#a4b1ce1fdbc8e76538e67a292e150083c" title="This method sets the symbol stroke width.">setStrokeWidth()</a>, and <a class="el" href="classbridges_1_1base_1_1_symbol.html#ad36224ec7cb588dbbaa8040ef59ffbfc">setStrokeDash()</a>.</p>
+<p>The inside of the <a class="el" href="classbridges_1_1base_1_1_symbol.html" title="This is a class in BRIDGES for deriving a number of Symbol objects for use in a SymbolCollection.">Symbol</a> can be colored independently from the stroke using <a class="el" href="classbridges_1_1base_1_1_symbol.html#a5d3faeffe2dbff7207a4f3d663a34763">setFillColor()</a>.</p>
+<p>Affine transformations are supported with each symbol. If specified, these will transform the shape (pre-multiply); translation, rotation and scale transforms are supported. These can be chained to form a composite transform</p>
+<p>The overall <a class="el" href="classbridges_1_1base_1_1_symbol.html" title="This is a class in BRIDGES for deriving a number of Symbol objects for use in a SymbolCollection.">Symbol</a> can be made more of less visible by adjusting its opacity using <a class="el" href="classbridges_1_1base_1_1_symbol.html#abac237b439448cbef3744817d14061c5" title="This method sets the symbol opacity.">setOpacity()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd>An example tutorial can be found at <a href="https://bridgesuncc.github.io/tutorials/Symbol_Collection.html">https://bridgesuncc.github.io/tutorials/Symbol_Collection.html</a></dd></dl>
+<pre class="fragment">@author David Burlinson, Kalpathi Subramanian, Erik Saule
+</pre> <dl class="section date"><dt>Date</dt><dd>2018, 7/15/19 </dd>
+<dd>
+2020, 6/22/21 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5449cffb7ffdbab093a110957158acc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5449cffb7ffdbab093a110957158acc6">&#9670;&nbsp;</a></span>Symbol()</h2>
 
@@ -1187,12 +1190,12 @@ Package Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-java/src/main/java/bridges/base/<a class="el" href="_symbol_8java.html">Symbol.java</a></li>
+<li>bridges-java/src/main/java/bridges/base/<a class="el" href="_symbol_8java.html">Symbol.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:57 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:43 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

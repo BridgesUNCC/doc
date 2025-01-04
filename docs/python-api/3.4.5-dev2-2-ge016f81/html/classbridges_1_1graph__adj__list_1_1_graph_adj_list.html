@@ -77,50 +77,10 @@ $(function() {
 <div class="title">bridges.graph_adj_list.GraphAdjList Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES. </p>
-<p>The <a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES</p>
-<p>Convenience methods are provided to add vertices and edges to the graph as well as retrieve the adjacency list of a vertex, given its id. Convenience method addVertex() is provided to add vertices to the graph, and addEdge() is provided to add edges. Edges are retrieved by using the dual hashmap, given the vertex ids of the edge. Vertices can be styled directly from the vertex element returned by getVertex(), and edges are styled from a LinkVisualizer one can access through getLinkVisualizer(). Here is a simple example:</p>
-<div class="fragment"><div class="line">@code</div>
-<div class="line">   graph = GraphAdjList()</div>
-<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a47ace7b83f7916fb3ab8cfc7b871804c">add_vertex</a>(&quot;a&quot;);</div>
-<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a47ace7b83f7916fb3ab8cfc7b871804c">add_vertex</a>(&quot;b&quot;);</div>
-<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a40c678fb1bb5249d736ed3e7ba7b77d5">add_edge</a>(&quot;a&quot;, &quot;b&quot;);</div>
-<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#ab3a739ee1ccd0d487677fd9d71b0dc0c">get_vertex</a>(&quot;a&quot;).set_shape(&quot;square&quot;);</div>
-<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a4936e6a9d2cd2930ccbd4de9ed717dff">get_link_visualizer</a>(&quot;a&quot;, &quot;b&quot;).set_color(&quot;yellow&quot;);</div>
-<div class="ttc" id="aclassbridges_1_1graph__adj__list_1_1_graph_adj_list_html_a40c678fb1bb5249d736ed3e7ba7b77d5"><div class="ttname"><a href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a40c678fb1bb5249d736ed3e7ba7b77d5">bridges.graph_adj_list.GraphAdjList.add_edge</a></div><div class="ttdeci">Edge add_edge(self, Union[str, Element] src, Union[str, Element] dest, str label=None, any data=None, Union[str, Color] color=&quot;blue&quot;, float thickness=1.0, float opacity=1.0)</div><div class="ttdoc">Adds a new edge to the graph.</div><div class="ttdef"><b>Definition:</b> graph_adj_list.py:164</div></div>
-<div class="ttc" id="aclassbridges_1_1graph__adj__list_1_1_graph_adj_list_html_a47ace7b83f7916fb3ab8cfc7b871804c"><div class="ttname"><a href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a47ace7b83f7916fb3ab8cfc7b871804c">bridges.graph_adj_list.GraphAdjList.add_vertex</a></div><div class="ttdeci">Element add_vertex(self, str id, str label=None, Any data=None, Union[str, Color] color=&quot;blue&quot;, float opacity=1.0, Element original=None)</div><div class="ttdoc">Adds a new vertex to the graph.</div><div class="ttdef"><b>Definition:</b> graph_adj_list.py:134</div></div>
-<div class="ttc" id="aclassbridges_1_1graph__adj__list_1_1_graph_adj_list_html_a4936e6a9d2cd2930ccbd4de9ed717dff"><div class="ttname"><a href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a4936e6a9d2cd2930ccbd4de9ed717dff">bridges.graph_adj_list.GraphAdjList.get_link_visualizer</a></div><div class="ttdeci">Edge get_link_visualizer(self, Union[str, Element] src, Union[str, Element] dest)</div><div class="ttdoc">This is a convenience method to simplify access to the link visualizer; the method assumes the vertex...</div><div class="ttdef"><b>Definition:</b> graph_adj_list.py:401</div></div>
-<div class="ttc" id="aclassbridges_1_1graph__adj__list_1_1_graph_adj_list_html_ab3a739ee1ccd0d487677fd9d71b0dc0c"><div class="ttname"><a href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#ab3a739ee1ccd0d487677fd9d71b0dc0c">bridges.graph_adj_list.GraphAdjList.get_vertex</a></div><div class="ttdeci">Element get_vertex(self, key)</div><div class="ttdoc">Getter for a specific vertex in the dictionary of vertices.</div><div class="ttdef"><b>Definition:</b> graph_adj_list.py:256</div></div>
-</div><!-- fragment --> <p>Adjacency lists are singly linked lists using the BRIDGES SLelement. Iterators are provided for easy traversal of the adjacency lists. For instance,</p>
-<div class="fragment"><div class="line">@code</div>
-<div class="line">   graph = GraphAdjList()</div>
-</div><!-- fragment --><p> for (e : graph.out_going_edge_set_of("a")) </p><div class="fragment"><div class="line">print(<span class="stringliteral">&quot;a -&gt; &quot;</span>+e.tov());</div>
-</div><!-- fragment --> <p>Graphs can have their nodes and links affected by visual attributes. Nodes can have color, size, opacity and shape and detailed in the ElementVisualizer class. Edges support attributes such as color, thickness and opacity and are detailed in the LinkVisualizer class. Element and link attributes are set using the <a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a938ae453068891ad2854e177cdf60e93" title="This is a convenience method to simplify access to the element visualizer.">get_visualizer()</a> and <a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a4936e6a9d2cd2930ccbd4de9ed717dff" title="This is a convenience method to simplify access to the link visualizer; the method assumes the vertex...">get_link_visualizer()</a> methods. For instance,</p>
-<div class="fragment"><div class="line">   GraphAdjList graph = something();</div>
-<div class="line">@code</div>
-<div class="line">   graph.add_vertex(<span class="stringliteral">&quot;baskin&quot;</span>);</div>
-<div class="line">   graph.add_vertex(<span class="stringliteral">&quot;robins&quot;</span>);</div>
-<div class="line">   graph.add_edge(<span class="stringliteral">&quot;baskin&quot;</span>,<span class="stringliteral">&quot;robins&quot;</span>);</div>
-<div class="line">   graph.get_visualizer().set_color(<span class="stringliteral">&quot;cyan&quot;</span>);</div>
-<div class="line">   graph.get_visualizer().set_shape(<span class="stringliteral">&quot;square&quot;</span>);</div>
-<div class="line">   graph.get_link_visualizer(<span class="stringliteral">&quot;baskin&quot;</span>, <span class="stringliteral">&quot;robins&quot;</span>).set_color(<span class="stringliteral">&quot;green&quot;</span>);</div>
-<div class="line">   graph.get_link_visualizer(<span class="stringliteral">&quot;baskin&quot;</span>, <span class="stringliteral">&quot;robins&quot;</span>).set_opacity(<span class="stringliteral">&quot;0.5f&quot;</span>);</div>
-</div><!-- fragment --> <pre class="fragment">@author Matthew Mcquaigue, Kalpathi Subramanian
-@date 2018,  7/23/19, 1/5/21
 
-\sa graph adjacency list tutorial, https://bridgesuncc.github.io/tutorials/Graph.html
-
-There are two visualization engines available for graph. The small
-graph visualization supports all attributes of vertices and edges
-but is prohibitively slow on large graphs. The large graph
-visualization only supports locations (actually they are mandatory)
-and colors, all other attributes are ignored.
-
-BRIDGES picks the rendering engine automatically. But it can be
-forced to pick one used forceLargeVizualization() and
-forceSmallVizualization
-</pre> </div><table class="memberdecls">
+<p>The <a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES.  
+ <a href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#details">More...</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ace583fede9dccbdc0360da581c7a6194"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#ace583fede9dccbdc0360da581c7a6194">__init__</a> (self)</td></tr>
@@ -204,7 +164,50 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a27900e6bb5504036ccf5ec2e4d301ddb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a27900e6bb5504036ccf5ec2e4d301ddb">force_small_viz</a> = False</td></tr>
 <tr class="separator:a27900e6bb5504036ccf5ec2e4d301ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES. </p>
+<p>The <a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html" title="The GraphAdjList class can be used to represent adjacency list based graphs in BRIDGES.">GraphAdjList</a> class can be used to represent adjacency list based graphs in BRIDGES</p>
+<p>Convenience methods are provided to add vertices and edges to the graph as well as retrieve the adjacency list of a vertex, given its id. Convenience method addVertex() is provided to add vertices to the graph, and addEdge() is provided to add edges. Edges are retrieved by using the dual hashmap, given the vertex ids of the edge. Vertices can be styled directly from the vertex element returned by getVertex(), and edges are styled from a LinkVisualizer one can access through getLinkVisualizer(). Here is a simple example:</p>
+<div class="fragment"><div class="line">@code</div>
+<div class="line">   graph = GraphAdjList()</div>
+<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a47ace7b83f7916fb3ab8cfc7b871804c">add_vertex</a>(&quot;a&quot;);</div>
+<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a47ace7b83f7916fb3ab8cfc7b871804c">add_vertex</a>(&quot;b&quot;);</div>
+<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a40c678fb1bb5249d736ed3e7ba7b77d5">add_edge</a>(&quot;a&quot;, &quot;b&quot;);</div>
+<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#ab3a739ee1ccd0d487677fd9d71b0dc0c">get_vertex</a>(&quot;a&quot;).set_shape(&quot;square&quot;);</div>
+<div class="line">   graph.<a class="code" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a4936e6a9d2cd2930ccbd4de9ed717dff">get_link_visualizer</a>(&quot;a&quot;, &quot;b&quot;).set_color(&quot;yellow&quot;);</div>
+<div class="ttc" id="aclassbridges_1_1graph__adj__list_1_1_graph_adj_list_html_a40c678fb1bb5249d736ed3e7ba7b77d5"><div class="ttname"><a href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a40c678fb1bb5249d736ed3e7ba7b77d5">bridges.graph_adj_list.GraphAdjList.add_edge</a></div><div class="ttdeci">Edge add_edge(self, Union[str, Element] src, Union[str, Element] dest, str label=None, any data=None, Union[str, Color] color=&quot;blue&quot;, float thickness=1.0, float opacity=1.0)</div><div class="ttdoc">Adds a new edge to the graph.</div><div class="ttdef"><b>Definition:</b> graph_adj_list.py:164</div></div>
+<div class="ttc" id="aclassbridges_1_1graph__adj__list_1_1_graph_adj_list_html_a47ace7b83f7916fb3ab8cfc7b871804c"><div class="ttname"><a href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a47ace7b83f7916fb3ab8cfc7b871804c">bridges.graph_adj_list.GraphAdjList.add_vertex</a></div><div class="ttdeci">Element add_vertex(self, str id, str label=None, Any data=None, Union[str, Color] color=&quot;blue&quot;, float opacity=1.0, Element original=None)</div><div class="ttdoc">Adds a new vertex to the graph.</div><div class="ttdef"><b>Definition:</b> graph_adj_list.py:134</div></div>
+<div class="ttc" id="aclassbridges_1_1graph__adj__list_1_1_graph_adj_list_html_a4936e6a9d2cd2930ccbd4de9ed717dff"><div class="ttname"><a href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a4936e6a9d2cd2930ccbd4de9ed717dff">bridges.graph_adj_list.GraphAdjList.get_link_visualizer</a></div><div class="ttdeci">Edge get_link_visualizer(self, Union[str, Element] src, Union[str, Element] dest)</div><div class="ttdoc">This is a convenience method to simplify access to the link visualizer; the method assumes the vertex...</div><div class="ttdef"><b>Definition:</b> graph_adj_list.py:401</div></div>
+<div class="ttc" id="aclassbridges_1_1graph__adj__list_1_1_graph_adj_list_html_ab3a739ee1ccd0d487677fd9d71b0dc0c"><div class="ttname"><a href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#ab3a739ee1ccd0d487677fd9d71b0dc0c">bridges.graph_adj_list.GraphAdjList.get_vertex</a></div><div class="ttdeci">Element get_vertex(self, key)</div><div class="ttdoc">Getter for a specific vertex in the dictionary of vertices.</div><div class="ttdef"><b>Definition:</b> graph_adj_list.py:256</div></div>
+</div><!-- fragment --> <p>Adjacency lists are singly linked lists using the BRIDGES SLelement. Iterators are provided for easy traversal of the adjacency lists. For instance,</p>
+<div class="fragment"><div class="line">@code</div>
+<div class="line">   graph = GraphAdjList()</div>
+</div><!-- fragment --><p> for (e : graph.out_going_edge_set_of("a")) </p><div class="fragment"><div class="line">print(<span class="stringliteral">&quot;a -&gt; &quot;</span>+e.tov());</div>
+</div><!-- fragment --> <p>Graphs can have their nodes and links affected by visual attributes. Nodes can have color, size, opacity and shape and detailed in the ElementVisualizer class. Edges support attributes such as color, thickness and opacity and are detailed in the LinkVisualizer class. Element and link attributes are set using the <a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a938ae453068891ad2854e177cdf60e93" title="This is a convenience method to simplify access to the element visualizer.">get_visualizer()</a> and <a class="el" href="classbridges_1_1graph__adj__list_1_1_graph_adj_list.html#a4936e6a9d2cd2930ccbd4de9ed717dff" title="This is a convenience method to simplify access to the link visualizer; the method assumes the vertex...">get_link_visualizer()</a> methods. For instance,</p>
+<div class="fragment"><div class="line">   GraphAdjList graph = something();</div>
+<div class="line">@code</div>
+<div class="line">   graph.add_vertex(<span class="stringliteral">&quot;baskin&quot;</span>);</div>
+<div class="line">   graph.add_vertex(<span class="stringliteral">&quot;robins&quot;</span>);</div>
+<div class="line">   graph.add_edge(<span class="stringliteral">&quot;baskin&quot;</span>,<span class="stringliteral">&quot;robins&quot;</span>);</div>
+<div class="line">   graph.get_visualizer().set_color(<span class="stringliteral">&quot;cyan&quot;</span>);</div>
+<div class="line">   graph.get_visualizer().set_shape(<span class="stringliteral">&quot;square&quot;</span>);</div>
+<div class="line">   graph.get_link_visualizer(<span class="stringliteral">&quot;baskin&quot;</span>, <span class="stringliteral">&quot;robins&quot;</span>).set_color(<span class="stringliteral">&quot;green&quot;</span>);</div>
+<div class="line">   graph.get_link_visualizer(<span class="stringliteral">&quot;baskin&quot;</span>, <span class="stringliteral">&quot;robins&quot;</span>).set_opacity(<span class="stringliteral">&quot;0.5f&quot;</span>);</div>
+</div><!-- fragment --> <pre class="fragment">@author Matthew Mcquaigue, Kalpathi Subramanian
+@date 2018,  7/23/19, 1/5/21
+
+\sa graph adjacency list tutorial, https://bridgesuncc.github.io/tutorials/Graph.html
+
+There are two visualization engines available for graph. The small
+graph visualization supports all attributes of vertices and edges
+but is prohibitively slow on large graphs. The large graph
+visualization only supports locations (actually they are mandatory)
+and colors, all other attributes are ignored.
+
+BRIDGES picks the rendering engine automatically. But it can be
+forced to pick one used forceLargeVizualization() and
+forceSmallVizualization
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ace583fede9dccbdc0360da581c7a6194"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace583fede9dccbdc0360da581c7a6194">&#9670;&nbsp;</a></span>__init__()</h2>
 
@@ -1125,12 +1128,12 @@ dict </dd></dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-python/bridges/<a class="el" href="graph__adj__list_8py.html">graph_adj_list.py</a></li>
+<li>bridges-python/bridges/<a class="el" href="graph__adj__list_8py.html">graph_adj_list.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:33:05 for Bridges-Python by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:53 for Bridges-Python by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -76,6 +76,9 @@ $(function() {
 <div class="title">bridges.non_blocking_game.NonBlockingGame Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class provides the features necessary to implement simple non blocking games.  
+ <a href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for bridges.non_blocking_game.NonBlockingGame:</div>
 <div class="dyncontent">
@@ -85,48 +88,7 @@ Inheritance diagram for bridges.non_blocking_game.NonBlockingGame:</div>
 <area href="classbridges_1_1gamebase_1_1_game_base.html" title="This is the base class for all games in BRIDGES." alt="bridges.gamebase.GameBase" shape="rect" coords="0,56,277,80"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class provides the features necessary to implement simple non blocking games. </p>
-<p>The games that can be created out of <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html" title="This class provides the features necessary to implement simple non blocking games.">NonBlockingGame</a> are based on a simple board grid of at most 1024 cells (e.g., 32x32, or any combinations less than 1024 cells). Each cell has a background color, and a colored symbol.</p>
-<p>This class is used by having another class derive from it and implement the two functions: <a class="el" href="classbridges_1_1gamebase_1_1_game_base.html#a336629d190f1601f1211ca57e4d5427d">initialize()</a> and GameLoop(). <a class="el" href="classbridges_1_1gamebase_1_1_game_base.html#a336629d190f1601f1211ca57e4d5427d">initialize()</a> is called exactly once, on the first frame of the game. It is used to make first time initializations of the game state (such as setting the board in its initial position, for instance in chess). However, GameLoop() is called at every frame of the game. The game starts when the function <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#ad6e23c265e1b710114459f0b666d25cb" title="Call this function from main to start game.">start()</a> is called on the object you created.</p>
-<p>This game does not do anything, but it is the minimal code that will run a game. Note that the constructor of my_game passes 3 parameters to the constructor of NonBlockingGame(). These three parameters are the classic parameters that the constructor of <a class="el" href="classbridges_1_1bridges_1_1_bridges.html" title="The bridges class is the main class that provides interfaces to datasets, maintains user and assignme...">bridges::Bridges</a> takes (e.g., assignmentID, username, apikey).</p>
-<p>To change the board, two functions are used. setBGColor() change the background color of a particular cell. It takes three parameters, the first two identify the cell of the board to change, and the last one is a color from a color palette provided by NamedColor. drawSymbol() takes four parameters, the first two identify the cell of the board to change, the third is a symbol from a symbol palette provided by NamedSymbol, the fourth is the color that symbol shold be drawn in and provided by NamedColor.</p>
-<p>For instance, a very simple <a class="el" href="classbridges_1_1gamebase_1_1_game_base.html#a336629d190f1601f1211ca57e4d5427d">initialize()</a> could look like: </p><div class="fragment"><div class="line">   <span class="keyword">def </span>initialize():</div>
-<div class="line">       set_bg_color(0, 0, NamedColor.lightsalmon);</div>
-<div class="line"><span class="preprocessor">@code</span></div>
-<div class="line">       draw_symbol(0, 0, NamedSymbol.sword, NamedColor.blue);</div>
-</div><!-- fragment --> <p>Note that the size of the board is set by default at 10x10 and that drawing on a cell that does not exist will lead to an error. One can specify a gameboard of a different size by passing additional parameters to the <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html" title="This class provides the features necessary to implement simple non blocking games.">NonBlockingGame</a> constructor. However, the game can not be more than 1024 cells in total, so a 15x15 board is possible, a 32x32 board is the largest square board possible, and a rectangular 64x16 rectangular board is also possible. But a 100x20 board would be 2000 cells and is not possible. For instance a board of 16 rows and 64 columns can be created defining the my_game constructor as:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">@code</span></div>
-<div class="line">       my_game = NonBlockingGame (1, <span class="stringliteral">&quot;myuserid&quot;</span>,  <span class="stringliteral">&quot;myapikey&quot;</span>, 16, 64)</div>
-</div><!-- fragment --> <p>The bridges game engine will call the GameLoop() function at each frame of the game. You can write this function to modify the state of the game board using setBGColor() and drawSymbol(). For instance, the following GameLoop() will color the board randomly one cell at a time.</p>
-<div class="fragment"><div class="line"><span class="keyword">def </span>game_loop():</div>
-<div class="line">    set_BG_Color(rand()%10, rand()%10, NamedColor.lightsalmon);</div>
-</div><!-- fragment --><p>The gameLoop can also probe the state of some keys of the keyboard using functions <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a7e853081cefe51511de0c6438aeea871" title="Is &#39;up&#39; arrow currently pressed?">key_up()</a>, <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a87490ef28d161f22e753aab5d3e67e46" title="Is &#39;left&#39; arrow key currently pressed?">key_left()</a>, </p><div class="fragment"><div class="line">key_down(), key_right(), key_w(), key_a(), key_s(),</div>
-</div><!-- fragment --><p> <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a0c90fcb365dcdb7ccf49b98b3e63ecc8" title="Is &#39;d&#39; key currently pressed?">key_d()</a>, <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a1059ffd8d5daa3a0db2e6847f5724883" title="Is &#39;space&#39; key currently pressed?">key_space()</a>, and <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a75e94a930466b607828b6ef092f810d6" title="Is &#39;q&#39; currently pressed?">key_q()</a>. These functions return a boolean that indicate whether the key is pressed at that frame or not. For instance, the following code will only color the board randomly when the up arrow is pressed.</p>
-<div class="fragment"><div class="line">   <span class="keyword">def </span>game_loop():</div>
-<div class="line">       <span class="keywordflow">if</span> key_up():</div>
-<div class="line"><span class="preprocessor">@code</span></div>
-<div class="line">           set_bg_color(rand()%10, rand()%10, NamedColor.lightsalmon);</div>
-</div><!-- fragment --> <p>The previous way will have an action executed at each frame of the game if the key stays pressed. This could be cumbersome for some games and you may want a key press to be triggered with a cooldown (so that it activates only every so many frames). You can configure how many frames will pass between two activations of the key with keyUpSetupFire() and you can tell whether it is a fire frame with keyUpFire(). There are similar functions for all keys that are recognized by Bridges. See the following code for a simple usage:</p>
-<div class="fragment"><div class="line">   <span class="keyword">def </span>initialize() override:</div>
-<div class="line">@code</div>
-<div class="line">        keyUpSetupFire(20);</div>
-</div><!-- fragment --><p> gameLoop(): if # will only be true once every 20 frames </p><div class="fragment"><div class="line">setBGColor(rand()%10, rand()%10, NamedColor.lightsalmon);</div>
-</div><!-- fragment --><p>  Bridges supports a third way to use inputs that enables you to know the first frame a key is pressed and the first frame a key is no longer pressed. You can also know whether a key is still being pressed (after the first frame it is being pressed) and whether it is still not pressed (after the first frame it is no longer pressed). The four functions are keyUpJustPressed(), </p><div class="fragment"><div class="line">keyUpStillPressed(), keyUpJustNotPressed(),</div>
-</div><!-- fragment --><p> keyUpStillNotPressed(). The following code examplifies the usage of these functions.</p>
-<div class="fragment"><div class="line">gameLoop():</div>
-<div class="line">   <span class="keywordflow">if</span> (keyUpJustPressed()):</div>
-<div class="line">      setBGColor(0, 0, NamedColor.lightsalmon);</div>
-<div class="line">   <span class="keywordflow">if</span> (keyUpStillPressed()):</div>
-<div class="line">      setBGColor(0, 1, NamedColor.lightsalmon);</div>
-<div class="line">   <span class="keywordflow">if</span> (keyUpJustNotPressed()):</div>
-<div class="line">      setBGColor(0, 2, NamedColor.lightsalmon);</div>
-<div class="line">   <span class="keywordflow">if</span> (keyUpStillNotPressed()):</div>
-<div class="line">      setBGColor(0, 3, NamedColor.lightsalmon);</div>
-</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>7-21-19, 1-12-23</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html" title="This class provides the features necessary to implement simple non blocking games.">NonBlockingGame</a> tutorial at: <a href="https://bridgesuncc.github.io/tutorials/NonBlockingGame.html">https://bridgesuncc.github.io/tutorials/NonBlockingGame.html</a> </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0765845474ea88c764986ab0ea361da"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#ac0765845474ea88c764986ab0ea361da">__init__</a> (self, assid, login, apikey, rows, cols, <a class="el" href="classbridges_1_1gamebase_1_1_game_base.html#a25e8f6f349f54300666127f58669356c">debug</a>=False)</td></tr>
@@ -442,7 +404,48 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a25e8f6f349f54300666127f58669356c inherit pub_static_attribs_classbridges_1_1gamebase_1_1_game_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1gamebase_1_1_game_base.html#a25e8f6f349f54300666127f58669356c">debug</a> = True</td></tr>
 <tr class="separator:a25e8f6f349f54300666127f58669356c inherit pub_static_attribs_classbridges_1_1gamebase_1_1_game_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class provides the features necessary to implement simple non blocking games. </p>
+<p>The games that can be created out of <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html" title="This class provides the features necessary to implement simple non blocking games.">NonBlockingGame</a> are based on a simple board grid of at most 1024 cells (e.g., 32x32, or any combinations less than 1024 cells). Each cell has a background color, and a colored symbol.</p>
+<p>This class is used by having another class derive from it and implement the two functions: <a class="el" href="classbridges_1_1gamebase_1_1_game_base.html#a336629d190f1601f1211ca57e4d5427d">initialize()</a> and GameLoop(). <a class="el" href="classbridges_1_1gamebase_1_1_game_base.html#a336629d190f1601f1211ca57e4d5427d">initialize()</a> is called exactly once, on the first frame of the game. It is used to make first time initializations of the game state (such as setting the board in its initial position, for instance in chess). However, GameLoop() is called at every frame of the game. The game starts when the function <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#ad6e23c265e1b710114459f0b666d25cb" title="Call this function from main to start game.">start()</a> is called on the object you created.</p>
+<p>This game does not do anything, but it is the minimal code that will run a game. Note that the constructor of my_game passes 3 parameters to the constructor of NonBlockingGame(). These three parameters are the classic parameters that the constructor of <a class="el" href="classbridges_1_1bridges_1_1_bridges.html" title="The bridges class is the main class that provides interfaces to datasets, maintains user and assignme...">bridges::Bridges</a> takes (e.g., assignmentID, username, apikey).</p>
+<p>To change the board, two functions are used. setBGColor() change the background color of a particular cell. It takes three parameters, the first two identify the cell of the board to change, and the last one is a color from a color palette provided by NamedColor. drawSymbol() takes four parameters, the first two identify the cell of the board to change, the third is a symbol from a symbol palette provided by NamedSymbol, the fourth is the color that symbol shold be drawn in and provided by NamedColor.</p>
+<p>For instance, a very simple <a class="el" href="classbridges_1_1gamebase_1_1_game_base.html#a336629d190f1601f1211ca57e4d5427d">initialize()</a> could look like: </p><div class="fragment"><div class="line">   <span class="keyword">def </span>initialize():</div>
+<div class="line">       set_bg_color(0, 0, NamedColor.lightsalmon);</div>
+<div class="line"><span class="preprocessor">@code</span></div>
+<div class="line">       draw_symbol(0, 0, NamedSymbol.sword, NamedColor.blue);</div>
+</div><!-- fragment --> <p>Note that the size of the board is set by default at 10x10 and that drawing on a cell that does not exist will lead to an error. One can specify a gameboard of a different size by passing additional parameters to the <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html" title="This class provides the features necessary to implement simple non blocking games.">NonBlockingGame</a> constructor. However, the game can not be more than 1024 cells in total, so a 15x15 board is possible, a 32x32 board is the largest square board possible, and a rectangular 64x16 rectangular board is also possible. But a 100x20 board would be 2000 cells and is not possible. For instance a board of 16 rows and 64 columns can be created defining the my_game constructor as:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">@code</span></div>
+<div class="line">       my_game = NonBlockingGame (1, <span class="stringliteral">&quot;myuserid&quot;</span>,  <span class="stringliteral">&quot;myapikey&quot;</span>, 16, 64)</div>
+</div><!-- fragment --> <p>The bridges game engine will call the GameLoop() function at each frame of the game. You can write this function to modify the state of the game board using setBGColor() and drawSymbol(). For instance, the following GameLoop() will color the board randomly one cell at a time.</p>
+<div class="fragment"><div class="line"><span class="keyword">def </span>game_loop():</div>
+<div class="line">    set_BG_Color(rand()%10, rand()%10, NamedColor.lightsalmon);</div>
+</div><!-- fragment --><p>The gameLoop can also probe the state of some keys of the keyboard using functions <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a7e853081cefe51511de0c6438aeea871" title="Is &#39;up&#39; arrow currently pressed?">key_up()</a>, <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a87490ef28d161f22e753aab5d3e67e46" title="Is &#39;left&#39; arrow key currently pressed?">key_left()</a>, </p><div class="fragment"><div class="line">key_down(), key_right(), key_w(), key_a(), key_s(),</div>
+</div><!-- fragment --><p> <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a0c90fcb365dcdb7ccf49b98b3e63ecc8" title="Is &#39;d&#39; key currently pressed?">key_d()</a>, <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a1059ffd8d5daa3a0db2e6847f5724883" title="Is &#39;space&#39; key currently pressed?">key_space()</a>, and <a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html#a75e94a930466b607828b6ef092f810d6" title="Is &#39;q&#39; currently pressed?">key_q()</a>. These functions return a boolean that indicate whether the key is pressed at that frame or not. For instance, the following code will only color the board randomly when the up arrow is pressed.</p>
+<div class="fragment"><div class="line">   <span class="keyword">def </span>game_loop():</div>
+<div class="line">       <span class="keywordflow">if</span> key_up():</div>
+<div class="line"><span class="preprocessor">@code</span></div>
+<div class="line">           set_bg_color(rand()%10, rand()%10, NamedColor.lightsalmon);</div>
+</div><!-- fragment --> <p>The previous way will have an action executed at each frame of the game if the key stays pressed. This could be cumbersome for some games and you may want a key press to be triggered with a cooldown (so that it activates only every so many frames). You can configure how many frames will pass between two activations of the key with keyUpSetupFire() and you can tell whether it is a fire frame with keyUpFire(). There are similar functions for all keys that are recognized by Bridges. See the following code for a simple usage:</p>
+<div class="fragment"><div class="line">   <span class="keyword">def </span>initialize() override:</div>
+<div class="line">@code</div>
+<div class="line">        keyUpSetupFire(20);</div>
+</div><!-- fragment --><p> gameLoop(): if # will only be true once every 20 frames </p><div class="fragment"><div class="line">setBGColor(rand()%10, rand()%10, NamedColor.lightsalmon);</div>
+</div><!-- fragment --><p>  Bridges supports a third way to use inputs that enables you to know the first frame a key is pressed and the first frame a key is no longer pressed. You can also know whether a key is still being pressed (after the first frame it is being pressed) and whether it is still not pressed (after the first frame it is no longer pressed). The four functions are keyUpJustPressed(), </p><div class="fragment"><div class="line">keyUpStillPressed(), keyUpJustNotPressed(),</div>
+</div><!-- fragment --><p> keyUpStillNotPressed(). The following code examplifies the usage of these functions.</p>
+<div class="fragment"><div class="line">gameLoop():</div>
+<div class="line">   <span class="keywordflow">if</span> (keyUpJustPressed()):</div>
+<div class="line">      setBGColor(0, 0, NamedColor.lightsalmon);</div>
+<div class="line">   <span class="keywordflow">if</span> (keyUpStillPressed()):</div>
+<div class="line">      setBGColor(0, 1, NamedColor.lightsalmon);</div>
+<div class="line">   <span class="keywordflow">if</span> (keyUpJustNotPressed()):</div>
+<div class="line">      setBGColor(0, 2, NamedColor.lightsalmon);</div>
+<div class="line">   <span class="keywordflow">if</span> (keyUpStillNotPressed()):</div>
+<div class="line">      setBGColor(0, 3, NamedColor.lightsalmon);</div>
+</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>7-21-19, 1-12-23</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classbridges_1_1non__blocking__game_1_1_non_blocking_game.html" title="This class provides the features necessary to implement simple non blocking games.">NonBlockingGame</a> tutorial at: <a href="https://bridgesuncc.github.io/tutorials/NonBlockingGame.html">https://bridgesuncc.github.io/tutorials/NonBlockingGame.html</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac0765845474ea88c764986ab0ea361da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0765845474ea88c764986ab0ea361da">&#9670;&nbsp;</a></span>__init__()</h2>
 
@@ -2379,12 +2382,12 @@ None </dd></dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-python/bridges/<a class="el" href="non__blocking__game_8py.html">non_blocking_game.py</a></li>
+<li>bridges-python/bridges/<a class="el" href="non__blocking__game_8py.html">non_blocking_game.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:33:05 for Bridges-Python by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:53 for Bridges-Python by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

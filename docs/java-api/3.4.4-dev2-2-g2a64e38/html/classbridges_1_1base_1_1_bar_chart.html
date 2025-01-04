@@ -76,6 +76,9 @@ $(function() {
 <div class="title">bridges.base.BarChart Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Support for drawing Bar charts.  
+ <a href="classbridges_1_1base_1_1_bar_chart.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for bridges.base.BarChart:</div>
 <div class="dyncontent">
@@ -85,17 +88,7 @@ Inheritance diagram for bridges.base.BarChart:</div>
 <area href="classbridges_1_1base_1_1_data_struct.html" title="This is an abstract super class that is extended by all Bridges subclasses and provides some methods ..." alt="bridges.base.DataStruct" shape="rect" coords="0,0,148,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Support for drawing Bar charts. </p>
-<p>Bar charts (<a href="https://en.wikipedia.org/wiki/Bar_chart">https://en.wikipedia.org/wiki/Bar_chart</a>) are used to represent categorical data as a series of rectangular bars with length proportional to the values they represent.</p>
-<p>Series in a bar chart provides data for a number of categories (sometimes called bins). Categories are defined using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html#ab2041d6f038861951a02cb0091b31fb1" title="set the category labels for this bar chart">setCategories()</a> and the series are added using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html#a306f719db0fb2f6ae00e2c473b01e163" title="Add a series of data.">addDataSeries()</a>. The series are rendered in the order in which they were added. Once a series has been added, it can not be modified.</p>
-<p>One should always define the categories before adding data. Changing the categories after series have been added will throw exceptions; adding series with different number of values than the number of categories will throw an exception.</p>
-<p>The Bar charts can have a title, subtitle. The charts can be horizontal or vertically oriented, using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html#a86db8b3fb376d8f5c60842c37843c713" title="sets the bar chart orientation">setBarOrientation()</a>.</p>
-<p>A tooltip indicating the value of a series in a particular bin is displayed by hovering on a bar. One can append a string to the value using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html#a7d94195abcdf4ff831455048a2f41d45" title="sets the tooltip suffix">setTooltipSuffix()</a> to specify units in the tooltip if desired.</p>
-<dl class="section see"><dt>See also</dt><dd>See tutorial on using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html" title="Support for drawing Bar charts.">BarChart</a> at: <a href="https://bridgesuncc.github.io/tutorials/BarChart.html">https://bridgesuncc.github.io/tutorials/BarChart.html</a></dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Erik Saule</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>09/15/24 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_bar_chart_1_1_pair.html">Pair</a></td></tr>
@@ -178,7 +171,17 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a8b3dbe53c49bcb3c6e82cef8fcd3e935 inherit pac_attribs_classbridges_1_1base_1_1_data_struct"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_data_struct.html#a8b3dbe53c49bcb3c6e82cef8fcd3e935">CLOSE_BOX</a> = &quot;]&quot;</td></tr>
 <tr class="separator:a8b3dbe53c49bcb3c6e82cef8fcd3e935 inherit pac_attribs_classbridges_1_1base_1_1_data_struct"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Support for drawing Bar charts. </p>
+<p>Bar charts (<a href="https://en.wikipedia.org/wiki/Bar_chart">https://en.wikipedia.org/wiki/Bar_chart</a>) are used to represent categorical data as a series of rectangular bars with length proportional to the values they represent.</p>
+<p>Series in a bar chart provides data for a number of categories (sometimes called bins). Categories are defined using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html#ab2041d6f038861951a02cb0091b31fb1" title="set the category labels for this bar chart">setCategories()</a> and the series are added using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html#a306f719db0fb2f6ae00e2c473b01e163" title="Add a series of data.">addDataSeries()</a>. The series are rendered in the order in which they were added. Once a series has been added, it can not be modified.</p>
+<p>One should always define the categories before adding data. Changing the categories after series have been added will throw exceptions; adding series with different number of values than the number of categories will throw an exception.</p>
+<p>The Bar charts can have a title, subtitle. The charts can be horizontal or vertically oriented, using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html#a86db8b3fb376d8f5c60842c37843c713" title="sets the bar chart orientation">setBarOrientation()</a>.</p>
+<p>A tooltip indicating the value of a series in a particular bin is displayed by hovering on a bar. One can append a string to the value using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html#a7d94195abcdf4ff831455048a2f41d45" title="sets the tooltip suffix">setTooltipSuffix()</a> to specify units in the tooltip if desired.</p>
+<dl class="section see"><dt>See also</dt><dd>See tutorial on using <a class="el" href="classbridges_1_1base_1_1_bar_chart.html" title="Support for drawing Bar charts.">BarChart</a> at: <a href="https://bridgesuncc.github.io/tutorials/BarChart.html">https://bridgesuncc.github.io/tutorials/BarChart.html</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Erik Saule</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>09/15/24 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5736c0e368c3d4375271622ade100b2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5736c0e368c3d4375271622ade100b2a">&#9670;&nbsp;</a></span>BarChart()</h2>
 
@@ -587,12 +590,12 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-java/src/main/java/bridges/base/<a class="el" href="_bar_chart_8java.html">BarChart.java</a></li>
+<li>bridges-java/src/main/java/bridges/base/<a class="el" href="_bar_chart_8java.html">BarChart.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:57 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:43 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

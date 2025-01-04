@@ -77,6 +77,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class can be used to instantiate Multi-list Elements.  
+ <a href="classbridges_1_1datastructure_1_1_m_lelement.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_m_lelement_8h_source.html">MLelement.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for bridges::datastructure::MLelement&lt; E &gt;:</div>
@@ -89,24 +92,7 @@ Inheritance diagram for bridges::datastructure::MLelement&lt; E &gt;:</div>
 <area href="classbridges_1_1datastructure_1_1_data_structure.html" title="This is the superclass of all data structure types in BRIDGES." alt="bridges::datastructure::DataStructure" shape="rect" coords="243,0,476,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename E&gt;<br />
-class bridges::datastructure::MLelement&lt; E &gt;</h3>
-
-<p>This class can be used to instantiate Multi-list Elements. </p>
-<p>This class extends <a class="el" href="classbridges_1_1datastructure_1_1_s_lelement.html" title="The singly linked list element, derived from Element.">SLelement</a> (singly linked list element) to build multi-lists; Multilist elements contain a tag (boolean) that indicates if the element contains a sublist or not; if the tag is true, then there is a sublist beginning at this node and the starting point is the &lsquo;sublist&rsquo; field in the element. If the tag is false, then the list continues as a normal singly linked list. The sublists are re recursive: any sublist can have its own sublists and so on. As in singly linked elements, the next pointer points to the following list element and each element contains a generic application specific object.</p>
-<p>Multi-list elements contain a visualizer (<a class="el" href="classbridges_1_1datastructure_1_1_element_visualizer.html" title="This class maintains the visual properties of the a Bridges element.">ElementVisualizer</a>) object for setting visual attributes (color, shape, opacity, size), necessary for displaying them in a web browser.</p>
-<p>Elements also have a <a class="el" href="classbridges_1_1datastructure_1_1_link_visualizer.html" title="This class maintains the visual properties of links within data structures.">LinkVisualizer</a> object, that is used when they are linked to another element, appropriate for setting link attributes, for instance, between the current element and its next element. In this case, the link in question is that which connects the element to the following elements; a similar logic follows for sublists.</p>
-<dl class="section see"><dt>See also</dt><dd>There is a tutorial about Multi Lists : <a href="https://bridgesuncc.github.io/tutorials/MultiList.html">https://bridgesuncc.github.io/tutorials/MultiList.html</a></dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>5/24/17, 7/12/19, 12/28/20</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">E</td><td>The generic parameter object that is part of this element, representing either application specific data, or a pointer to a sublist. </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af73050e460a47d0b5d82ee6ae49b6c59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1datastructure_1_1_m_lelement.html#af73050e460a47d0b5d82ee6ae49b6c59">MLelement</a> (const E &amp;val=E(), const string &amp;lab=string())</td></tr>
@@ -260,7 +246,24 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ac165bbef40069740778f3a7047e93878 inherit pro_static_methods_classbridges_1_1datastructure_1_1_element"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1datastructure_1_1_element.html#ac165bbef40069740778f3a7047e93878">getLinkRepresentation</a> (const <a class="el" href="classbridges_1_1datastructure_1_1_link_visualizer.html">LinkVisualizer</a> &amp;lv, const string &amp;src, const string &amp;dest, rapidjson::Document &amp;d)</td></tr>
 <tr class="separator:ac165bbef40069740778f3a7047e93878 inherit pro_static_methods_classbridges_1_1datastructure_1_1_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename E&gt;<br />
+class bridges::datastructure::MLelement&lt; E &gt;</h3>
+
+<p>This class can be used to instantiate Multi-list Elements. </p>
+<p>This class extends <a class="el" href="classbridges_1_1datastructure_1_1_s_lelement.html" title="The singly linked list element, derived from Element.">SLelement</a> (singly linked list element) to build multi-lists; Multilist elements contain a tag (boolean) that indicates if the element contains a sublist or not; if the tag is true, then there is a sublist beginning at this node and the starting point is the &lsquo;sublist&rsquo; field in the element. If the tag is false, then the list continues as a normal singly linked list. The sublists are re recursive: any sublist can have its own sublists and so on. As in singly linked elements, the next pointer points to the following list element and each element contains a generic application specific object.</p>
+<p>Multi-list elements contain a visualizer (<a class="el" href="classbridges_1_1datastructure_1_1_element_visualizer.html" title="This class maintains the visual properties of the a Bridges element.">ElementVisualizer</a>) object for setting visual attributes (color, shape, opacity, size), necessary for displaying them in a web browser.</p>
+<p>Elements also have a <a class="el" href="classbridges_1_1datastructure_1_1_link_visualizer.html" title="This class maintains the visual properties of links within data structures.">LinkVisualizer</a> object, that is used when they are linked to another element, appropriate for setting link attributes, for instance, between the current element and its next element. In this case, the link in question is that which connects the element to the following elements; a similar logic follows for sublists.</p>
+<dl class="section see"><dt>See also</dt><dd>There is a tutorial about Multi Lists : <a href="https://bridgesuncc.github.io/tutorials/MultiList.html">https://bridgesuncc.github.io/tutorials/MultiList.html</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>5/24/17, 7/12/19, 12/28/20</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">E</td><td>The generic parameter object that is part of this element, representing either application specific data, or a pointer to a sublist. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af73050e460a47d0b5d82ee6ae49b6c59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af73050e460a47d0b5d82ee6ae49b6c59">&#9670;&nbsp;</a></span>MLelement() <span class="overload">[1/3]</span></h2>
 
@@ -709,12 +712,12 @@ template&lt;typename E &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-cxx/src/<a class="el" href="_m_lelement_8h_source.html">MLelement.h</a></li>
+<li>bridges-cxx/src/<a class="el" href="_m_lelement_8h_source.html">MLelement.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:56 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 20:25:47 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

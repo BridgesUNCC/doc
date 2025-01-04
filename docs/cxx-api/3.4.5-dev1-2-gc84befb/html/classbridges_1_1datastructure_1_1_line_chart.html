@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Show series of data or functions using a line chart.  
+ <a href="classbridges_1_1datastructure_1_1_line_chart.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_line_chart_8h_source.html">LineChart.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for bridges::datastructure::LineChart:</div>
@@ -86,16 +89,7 @@ Inheritance diagram for bridges::datastructure::LineChart:</div>
 <area href="classbridges_1_1datastructure_1_1_data_structure.html" title="This is the superclass of all data structure types in BRIDGES." alt="bridges::datastructure::DataStructure" shape="rect" coords="0,0,218,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Show series of data or functions using a line chart. </p>
-<p>Line charts (<a href="https://en.wikipedia.org/wiki/Line_chart">https://en.wikipedia.org/wiki/Line_chart</a>) are used to represent graphically functions such as f(x) = 3*x+1, or data such as temperature of a liquid on a stove as time passes. A individual function or a set of data is called "series".</p>
-<p>A series is represented by two arrays xdata and ydata such that there is a point at (xdata[0], ydata[0]), an other at (xdata[1], ydata[1]), ... One can add a series by passing the two arrays using <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#acb763ea4b2d0f27c73edc3861cc51fbb" title="Add a series (or update it)">setDataSeries()</a> or add the arrays individually using <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#aa9959489d71e31645f561c4481f050d2" title="Changes the X data for a series.">setXData()</a> and <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a861370f3f7b32cc1a9347727d084d307" title="Changes the Y data for a series.">setYData()</a>.</p>
-<p>The different series have a label associated with them by default which can be disabled (see <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a21031cd026426ab91307626ce9651c03" title="Enables or disables series labels.">toggleSeriesLabel()</a>).</p>
-<p>The data is typically shown with axes that use a linear scale. However, the scale can be changed to logarithmic for each axis individually (see <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a4e2aa224d793793faa0c5a6edb729646" title="Change the X-axis scale to logarithmic.">toggleLogarithmicX()</a> and toggleLogarithmic()).</p>
-<p>The <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html" title="Show series of data or functions using a line chart.">LineChart</a> can have a title (see <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#aa38d6cf9657d2757a98b657f079ae2bc" title="Title of the plot.">getTitle()</a> and <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#ac42cf1e6348ce8ab0c3593a496a3539c" title="Title of the plot.">setTitle()</a>) and a subtitle (see <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a578c2590cb6baa8ef40ba1251bd1279e" title="Subtitle of the plot.">setSubTitle()</a> and <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a07a4424d4bbc1cdd15cef3e2c0f0c075" title="Subtitle of the plot.">getSubTitle()</a>).</p>
-<dl class="section author"><dt>Author</dt><dd>Erik Saule, Kalpathi Subramanian</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>7/16/19 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab96c0639aca0d08c19e5d3b51a29b0a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#ab96c0639aca0d08c19e5d3b51a29b0a6">LineChart</a> ()</td></tr>
@@ -160,7 +154,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54bde1c8f14ca3bff47910a2e48d586a inherit pub_methods_classbridges_1_1datastructure_1_1_data_structure"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1datastructure_1_1_data_structure.html#a54bde1c8f14ca3bff47910a2e48d586a">~DataStructure</a> ()=default</td></tr>
 <tr class="separator:a54bde1c8f14ca3bff47910a2e48d586a inherit pub_methods_classbridges_1_1datastructure_1_1_data_structure"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Show series of data or functions using a line chart. </p>
+<p>Line charts (<a href="https://en.wikipedia.org/wiki/Line_chart">https://en.wikipedia.org/wiki/Line_chart</a>) are used to represent graphically functions such as f(x) = 3*x+1, or data such as temperature of a liquid on a stove as time passes. A individual function or a set of data is called "series".</p>
+<p>A series is represented by two arrays xdata and ydata such that there is a point at (xdata[0], ydata[0]), an other at (xdata[1], ydata[1]), ... One can add a series by passing the two arrays using <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#acb763ea4b2d0f27c73edc3861cc51fbb" title="Add a series (or update it)">setDataSeries()</a> or add the arrays individually using <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#aa9959489d71e31645f561c4481f050d2" title="Changes the X data for a series.">setXData()</a> and <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a861370f3f7b32cc1a9347727d084d307" title="Changes the Y data for a series.">setYData()</a>.</p>
+<p>The different series have a label associated with them by default which can be disabled (see <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a21031cd026426ab91307626ce9651c03" title="Enables or disables series labels.">toggleSeriesLabel()</a>).</p>
+<p>The data is typically shown with axes that use a linear scale. However, the scale can be changed to logarithmic for each axis individually (see <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a4e2aa224d793793faa0c5a6edb729646" title="Change the X-axis scale to logarithmic.">toggleLogarithmicX()</a> and toggleLogarithmic()).</p>
+<p>The <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html" title="Show series of data or functions using a line chart.">LineChart</a> can have a title (see <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#aa38d6cf9657d2757a98b657f079ae2bc" title="Title of the plot.">getTitle()</a> and <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#ac42cf1e6348ce8ab0c3593a496a3539c" title="Title of the plot.">setTitle()</a>) and a subtitle (see <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a578c2590cb6baa8ef40ba1251bd1279e" title="Subtitle of the plot.">setSubTitle()</a> and <a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html#a07a4424d4bbc1cdd15cef3e2c0f0c075" title="Subtitle of the plot.">getSubTitle()</a>).</p>
+<dl class="section author"><dt>Author</dt><dd>Erik Saule, Kalpathi Subramanian</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>7/16/19 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab96c0639aca0d08c19e5d3b51a29b0a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab96c0639aca0d08c19e5d3b51a29b0a6">&#9670;&nbsp;</a></span>LineChart()</h2>
 
@@ -848,12 +851,12 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-cxx/src/<a class="el" href="_line_chart_8h_source.html">LineChart.h</a></li>
+<li>bridges-cxx/src/<a class="el" href="_line_chart_8h_source.html">LineChart.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:56 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 20:25:47 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

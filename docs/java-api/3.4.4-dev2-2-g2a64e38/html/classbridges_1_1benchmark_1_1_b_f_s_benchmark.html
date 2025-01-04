@@ -75,6 +75,9 @@ $(function() {
 <div class="title">bridges.benchmark.BFSBenchmark Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Benchmarks Breadth First Search algorithms.  
+ <a href="classbridges_1_1benchmark_1_1_b_f_s_benchmark.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for bridges.benchmark.BFSBenchmark:</div>
 <div class="dyncontent">
@@ -85,18 +88,7 @@ Inheritance diagram for bridges.benchmark.BFSBenchmark:</div>
 <area href="classbridges_1_1benchmark_1_1_benchmark.html" title="Base class for a variety of benchmarks." alt="bridges.benchmark.Benchmark" shape="rect" coords="0,0,222,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Benchmarks Breadth First Search algorithms. </p>
-<p>Benchmarks BFS algorithms and add time series to a LineChart.</p>
-<p>One can also set a maximum time spent on a particular run using <a class="el" href="classbridges_1_1benchmark_1_1_benchmark.html#ab9acf34de3eb2cf39232de9520c08228" title="sets an upper bound to the time of a run.">setTimeCap()</a>.</p>
-<p>and can be passed to the run function for being benchmarked. A typical use would look something like</p>
-<div class="fragment"><div class="line">LineChart lc;</div>
-<div class="line"><a class="code" href="classbridges_1_1benchmark_1_1_b_f_s_benchmark.html#a47647a605d5cd6523e1472191e12ab94">BFSBenchmark</a> sb (lc) = <span class="keyword">new</span> <a class="code" href="classbridges_1_1benchmark_1_1_b_f_s_benchmark.html#a47647a605d5cd6523e1472191e12ab94">BFSBenchmark</a>(lc);</div>
-<div class="line">sb.run(<span class="stringliteral">&quot;mybfsalgorithm&quot;</span>, bfsalgo);</div>
-<div class="ttc" id="aclassbridges_1_1benchmark_1_1_b_f_s_benchmark_html_a47647a605d5cd6523e1472191e12ab94"><div class="ttname"><a href="classbridges_1_1benchmark_1_1_b_f_s_benchmark.html#a47647a605d5cd6523e1472191e12ab94">bridges.benchmark.BFSBenchmark.BFSBenchmark</a></div><div class="ttdeci">BFSBenchmark(LineChart plot, long timeCap)</div><div class="ttdef"><b>Definition:</b> BFSBenchmark.java:35</div></div>
-</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>07/21/2019 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a47647a605d5cd6523e1472191e12ab94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1benchmark_1_1_b_f_s_benchmark.html#a47647a605d5cd6523e1472191e12ab94">BFSBenchmark</a> (<a class="el" href="classbridges_1_1base_1_1_line_chart.html">LineChart</a> <a class="el" href="classbridges_1_1benchmark_1_1_benchmark.html#a1a6eba4a972865f9bd53ebc66115491e">plot</a>, long timeCap)</td></tr>
@@ -137,7 +129,18 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a54ab83c144ed5c80e1c426f654c96bd9 inherit pac_static_attribs_classbridges_1_1benchmark_1_1_graph_benchmark"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1benchmark_1_1_graph_benchmark.html#a54ab83c144ed5c80e1c426f654c96bd9">CURRENT_YEAR</a> = 2019</td></tr>
 <tr class="separator:a54ab83c144ed5c80e1c426f654c96bd9 inherit pac_static_attribs_classbridges_1_1benchmark_1_1_graph_benchmark"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Benchmarks Breadth First Search algorithms. </p>
+<p>Benchmarks BFS algorithms and add time series to a LineChart.</p>
+<p>One can also set a maximum time spent on a particular run using <a class="el" href="classbridges_1_1benchmark_1_1_benchmark.html#ab9acf34de3eb2cf39232de9520c08228" title="sets an upper bound to the time of a run.">setTimeCap()</a>.</p>
+<p>and can be passed to the run function for being benchmarked. A typical use would look something like</p>
+<div class="fragment"><div class="line">LineChart lc;</div>
+<div class="line"><a class="code" href="classbridges_1_1benchmark_1_1_b_f_s_benchmark.html#a47647a605d5cd6523e1472191e12ab94">BFSBenchmark</a> sb (lc) = <span class="keyword">new</span> <a class="code" href="classbridges_1_1benchmark_1_1_b_f_s_benchmark.html#a47647a605d5cd6523e1472191e12ab94">BFSBenchmark</a>(lc);</div>
+<div class="line">sb.run(<span class="stringliteral">&quot;mybfsalgorithm&quot;</span>, bfsalgo);</div>
+<div class="ttc" id="aclassbridges_1_1benchmark_1_1_b_f_s_benchmark_html_a47647a605d5cd6523e1472191e12ab94"><div class="ttname"><a href="classbridges_1_1benchmark_1_1_b_f_s_benchmark.html#a47647a605d5cd6523e1472191e12ab94">bridges.benchmark.BFSBenchmark.BFSBenchmark</a></div><div class="ttdeci">BFSBenchmark(LineChart plot, long timeCap)</div><div class="ttdef"><b>Definition:</b> BFSBenchmark.java:35</div></div>
+</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>07/21/2019 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a47647a605d5cd6523e1472191e12ab94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47647a605d5cd6523e1472191e12ab94">&#9670;&nbsp;</a></span>BFSBenchmark() <span class="overload">[1/2]</span></h2>
 
@@ -229,12 +232,12 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-java/src/main/java/bridges/benchmark/<a class="el" href="_b_f_s_benchmark_8java.html">BFSBenchmark.java</a></li>
+<li>bridges-java/src/main/java/bridges/benchmark/<a class="el" href="_b_f_s_benchmark_8java.html">BFSBenchmark.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:57 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:43 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

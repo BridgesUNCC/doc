@@ -77,6 +77,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class can be used to instantiate Circular Doubly Linked List Elements.  
+ <a href="classbridges_1_1datastructure_1_1_circ_d_lelement.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_circ_d_lelement_8h_source.html">CircDLelement.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for bridges::datastructure::CircDLelement&lt; E &gt;:</div>
@@ -90,18 +93,7 @@ Inheritance diagram for bridges::datastructure::CircDLelement&lt; E &gt;:</div>
 <area href="classbridges_1_1datastructure_1_1_data_structure.html" title="This is the superclass of all data structure types in BRIDGES." alt="bridges::datastructure::DataStructure" shape="rect" coords="265,0,520,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename E&gt;<br />
-class bridges::datastructure::CircDLelement&lt; E &gt;</h3>
-
-<p>This class can be used to instantiate Circular Doubly Linked List Elements. </p>
-<p>Structurally they are the same as doubly linked elements except that each node constructed with the next and the previous pointers pointing to itself.</p>
-<p>User's implementation of the circularly linked list needs to ensure that the last node's next pointer points to the first node and the first node's previous pointer points to the last node, as the visualization generation is dependent on this.</p>
-<p>Elements have labels (string) that are displayed on the visualization. Elements take an generic object E as a user defined parameter, which can any native type or object. Elements contain a visualizer object for setting visual attributes (color, shape, opacity, size), necessary for displaying them in a web browser</p>
-<dl class="section see"><dt>See also</dt><dd>There is a tutorial about Circular Doubly Linked Lists : <a href="https://bridgesuncc.github.io/tutorials/CircularDoublyLinkedList.html">https://bridgesuncc.github.io/tutorials/CircularDoublyLinkedList.html</a></dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>10/5/16, 7/12/19 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1datastructure_1_1_circ_d_lelement_1_1_circ_d_lelement__constlisthelper.html">CircDLelement_constlisthelper</a></td></tr>
@@ -255,7 +247,18 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ac296ae66e6b04e95f31f4134228524f8 inherit pro_attribs_classbridges_1_1datastructure_1_1_element"><td class="memItemLeft" align="right" valign="top">unordered_map&lt; <a class="el" href="classbridges_1_1datastructure_1_1_element.html">Element</a> *, <a class="el" href="classbridges_1_1datastructure_1_1_link_visualizer.html">LinkVisualizer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1datastructure_1_1_element.html#ac296ae66e6b04e95f31f4134228524f8">links</a></td></tr>
 <tr class="separator:ac296ae66e6b04e95f31f4134228524f8 inherit pro_attribs_classbridges_1_1datastructure_1_1_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename E&gt;<br />
+class bridges::datastructure::CircDLelement&lt; E &gt;</h3>
+
+<p>This class can be used to instantiate Circular Doubly Linked List Elements. </p>
+<p>Structurally they are the same as doubly linked elements except that each node constructed with the next and the previous pointers pointing to itself.</p>
+<p>User's implementation of the circularly linked list needs to ensure that the last node's next pointer points to the first node and the first node's previous pointer points to the last node, as the visualization generation is dependent on this.</p>
+<p>Elements have labels (string) that are displayed on the visualization. Elements take an generic object E as a user defined parameter, which can any native type or object. Elements contain a visualizer object for setting visual attributes (color, shape, opacity, size), necessary for displaying them in a web browser</p>
+<dl class="section see"><dt>See also</dt><dd>There is a tutorial about Circular Doubly Linked Lists : <a href="https://bridgesuncc.github.io/tutorials/CircularDoublyLinkedList.html">https://bridgesuncc.github.io/tutorials/CircularDoublyLinkedList.html</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>10/5/16, 7/12/19 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acd151aff05440f2c6fe26f41b46e0668"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd151aff05440f2c6fe26f41b46e0668">&#9670;&nbsp;</a></span>CircDLelement() <span class="overload">[1/4]</span></h2>
 
@@ -650,12 +653,12 @@ template&lt;typename E &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-cxx/src/<a class="el" href="_circ_d_lelement_8h_source.html">CircDLelement.h</a></li>
+<li>bridges-cxx/src/<a class="el" href="_circ_d_lelement_8h_source.html">CircDLelement.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:56 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 20:25:46 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

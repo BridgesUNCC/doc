@@ -75,6 +75,9 @@ $(function() {
 <div class="title">bridges.base.LineChart Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Enable plotting series of data or functions using a line chart.  
+ <a href="classbridges_1_1base_1_1_line_chart.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for bridges.base.LineChart:</div>
 <div class="dyncontent">
@@ -84,17 +87,7 @@ Inheritance diagram for bridges.base.LineChart:</div>
 <area href="classbridges_1_1base_1_1_data_struct.html" title="This is an abstract super class that is extended by all Bridges subclasses and provides some methods ..." alt="bridges.base.DataStruct" shape="rect" coords="0,0,148,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Enable plotting series of data or functions using a line chart. </p>
-<p>Line charts (<a href="https://en.wikipedia.org/wiki/Line_chart">https://en.wikipedia.org/wiki/Line_chart</a>) are used to represent graphically functions such as f(x) = 3*x+1, or data such as temperature of a liquid on a stove as time passes. A individual function or a set of data are called "series".</p>
-<p>A series is represented by two arrays xdata and ydata such that there is a point at (xdata[0], ydata[0]), an other at (xdata[1], ydata[1]), ... One can add a series by passing the two arrays using <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a586e9953b13e51ab9e592acfb034887b" title="Add a series (or update it)">setDataSeries()</a> or add the arrays individually using <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a2918179283e8280d47abb43df3c59195" title="Changes the X data for a series.">setXData()</a> and <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a3076dc99debb599529169de40815aba2" title="Changes the Y data for a series.">setYData()</a>.</p>
-<p>The different series have a label associated with them by default which can be disabled (see <a class="el" href="classbridges_1_1base_1_1_line_chart.html#adae74cfb09585727a96cf74ddf74d098" title="Enables or disables series labels.">toggleSeriesLabel()</a>).</p>
-<p>The data is typically shown with axes that use a linear scale. However, the scale can be changed to logarithmic for each axis individually (see <a class="el" href="classbridges_1_1base_1_1_line_chart.html#ad3e5e54c382ac605a81b6b61c250ad16" title="Change the X-axis scale to logarithmic.">toggleLogarithmicX()</a> and toggleLogarithmic()).</p>
-<p>The <a class="el" href="classbridges_1_1base_1_1_line_chart.html" title="Enable plotting series of data or functions using a line chart.">LineChart</a> can have a title (see <a class="el" href="classbridges_1_1base_1_1_line_chart.html#aedc5f75b158298b755ba0c31bcf84138" title="Title of the plot.">getTitle()</a> and <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a893519da804666988c49b918c87da2a2" title="Title of the plot.">setTitle()</a>) and a subtitle (see <a class="el" href="classbridges_1_1base_1_1_line_chart.html#ad24bfdd49194f8e152fdb80e039762ad" title="Subtitle of the plot.">setSubTitle()</a> and <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a102006e90f2a226886538db0eeda6b08" title="Subtitle of the plot.">getSubTitle()</a>).</p>
-<dl class="section see"><dt>See also</dt><dd>See tutorial on using <a class="el" href="classbridges_1_1base_1_1_line_chart.html" title="Enable plotting series of data or functions using a line chart.">LineChart</a> at: <a href="https://bridgesuncc.github.io/tutorials/LineChart.html">https://bridgesuncc.github.io/tutorials/LineChart.html</a></dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Erik Saule</dd></dl>
-<dl class="section date"><dt>Date</dt><dd>08/11/21 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae864fe5ae85e80ae2f035471fb216e68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_line_chart.html#ae864fe5ae85e80ae2f035471fb216e68">LineChart</a> ()</td></tr>
@@ -195,7 +188,17 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a8b3dbe53c49bcb3c6e82cef8fcd3e935 inherit pac_attribs_classbridges_1_1base_1_1_data_struct"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1base_1_1_data_struct.html#a8b3dbe53c49bcb3c6e82cef8fcd3e935">CLOSE_BOX</a> = &quot;]&quot;</td></tr>
 <tr class="separator:a8b3dbe53c49bcb3c6e82cef8fcd3e935 inherit pac_attribs_classbridges_1_1base_1_1_data_struct"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Enable plotting series of data or functions using a line chart. </p>
+<p>Line charts (<a href="https://en.wikipedia.org/wiki/Line_chart">https://en.wikipedia.org/wiki/Line_chart</a>) are used to represent graphically functions such as f(x) = 3*x+1, or data such as temperature of a liquid on a stove as time passes. A individual function or a set of data are called "series".</p>
+<p>A series is represented by two arrays xdata and ydata such that there is a point at (xdata[0], ydata[0]), an other at (xdata[1], ydata[1]), ... One can add a series by passing the two arrays using <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a586e9953b13e51ab9e592acfb034887b" title="Add a series (or update it)">setDataSeries()</a> or add the arrays individually using <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a2918179283e8280d47abb43df3c59195" title="Changes the X data for a series.">setXData()</a> and <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a3076dc99debb599529169de40815aba2" title="Changes the Y data for a series.">setYData()</a>.</p>
+<p>The different series have a label associated with them by default which can be disabled (see <a class="el" href="classbridges_1_1base_1_1_line_chart.html#adae74cfb09585727a96cf74ddf74d098" title="Enables or disables series labels.">toggleSeriesLabel()</a>).</p>
+<p>The data is typically shown with axes that use a linear scale. However, the scale can be changed to logarithmic for each axis individually (see <a class="el" href="classbridges_1_1base_1_1_line_chart.html#ad3e5e54c382ac605a81b6b61c250ad16" title="Change the X-axis scale to logarithmic.">toggleLogarithmicX()</a> and toggleLogarithmic()).</p>
+<p>The <a class="el" href="classbridges_1_1base_1_1_line_chart.html" title="Enable plotting series of data or functions using a line chart.">LineChart</a> can have a title (see <a class="el" href="classbridges_1_1base_1_1_line_chart.html#aedc5f75b158298b755ba0c31bcf84138" title="Title of the plot.">getTitle()</a> and <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a893519da804666988c49b918c87da2a2" title="Title of the plot.">setTitle()</a>) and a subtitle (see <a class="el" href="classbridges_1_1base_1_1_line_chart.html#ad24bfdd49194f8e152fdb80e039762ad" title="Subtitle of the plot.">setSubTitle()</a> and <a class="el" href="classbridges_1_1base_1_1_line_chart.html#a102006e90f2a226886538db0eeda6b08" title="Subtitle of the plot.">getSubTitle()</a>).</p>
+<dl class="section see"><dt>See also</dt><dd>See tutorial on using <a class="el" href="classbridges_1_1base_1_1_line_chart.html" title="Enable plotting series of data or functions using a line chart.">LineChart</a> at: <a href="https://bridgesuncc.github.io/tutorials/LineChart.html">https://bridgesuncc.github.io/tutorials/LineChart.html</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Erik Saule</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>08/11/21 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae864fe5ae85e80ae2f035471fb216e68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae864fe5ae85e80ae2f035471fb216e68">&#9670;&nbsp;</a></span>LineChart()</h2>
 
@@ -928,12 +931,12 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-java/src/main/java/bridges/base/<a class="el" href="_line_chart_8java.html">LineChart.java</a></li>
+<li>bridges-java/src/main/java/bridges/base/<a class="el" href="_line_chart_8java.html">LineChart.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:57 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 21:45:43 for Bridges-Java by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

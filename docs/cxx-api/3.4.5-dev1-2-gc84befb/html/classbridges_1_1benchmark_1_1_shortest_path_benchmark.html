@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Benchmarks Shortest Path algorithms.  
+ <a href="classbridges_1_1benchmark_1_1_shortest_path_benchmark.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_shortest_path_benchmark_8h_source.html">ShortestPathBenchmark.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for bridges::benchmark::ShortestPathBenchmark:</div>
@@ -86,20 +89,7 @@ Inheritance diagram for bridges::benchmark::ShortestPathBenchmark:</div>
 <area href="classbridges_1_1benchmark_1_1_graph_benchmark.html" title="Base class for a variety of graph based benchmark." alt="bridges::benchmark::GraphBenchmark" shape="rect" coords="0,0,262,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Benchmarks Shortest Path algorithms. </p>
-<p>Benchmarks Shortest Path algorithms and add time series to a LineChart.</p>
-<p>One can also set a maximum time spent on a particular run using <a class="el" href="classbridges_1_1benchmark_1_1_graph_benchmark.html#a56934eb2789e54c088e7b4423c3a7456" title="sets an upper bound to the time of a run.">setTimeCap()</a>.</p>
-<p>The Shortest Path algorithms must have for prototype:</p>
-<p>void (*spalgo)(const GraphAdjList&lt;int, OSMVertex, double&gt;&amp; gr, int source, std::unordered_map&lt;int, double&gt;&amp; distance, std::unordered_map&lt;int, int&gt;&amp; parent);</p>
-<p>and can be passed to the run function for being benchmarked. A typical use would look something like</p>
-<div class="fragment"><div class="line">LineChart lc;</div>
-<div class="line"><a class="code" href="classbridges_1_1benchmark_1_1_shortest_path_benchmark.html#aa7109739d2ac254c113d820cff747df4">ShortestPathBenchmark</a> sb (lc);</div>
-<div class="line">sb.run(<span class="stringliteral">&quot;mybfsalgorithm&quot;</span>, spalgo);</div>
-<div class="ttc" id="aclassbridges_1_1benchmark_1_1_shortest_path_benchmark_html_aa7109739d2ac254c113d820cff747df4"><div class="ttname"><a href="classbridges_1_1benchmark_1_1_shortest_path_benchmark.html#aa7109739d2ac254c113d820cff747df4">bridges::benchmark::ShortestPathBenchmark::ShortestPathBenchmark</a></div><div class="ttdeci">ShortestPathBenchmark(LineChart &amp;p)</div><div class="ttdef"><b>Definition:</b> ShortestPathBenchmark.h:69</div></div>
-</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>07/21/2019 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa7109739d2ac254c113d820cff747df4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1benchmark_1_1_shortest_path_benchmark.html#aa7109739d2ac254c113d820cff747df4">ShortestPathBenchmark</a> (<a class="el" href="classbridges_1_1datastructure_1_1_line_chart.html">LineChart</a> &amp;p)</td></tr>
@@ -134,7 +124,20 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a59938016b721fb6db2ff8bdb2c9d41c1 inherit pro_attribs_classbridges_1_1benchmark_1_1_graph_benchmark"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1benchmark_1_1_graph_benchmark.html#a59938016b721fb6db2ff8bdb2c9d41c1">time_cap</a></td></tr>
 <tr class="separator:a59938016b721fb6db2ff8bdb2c9d41c1 inherit pro_attribs_classbridges_1_1benchmark_1_1_graph_benchmark"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Benchmarks Shortest Path algorithms. </p>
+<p>Benchmarks Shortest Path algorithms and add time series to a LineChart.</p>
+<p>One can also set a maximum time spent on a particular run using <a class="el" href="classbridges_1_1benchmark_1_1_graph_benchmark.html#a56934eb2789e54c088e7b4423c3a7456" title="sets an upper bound to the time of a run.">setTimeCap()</a>.</p>
+<p>The Shortest Path algorithms must have for prototype:</p>
+<p>void (*spalgo)(const GraphAdjList&lt;int, OSMVertex, double&gt;&amp; gr, int source, std::unordered_map&lt;int, double&gt;&amp; distance, std::unordered_map&lt;int, int&gt;&amp; parent);</p>
+<p>and can be passed to the run function for being benchmarked. A typical use would look something like</p>
+<div class="fragment"><div class="line">LineChart lc;</div>
+<div class="line"><a class="code" href="classbridges_1_1benchmark_1_1_shortest_path_benchmark.html#aa7109739d2ac254c113d820cff747df4">ShortestPathBenchmark</a> sb (lc);</div>
+<div class="line">sb.run(<span class="stringliteral">&quot;mybfsalgorithm&quot;</span>, spalgo);</div>
+<div class="ttc" id="aclassbridges_1_1benchmark_1_1_shortest_path_benchmark_html_aa7109739d2ac254c113d820cff747df4"><div class="ttname"><a href="classbridges_1_1benchmark_1_1_shortest_path_benchmark.html#aa7109739d2ac254c113d820cff747df4">bridges::benchmark::ShortestPathBenchmark::ShortestPathBenchmark</a></div><div class="ttdeci">ShortestPathBenchmark(LineChart &amp;p)</div><div class="ttdef"><b>Definition:</b> ShortestPathBenchmark.h:69</div></div>
+</div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Erik Saule </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>07/21/2019 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa7109739d2ac254c113d820cff747df4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7109739d2ac254c113d820cff747df4">&#9670;&nbsp;</a></span>ShortestPathBenchmark()</h2>
 
@@ -208,12 +211,12 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-cxx/src/<a class="el" href="_shortest_path_benchmark_8h_source.html">ShortestPathBenchmark.h</a></li>
+<li>bridges-cxx/src/<a class="el" href="_shortest_path_benchmark_8h_source.html">ShortestPathBenchmark.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:56 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 20:25:46 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

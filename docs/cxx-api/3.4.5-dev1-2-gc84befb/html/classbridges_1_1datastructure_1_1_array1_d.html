@@ -77,6 +77,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A BRIDGES 1D array type.  
+ <a href="classbridges_1_1datastructure_1_1_array1_d.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_array1_d_8h_source.html">Array1D.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for bridges::datastructure::Array1D&lt; E &gt;:</div>
@@ -88,35 +91,7 @@ Inheritance diagram for bridges::datastructure::Array1D&lt; E &gt;:</div>
 <area href="classbridges_1_1datastructure_1_1_data_structure.html" title="This is the superclass of all data structure types in BRIDGES." alt="bridges::datastructure::DataStructure" shape="rect" coords="0,0,221,24"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename E&gt;<br />
-class bridges::datastructure::Array1D&lt; E &gt;</h3>
-
-<p>A BRIDGES 1D array type. </p>
-<p>This class can be used to create 1D arrays of any type.</p>
-<p>The class stores an array of E where each entry can be styled.</p>
-<p>The access to the values stored are done directly using bracket operators such as</p>
-<div class="fragment"><div class="line">Array1D&lt;std::string&gt; arr(19);</div>
-<div class="line">arr [12] = <span class="stringliteral">&quot;hello!&quot;</span>;</div>
-</div><!-- fragment --><p>Entries in the array can be styled by showing a label and changing the color of an entry. This is achieved by styling the underlying element to a particular entry of the array such as:</p>
-<div class="fragment"><div class="line">Array1D&lt;std::string&gt; arr(19);</div>
-<div class="line">arr.getElement(12).setColor(<span class="stringliteral">&quot;yellow&quot;</span>);</div>
-<div class="line">arr.getElement(12).setLabel(<span class="stringliteral">&quot;Hi there&quot;</span>);</div>
-</div><!-- fragment --><p>The array support range for loop so you can get to all elements in the array using :</p>
-<div class="fragment"><div class="line">Array1D&lt;std::string&gt; arr(19);</div>
-<div class="line"><span class="keywordflow">for</span> (<span class="keyword">auto</span> mystring : arr) {</div>
-<div class="line">  std::cout&lt;&lt;mystring&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line">}</div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd>See tutorial at: <a href="https://bridgesuncc.github.io/tutorials/Array.html">https://bridgesuncc.github.io/tutorials/Array.html</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">E</td><td>the application data type </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Erik Saule </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>7/16/19 </dd></dl>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbridges_1_1datastructure_1_1_array1_d_1_1const__iterator.html">const_iterator</a></td></tr>
@@ -200,7 +175,35 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a120174198dc4de388af154d97951e856 inherit pro_methods_classbridges_1_1datastructure_1_1_array"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="classbridges_1_1datastructure_1_1_element.html" title="This is the fundamental building block for all data structures in BRIDGES.">Element</a> at index ind - 1D array.  <a href="classbridges_1_1datastructure_1_1_array.html#a120174198dc4de388af154d97951e856">More...</a><br /></td></tr>
 <tr class="separator:a120174198dc4de388af154d97951e856 inherit pro_methods_classbridges_1_1datastructure_1_1_array"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename E&gt;<br />
+class bridges::datastructure::Array1D&lt; E &gt;</h3>
+
+<p>A BRIDGES 1D array type. </p>
+<p>This class can be used to create 1D arrays of any type.</p>
+<p>The class stores an array of E where each entry can be styled.</p>
+<p>The access to the values stored are done directly using bracket operators such as</p>
+<div class="fragment"><div class="line">Array1D&lt;std::string&gt; arr(19);</div>
+<div class="line">arr [12] = <span class="stringliteral">&quot;hello!&quot;</span>;</div>
+</div><!-- fragment --><p>Entries in the array can be styled by showing a label and changing the color of an entry. This is achieved by styling the underlying element to a particular entry of the array such as:</p>
+<div class="fragment"><div class="line">Array1D&lt;std::string&gt; arr(19);</div>
+<div class="line">arr.getElement(12).setColor(<span class="stringliteral">&quot;yellow&quot;</span>);</div>
+<div class="line">arr.getElement(12).setLabel(<span class="stringliteral">&quot;Hi there&quot;</span>);</div>
+</div><!-- fragment --><p>The array support range for loop so you can get to all elements in the array using :</p>
+<div class="fragment"><div class="line">Array1D&lt;std::string&gt; arr(19);</div>
+<div class="line"><span class="keywordflow">for</span> (<span class="keyword">auto</span> mystring : arr) {</div>
+<div class="line">  std::cout&lt;&lt;mystring&lt;&lt;<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd>See tutorial at: <a href="https://bridgesuncc.github.io/tutorials/Array.html">https://bridgesuncc.github.io/tutorials/Array.html</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">E</td><td>the application data type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Kalpathi Subramanian, Erik Saule </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>7/16/19 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a690a7802e32842acfda2688459bb2caa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a690a7802e32842acfda2688459bb2caa">&#9670;&nbsp;</a></span>~Array1D()</h2>
 
@@ -561,12 +564,12 @@ template&lt;typename E &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/erik/work/bridges/bridges-cxx/src/<a class="el" href="_array1_d_8h_source.html">Array1D.h</a></li>
+<li>bridges-cxx/src/<a class="el" href="_array1_d_8h_source.html">Array1D.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 2 2025 19:32:56 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jan 3 2025 20:25:46 for Bridges-C++ by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
